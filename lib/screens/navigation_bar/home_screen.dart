@@ -13,12 +13,14 @@ class HomeScreen extends StatelessWidget {
     final ColorScheme colorScheme = AppTheme.colorScheme(context);
     return Scaffold(
       appBar: AppBar(
-        leading: SizedBox(
-          width: 10,
-          height: 10,
-          child: Image.asset(AppAsset.logo, width: 10, height: 10),
+        leading: Center(
+          child: SizedBox(
+            width: 30,
+            height: 30,
+            child: Image.asset(AppAsset.logo, fit: BoxFit.contain),
+          ),
         ),
-        title: Text("Bem vindo"),
+        title: Text("Hinário IECA"),
         centerTitle: true,
         actions: <Widget>[
           IconButton(icon: Icon(Icons.settings), onPressed: () {}),
@@ -59,7 +61,7 @@ class HomeScreen extends StatelessWidget {
               decoration: BoxDecoration(
                 color: colorScheme.onTertiary,
                 borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: colorScheme.primaryContainer),
+                border: Border.all(color: colorScheme.secondaryFixed),
               ),
               padding: EdgeInsets.symmetric(vertical: 15, horizontal: 10),
               child: Column(

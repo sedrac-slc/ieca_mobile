@@ -1,10 +1,31 @@
+import 'dart:isolate';
+
+import 'package:ieca_mobile/db/DBConn.dart';
 import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/screens/_import.dart';
 import 'package:ieca_mobile/theme/theme.dart';
 import 'package:flutter/material.dart';
 
-class IecaApp extends StatelessWidget {
+class IecaApp extends StatefulWidget {
   const IecaApp({super.key});
+
+  @override
+  State<IecaApp> createState() => _IecaAppState();
+}
+
+class _IecaAppState extends State<IecaApp> {
+
+  @override
+  void initState() {
+    _initDatabase();
+    super.initState();
+  }
+
+  void _initDatabase() async {
+    await Isolate.run((){
+      DBConn.instance.database;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

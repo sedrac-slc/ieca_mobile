@@ -32,6 +32,7 @@ class DBConn{
     LitanyContentSeeder.run(db);
     InvocationTitleSeeder.run(db);
     InvocationContentSeeder.run(db);
+    _database = db;
   }
 
 }

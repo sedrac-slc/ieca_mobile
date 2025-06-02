@@ -28,10 +28,16 @@ class DBConn{
     await db.execute(LitanyContentSql.TABLE_CREATE);
     await db.execute(InvocationTitleSql.TABLE_CREATE);
     await db.execute(InvocationContentSql.TABLE_CREATE);
+    await db.execute(PsalmsTitleSql.TABLE_CREATE);
+    await db.execute(PsalmsContentSql.TABLE_CREATE);
+
     LitanyTitleSeeder.run(db);
     LitanyContentSeeder.run(db);
     InvocationTitleSeeder.run(db);
     InvocationContentSeeder.run(db);
+    PsalmsTitleSeeder.run(db);
+    PsalmsContentSeeder.run(db);
+
     _database = db;
   }
 

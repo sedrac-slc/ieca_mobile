@@ -1,12 +1,12 @@
 class LitanyPerson{
-  static final DIRIGENTE = "DIRIGENTE";
-  static final CONGREGACAO = "CONGREGACAO";
-  static final DIRIGENTE_CONGREGACAO= "DIRIGENTE_CONGREGACAO";
+  static final DIRECTOR = "DIRECTOR";
+  static final CONGREGATION = "CONGREGATION";
+  static final DIRECTOR_CONGREGATION= "DIRECTOR_CONGREGATION";
 
   static String describe(String person){
-    if(LitanyPerson.DIRIGENTE == person) return "Dirigente";
-    if(LitanyPerson.CONGREGACAO == person) return "Congregação";
-    if(LitanyPerson.DIRIGENTE_CONGREGACAO == person) return "Dirigente e Congregação";
+    if(LitanyPerson.DIRECTOR == person) return "Dirigente";
+    if(LitanyPerson.CONGREGATION == person) return "Congregação";
+    if(LitanyPerson.DIRECTOR_CONGREGATION == person) return "Dirigente e Congregação";
     return "";
   }
 

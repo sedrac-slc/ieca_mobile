@@ -1,22 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:ieca_mobile/models/LitanyTitle.dart';
-import 'package:ieca_mobile/repository/LitanyContentRepository.dart';
+import 'package:ieca_mobile/enums/PsalmsPerson.dart';
+import 'package:ieca_mobile/models/PsalmsTitle.dart';
+import 'package:ieca_mobile/repository/PsalmsContentRepository.dart';
 import 'package:ieca_mobile/util/AppTheme.dart';
 
-class LitanyContentModalBottomSheet extends StatefulWidget {
-  final LitanyTitle litanyTitle;
+class PsalmsContentModalBottomSheet extends StatefulWidget {
+  final PsalmsTitle psalmsTitle;
 
-  const LitanyContentModalBottomSheet({
+  const PsalmsContentModalBottomSheet({
     super.key,
-    required this.litanyTitle,
+    required this.psalmsTitle,
   });
 
   @override
-  State<LitanyContentModalBottomSheet> createState() => _LitanyContentModalBottomSheetState();
+  State<PsalmsContentModalBottomSheet> createState() => _PsalmsContentModalBottomSheetState();
 }
 
-class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottomSheet> {
-  final LitanyContentRepository _litanyContentRepository = LitanyContentRepository();
+class _PsalmsContentModalBottomSheetState extends State<PsalmsContentModalBottomSheet> {
+  final PsalmsContentRepository _psalmsContentRepository = PsalmsContentRepository();
 
   @override
   Widget build(BuildContext context) {
@@ -44,20 +45,16 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
           ),
           Expanded(
             child: FutureBuilder(
-              future: _litanyContentRepository.getBy(widget.litanyTitle,),
+              future: _psalmsContentRepository.getBy(widget.psalmsTitle,),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
                   return ListView(
                     children: snapshot.requireData.map((it) {
                           return Padding(
                             padding: const EdgeInsets.only(top: 15, left: 20, right: 20,),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              spacing: 3,
-                              children: [
-                                Text(it.litanyPerson(), style: TextStyle(color: colorSchema.primary),),
-                                Text(it.content),
-                              ],
+                            child: Text(
+                              it.content,
+                              style: TextStyle(fontWeight: it.person == PsalmsPerson.CONGREGATION ? FontWeight.w700 : null),
                             ),
                           );
                         }).toList(),

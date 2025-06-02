@@ -1,10 +1,10 @@
-class LitanyTitle{
+class PsalmsTitle{
   final int id;
   final String name;
   final int position;
   final String lang;
 
-  LitanyTitle({required this.id, required this.name, required this.position, this.lang = "pt"});
+  PsalmsTitle({required this.id, required this.name, required this.position, this.lang = "pt"});
 
   Map<String, dynamic> toMap() {
     return {
@@ -15,8 +15,8 @@ class LitanyTitle{
     };
   }
 
-  factory LitanyTitle.fromMap(Map<String, dynamic> map) {
-    return LitanyTitle(
+  factory PsalmsTitle.fromMap(Map<String, dynamic> map) {
+    return PsalmsTitle(
       id: map['id'] as int,
       name: map['name'] as String,
       position: map['position'] as int,
@@ -26,6 +26,6 @@ class LitanyTitle{
 
   @override
   String toString() {
-    return "LitanyTitle(id=$id, name=$name, position=$position, lang=$lang)";
+    return "PsalmsTitle(id=$id, name=$name, position=$position, lang=$lang)";
   }
 }

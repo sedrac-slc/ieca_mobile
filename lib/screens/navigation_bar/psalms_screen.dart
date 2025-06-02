@@ -1,18 +1,18 @@
 import 'package:ieca_mobile/l10n/app_localizations.dart';
-import 'package:ieca_mobile/models/LitanyTitle.dart';
-import 'package:ieca_mobile/repository/LitanyTitleRepository.dart';
+import 'package:ieca_mobile/models/PsalmsTitle.dart';
+import 'package:ieca_mobile/repository/PsalmsTitleRepository.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
 import 'package:flutter/material.dart';
 
-class LitaniesScreen extends StatefulWidget {
-  const LitaniesScreen({super.key});
+class PsalmsScreen extends StatefulWidget {
+  const PsalmsScreen({super.key});
 
   @override
-  State<LitaniesScreen> createState() => _LitaniesScreenState();
+  State<PsalmsScreen> createState() => _PsalmsScreenState();
 }
 
-class _LitaniesScreenState extends State<LitaniesScreen> {
-  final ValueNotifier<List<LitanyTitle>> _litanyTitles = ValueNotifier([]);
+class _PsalmsScreenState extends State<PsalmsScreen> {
+  final ValueNotifier<List<PsalmsTitle>> _psalmsTitles = ValueNotifier([]);
 
   @override
   void initState() {
@@ -23,14 +23,14 @@ class _LitaniesScreenState extends State<LitaniesScreen> {
   }
 
   _initData() async {
-    final repository = LitanyTitleRepository();
-    _litanyTitles.value = await repository.getAll();
+    final repository = PsalmsTitleRepository();
+    _psalmsTitles.value = await repository.getAll();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(AppLocalizations.of(context)!.litanies)),
+      appBar: AppBar(title: Text(AppLocalizations.of(context)!.psalms)),
       body: Padding(
         padding: const EdgeInsets.only(
           top: 8.0,
@@ -42,19 +42,19 @@ class _LitaniesScreenState extends State<LitaniesScreen> {
           spacing: 30,
           children: [
             InputSearch(),
-            ValueListenableBuilder<List<LitanyTitle>>(
-              valueListenable: _litanyTitles,
+            ValueListenableBuilder<List<PsalmsTitle>>(
+              valueListenable: _psalmsTitles,
               builder: (_, _, _) {
                 return Expanded(
                   child: ListView.separated(
-                    itemCount: _litanyTitles.value.length,
+                    itemCount: _psalmsTitles.value.length,
                     separatorBuilder: (context, index) => Padding(padding: EdgeInsets.symmetric(vertical: 5)),
                     itemBuilder: (context, index) {
-                      final item = _litanyTitles.value[index];
-                      return LitanyTile(litanyTitle: item, onPressed: () {
-                          showModalBottomSheet(context: context, builder: (_) {
-                              return LitanyContentModalBottomSheet(litanyTitle: item);
-                          });
+                      final item = _psalmsTitles.value[index];
+                      return PsalmsTile(psalmsTitle: item, onPressed: () {
+                        showModalBottomSheet(context: context, builder: (_) {
+                          return PsalmsContentModalBottomSheet(psalmsTitle: item);
+                        });
                       });
                     },
                   ),

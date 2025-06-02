@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:ieca_mobile/models/LitanyTitle.dart';
+import 'package:ieca_mobile/models/PsalmsTitle.dart';
 import 'package:ieca_mobile/util/AppTheme.dart';
-import 'package:ieca_mobile/widgets/_import.dart';
+import 'package:ieca_mobile/widgets/number_background_leading.dart';
 
-class LitanyTile extends StatelessWidget {
-  final LitanyTitle litanyTitle;
+class PsalmsTile extends StatelessWidget {
+  final PsalmsTitle psalmsTitle;
   final Function() onPressed;
 
-  const LitanyTile({super.key, required this.litanyTitle, required this.onPressed});
+  const PsalmsTile({super.key, required this.psalmsTitle, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -21,9 +21,9 @@ class LitanyTile extends StatelessWidget {
         borderRadius: BorderRadius.circular(10),
       ),
       child: ListTile(
-        leading: NumberBackgroundLeading(number: litanyTitle.position),
+        leading: NumberBackgroundLeading(number: psalmsTitle.position),
         title: Text(
-          litanyTitle.name,
+          psalmsTitle.name,
           overflow: TextOverflow.ellipsis,
           style: const TextStyle(fontSize: 13),
         ),

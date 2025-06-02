@@ -19,7 +19,7 @@ class _PageScreenState extends State<PageScreen> {
     (_) => const InvocationScreen(),
     (_) => const HymnsScreen(),
     (_) => const LitaniesScreen(),
-    (_) => const SettingsScreen(),
+    (_) => const PsalmsScreen(),
   ];
 
   @override

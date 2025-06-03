@@ -54,7 +54,10 @@ class _PsalmsContentModalBottomSheetState extends State<PsalmsContentModalBottom
                             padding: const EdgeInsets.only(top: 15, left: 20, right: 20,),
                             child: Text(
                               it.content,
-                              style: TextStyle(fontWeight: it.person == PsalmsPerson.CONGREGATION ? FontWeight.w700 : null),
+                              style: TextStyle(
+                                fontWeight: it.person == PsalmsPerson.CONGREGATION ? FontWeight.w700 : null,
+                                color: it.person == PsalmsPerson.CONGREGATION ? colorSchema.primary : null,
+                              ),
                             ),
                           );
                         }).toList(),

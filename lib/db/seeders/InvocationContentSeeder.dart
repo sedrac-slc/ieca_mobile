@@ -1,7 +1,7 @@
 import 'package:ieca_mobile/db/_import.dart';
 import 'package:ieca_mobile/db/sql/InvocationContentSql.dart';
 import 'package:ieca_mobile/models/InvocationContent.dart';
-import 'package:ieca_mobile/seeders/InvocationTitleSeeder.dart';
+import 'package:ieca_mobile/db/seeders/InvocationTitleSeeder.dart';
 import 'package:ieca_mobile/util/AppLang.dart';
 
 class InvocationContentSeeder{

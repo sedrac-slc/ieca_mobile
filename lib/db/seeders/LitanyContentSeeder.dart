@@ -1,7 +1,7 @@
 import 'package:ieca_mobile/db/_import.dart';
 import 'package:ieca_mobile/enums/LitanyPerson.dart';
 import 'package:ieca_mobile/models/LitanyContent.dart';
-import 'package:ieca_mobile/seeders/LitanyTitleSeeder.dart';
+import 'package:ieca_mobile/db/seeders/LitanyTitleSeeder.dart';
 import 'package:ieca_mobile/util/AppLang.dart';
 
 class LitanyContentSeeder{

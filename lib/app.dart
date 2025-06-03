@@ -49,7 +49,7 @@ class _IecaAppState extends State<IecaApp> {
         '/page': (context) => const PageScreen(),
         '/home': (context) => const HomeScreen(),
         '/hymns': (context) => const HymnsScreen(),
-        '/litanies': (context) => const LitaniesScreen(),
+        '/litanies': (context) => const HymnsScreen(),
       },
     );
   }

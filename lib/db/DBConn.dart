@@ -1,4 +1,3 @@
-import 'package:ieca_mobile/seeders/_import.dart';
 import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import '_import.dart';
@@ -30,6 +29,7 @@ class DBConn{
     await db.execute(InvocationContentSql.TABLE_CREATE);
     await db.execute(PsalmsTitleSql.TABLE_CREATE);
     await db.execute(PsalmsContentSql.TABLE_CREATE);
+    await db.execute(HymnsGroupSql.TABLE_CREATE);
 
     LitanyTitleSeeder.run(db);
     LitanyContentSeeder.run(db);
@@ -37,6 +37,7 @@ class DBConn{
     InvocationContentSeeder.run(db);
     PsalmsTitleSeeder.run(db);
     PsalmsContentSeeder.run(db);
+    HymnsGroupSeeder.run(db);
 
     _database = db;
   }

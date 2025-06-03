@@ -1,7 +1,7 @@
 import 'package:ieca_mobile/db/_import.dart';
 import 'package:ieca_mobile/enums/PsalmsPerson.dart';
 import 'package:ieca_mobile/models/PsalmsContent.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/db/seeders/_import.dart';
 import 'package:ieca_mobile/util/AppLang.dart';
 
 class PsalmsContentSeeder{

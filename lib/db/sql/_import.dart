@@ -5,3 +5,5 @@ export 'InvocationContentSql.dart';
 export 'PsalmsTitleSql.dart';
 export 'PsalmsContentSql.dart';
 export 'HymnsGroupSql.dart';
+export 'HymnsNumberSql.dart';
+export 'HymnsContentSql.dart';

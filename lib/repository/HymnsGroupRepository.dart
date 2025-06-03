@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:ieca_mobile/db/_import.dart';
 import 'package:ieca_mobile/models/HymnsGroup.dart';
 
-class HymnsGroupRepository extends ChangeNotifier{
+class HymnsGroupRepository{
   late Database database;
   late List<HymnsGroup> _list;
 

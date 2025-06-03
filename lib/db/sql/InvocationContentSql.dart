@@ -1,5 +1,3 @@
-import '_import.dart';
-
 final class InvocationContentSql{
 
   static String TABLE_NAME = "tb_invocation_content";
@@ -12,7 +10,7 @@ final class InvocationContentSql{
       position INTEGER, 
       lang TEXT,
       books TEXT,
-      FOREIGN KEY(invocation_title_id) REFERENCES ${InvocationTitleSql.TABLE_NAME}(id)
+      FOREIGN KEY(invocation_title_id) REFERENCES ${TABLE_NAME}(id)
     )
    """;
 }

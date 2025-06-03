@@ -10,7 +10,7 @@ final class PsalmsContentSql{
       content TEXT, 
       position INTEGER, 
       lang TEXT,
-      FOREIGN KEY(psalms_title_id) REFERENCES ${PsalmsContentSql.TABLE_NAME}(id)
+      FOREIGN KEY(psalms_title_id) REFERENCES ${TABLE_NAME}(id)
     )
    """;
 }

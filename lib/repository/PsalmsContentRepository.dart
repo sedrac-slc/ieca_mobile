@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:ieca_mobile/db/_import.dart';
 import 'package:ieca_mobile/models/PsalmsContent.dart';
 import 'package:ieca_mobile/models/PsalmsTitle.dart';
 
-class PsalmsContentRepository extends ChangeNotifier{
+class PsalmsContentRepository{
   late Database database;
   late List<PsalmsContent> _list;
 

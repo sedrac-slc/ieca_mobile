@@ -52,7 +52,9 @@ class _HymnsScreenState extends State<HymnsScreen> {
                     itemBuilder: (context, index) {
                       final item = _hymnsGroup.value[index];
                       return HymnsGroupTile(hymnsGroup: item, onPressed: () {
-
+                        showModalBottomSheet(context: context, builder: (_) {
+                          return HymnsNumberModalBottomSheet(hymnsGroup: item);
+                        });
                       });
                     },
                   ),

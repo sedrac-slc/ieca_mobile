@@ -1,8 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:ieca_mobile/db/_import.dart';
 import 'package:ieca_mobile/models/InvocationTitle.dart';
 
-class InvocationTitleRepository extends ChangeNotifier{
+class InvocationTitleRepository{
   late Database database;
   late List<InvocationTitle> _list;
 

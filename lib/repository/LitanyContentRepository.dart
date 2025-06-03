@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:ieca_mobile/db/_import.dart';
 import 'package:ieca_mobile/models/LitanyContent.dart';
 import 'package:ieca_mobile/models/LitanyTitle.dart';
 
-class LitanyContentRepository extends ChangeNotifier{
+class LitanyContentRepository{
   late Database database;
   late List<LitanyContent> _list;
 

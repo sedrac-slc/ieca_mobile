@@ -30,6 +30,8 @@ class DBConn{
     await db.execute(PsalmsTitleSql.TABLE_CREATE);
     await db.execute(PsalmsContentSql.TABLE_CREATE);
     await db.execute(HymnsGroupSql.TABLE_CREATE);
+    await db.execute(HymnsNumberSql.TABLE_CREATE);
+    await db.execute(HymnsContentSql.TABLE_CREATE);
 
     LitanyTitleSeeder.run(db);
     LitanyContentSeeder.run(db);
@@ -38,6 +40,8 @@ class DBConn{
     PsalmsTitleSeeder.run(db);
     PsalmsContentSeeder.run(db);
     HymnsGroupSeeder.run(db);
+    HymnsNumberSeeder.run(db);
+    HymnsContentSeeder.run(db);
 
     _database = db;
   }

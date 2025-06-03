@@ -1,5 +1,3 @@
-import '_import.dart';
-
 final class LitanyContentSql{
 
   static String TABLE_NAME = "tb_litany_content";
@@ -13,7 +11,7 @@ final class LitanyContentSql{
       position INTEGER, 
       lang TEXT,
       books TEXT,
-      FOREIGN KEY(litany_title_id) REFERENCES ${LitanyTitleSql.TABLE_NAME}(id)
+      FOREIGN KEY(litany_title_id) REFERENCES ${TABLE_NAME}(id)
     )
    """;
 }

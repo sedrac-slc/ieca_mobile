@@ -18,13 +18,18 @@ class HymnsContentRepository {
 
   Future<List<HymnsContent>> getBy(HymnsNumber item) async {
     await _initRepository();
-    final List<Map<String, dynamic>> maps = await database.query(
-      HymnsContentSql.TABLE_NAME,
-      where: 'hymns_number_id = ?',
-      whereArgs: [item.id],
-    );
-    return List.generate(maps.length, (i) {
-      return HymnsContent.fromMap(maps[i], item);
-    });
+    try {
+      final List<Map<String, dynamic>> maps = await database.query(
+        HymnsContentSql.TABLE_NAME,
+        where: 'hymns_number_id = ?',
+        whereArgs: [item.id],
+      );
+      return List.generate(maps.length, (i) {
+        return HymnsContent.fromMap(maps[i], item);
+      });
+    }catch(e){
+      print("error $e");
+      return [];
+    }
   }
 }

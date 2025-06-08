@@ -3,6 +3,7 @@ import 'package:ieca_mobile/enums/PsalmsPerson.dart';
 import 'package:ieca_mobile/models/PsalmsTitle.dart';
 import 'package:ieca_mobile/repository/PsalmsContentRepository.dart';
 import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/widgets/modal_button_top.dart';
 
 class PsalmsContentModalBottomSheet extends StatefulWidget {
   final PsalmsTitle psalmsTitle;
@@ -30,19 +31,7 @@ class _PsalmsContentModalBottomSheetState extends State<PsalmsContentModalBottom
         mainAxisSize: MainAxisSize.max,
         spacing: 10,
         children: <Widget>[
-          const SizedBox(height: 5),
-          InkWell(
-            onTap: () { Navigator.pop(context); },
-            child: Container(
-              padding: const EdgeInsets.only(top: 20),
-              width: 100,
-              height: 13,
-              decoration: BoxDecoration(
-                color: colorSchema.primary,
-                borderRadius: BorderRadius.circular(50),
-              ),
-            ),
-          ),
+          const ModalButtonTop(),
           Expanded(
             child: FutureBuilder(
               future: _psalmsContentRepository.getBy(widget.psalmsTitle,),

@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ieca_mobile/models/HymnsGroup.dart';
 import 'package:ieca_mobile/repository/_import.dart';
 import 'package:ieca_mobile/screens/hymns_content_screen.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
-import 'package:ieca_mobile/widgets/number_background_leading.dart';
+import 'package:ieca_mobile/widgets/_import.dart';
 
 class HymnsNumberModalBottomSheet extends StatefulWidget {
   final HymnsGroup hymnsGroup;
@@ -19,7 +18,7 @@ class _HymnsNumberModalBottomSheetState extends State<HymnsNumberModalBottomShee
 
   @override
   Widget build(BuildContext context) {
-    final colorSchema = AppTheme.colorScheme(context);
+
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
@@ -28,36 +27,24 @@ class _HymnsNumberModalBottomSheetState extends State<HymnsNumberModalBottomShee
         mainAxisSize: MainAxisSize.max,
         spacing: 10,
         children: <Widget>[
-          const SizedBox(height: 5),
-          InkWell(
-            onTap: () =>  Navigator.pop(context),
-            child: Container(
-              padding: const EdgeInsets.only(top: 20),
-              width: 100,
-              height: 13,
-              decoration: BoxDecoration(
-                color: colorSchema.primary,
-                borderRadius: BorderRadius.circular(50),
-              ),
-            ),
-          ),
+          const ModalButtonTop(),
           Expanded(
             child: FutureBuilder(
               future: _hymnsNumberRepository.getBy(widget.hymnsGroup),
               builder: (context, snapshot) {
                 if (snapshot.hasData) {
-                  return GridView.count(
-                    crossAxisCount: 5,
-                    crossAxisSpacing: 10,
-                    mainAxisSpacing: 15,
-                    childAspectRatio: 1.8,
-                    shrinkWrap: true,
-                    physics: NeverScrollableScrollPhysics(),
-                    children: snapshot.requireData.map((it) {
-                          return Padding(
-                            padding: const EdgeInsets.only(top: 15, left: 20, right: 20,),
-                            child: InkWell(
-                              child: NumberBackgroundLeading(number: it.num,),
+                  return Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: GridView.count(
+                      crossAxisCount: 5,
+                      crossAxisSpacing: 5,
+                      mainAxisSpacing: 10,
+                      childAspectRatio: 1.0,
+                      shrinkWrap: true,
+                      physics: NeverScrollableScrollPhysics(),
+                      children: snapshot.requireData.map((it) {
+                            return InkWell(
+                              child: NumberHymns(number: it.num,),
                               onTap: () {
                                 Navigator.push( context,
                                   MaterialPageRoute(
@@ -65,9 +52,9 @@ class _HymnsNumberModalBottomSheetState extends State<HymnsNumberModalBottomShee
                                   ),
                                 );
                               },
-                            ),
-                          );
-                        }).toList(),
+                            );
+                          }).toList(),
+                    ),
                   );
                 } else {
                   return Center(

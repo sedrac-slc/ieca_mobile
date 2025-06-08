@@ -1,4 +1,4 @@
 class HymnsContentCode{
-  static final STANZA = "STANZA";
+  static final CHOIR = "CHOIR";
   static final VERSE = "VERSE";
 }

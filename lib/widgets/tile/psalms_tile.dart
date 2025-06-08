@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ieca_mobile/models/PsalmsTitle.dart';
 import 'package:ieca_mobile/util/AppTheme.dart';
-import 'package:ieca_mobile/widgets/number_background_leading.dart';
+import 'package:ieca_mobile/widgets/badge/number_background_leading.dart';
 
 class PsalmsTile extends StatelessWidget {
   final PsalmsTitle psalmsTitle;

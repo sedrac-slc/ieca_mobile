@@ -4,7 +4,7 @@ class HymnsContent{
   final int id;
   final int position;
   final String content;
-  final String type;
+  final String typeStanza;
   final String lang;
   final HymnsNumber hymnsNumber;
 
@@ -13,7 +13,7 @@ class HymnsContent{
     required this.hymnsNumber,
     required this.position,
     required this.content,
-    required this.type,
+    required this.typeStanza,
     this.lang = "pt"
   });
 
@@ -24,7 +24,7 @@ class HymnsContent{
       'num': position,
       'code': content,
       'lang': lang,
-      'label': type,
+      'typeStanza': typeStanza,
     };
   }
 
@@ -32,7 +32,7 @@ class HymnsContent{
     return HymnsContent(
         id: map['id'] as int,
         position: map['position'] as int,
-        type: map['type'] as String,
+        typeStanza: map['type_stanza'] as String,
         content: map['content'] as String,
         lang: map['lang'] as String,
         hymnsNumber: item
@@ -41,6 +41,6 @@ class HymnsContent{
 
   @override
   String toString() {
-    return "HymnsContent(id=$id, type=$type, position=$position, content=$content, lang=$lang)";
+    return "HymnsContent(id=$id, type=$typeStanza, position=$position, content=$content, lang=$lang)";
   }
 }

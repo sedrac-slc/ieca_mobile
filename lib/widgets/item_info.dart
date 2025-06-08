@@ -25,40 +25,37 @@ class ItemInfo extends StatelessWidget {
 
     return Container(
       decoration: BoxDecoration(
-        color: backgroundColor ?? colorScheme.onTertiary,
-        gradient: LinearGradient(colors: [
-          colorScheme.surface,
-          colorScheme.secondaryContainer
-        ]),
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: colorScheme.primaryContainer)
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: Colors.grey)
       ),
+      width: 130,
       padding: const EdgeInsets.all(15),
-      child: Row(
+      child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Column(
+          Row(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Icon(icon, color: colorScheme.primary),
-              const SizedBox(height: 8),
-              Text(text, style: textStyle ?? TextStyle(color: colorScheme.outline),),
+              Container(
+                padding: const EdgeInsets.all(2),
+                height: 10,
+                constraints: const BoxConstraints( minWidth: 25, minHeight: 25,),
+                decoration: BoxDecoration(color: colorScheme.error, borderRadius: BorderRadius.circular(50),),
+                child: Center(
+                  child: Text(
+                    total.toString(),
+                    style: totalTextStyle ?? const TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ),
             ],
           ),
-          Container(
-            padding: const EdgeInsets.all(5),
-            height: 30,
-            constraints: const BoxConstraints( minWidth: 30, minHeight: 30,),
-            decoration: BoxDecoration(color: colorScheme.primary, borderRadius: BorderRadius.circular(50),),
-            child: Center(
-              child: Text(
-                total.toString(),
-                style: totalTextStyle ?? const TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
+          Text(text, style: textStyle ?? TextStyle(color: colorScheme.outline),),
         ],
       ),
     );

@@ -8,7 +8,7 @@ class InvocationTitleSeeder{
   static final CHRISTMAS = InvocationTitle(id: 3, name: "Do Natal", position: 3);
   static final EPIPHANY = InvocationTitle(id: 4, name: "Da Epifania", position: 4);
   static final LENT = InvocationTitle(id: 5, name: "Da Quaresma", position: 5);
-  static final PALM_SUNDAY = InvocationTitle(id: 6, name: "Da Domingo de Ramos", position: 6);
+  static final PALM_SUNDAY = InvocationTitle(id: 6, name: "Do Domingo de Ramos", position: 6);
   static final EASTER = InvocationTitle(id: 7, name: "Da Páscoa", position: 7);
   static final PENTECOST = InvocationTitle(id: 8, name: "Da Pentecostes", position: 8);
 

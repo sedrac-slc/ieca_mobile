@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ieca_mobile/models/LitanyTitle.dart';
 import 'package:ieca_mobile/repository/LitanyContentRepository.dart';
 import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/widgets/modal_button_top.dart';
 
 class LitanyContentModalBottomSheet extends StatefulWidget {
   final LitanyTitle litanyTitle;
@@ -29,19 +30,7 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
         mainAxisSize: MainAxisSize.max,
         spacing: 10,
         children: <Widget>[
-          const SizedBox(height: 5),
-          InkWell(
-            onTap: () { Navigator.pop(context); },
-            child: Container(
-              padding: const EdgeInsets.only(top: 20),
-              width: 100,
-              height: 13,
-              decoration: BoxDecoration(
-                color: colorSchema.primary,
-                borderRadius: BorderRadius.circular(50),
-              ),
-            ),
-          ),
+          const ModalButtonTop(),
           Expanded(
             child: FutureBuilder(
               future: _litanyContentRepository.getBy(widget.litanyTitle,),

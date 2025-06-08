@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class InputSearch extends StatelessWidget {
   final String hintText;
 
-  const InputSearch({super.key, this.hintText = ""});
+  const InputSearch({super.key, this.hintText = "Pesquisar ..."});
 
   @override
   Widget build(BuildContext context) {
@@ -11,11 +11,10 @@ class InputSearch extends StatelessWidget {
       decoration: InputDecoration(
         filled: true,
         border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(50),
-          borderSide: BorderSide(width: 0.5),
+          borderRadius: BorderRadius.circular(20),
         ),
         hintText: hintText,
-        suffixIcon: IconButton(onPressed: (){}, icon: Icon(Icons.search)),
+        suffixIcon: IconButton(onPressed: (){}, icon: Icon(Icons.search))
       ),
       
     );

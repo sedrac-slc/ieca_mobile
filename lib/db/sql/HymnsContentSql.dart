@@ -8,9 +8,10 @@ final class HymnsContentSql{
     CREATE TABLE tb_hymns_content(
       id INTEGER PRIMARY KEY, 
       hymns_number_id INTEGER,
-      type TEXT, 
+      type_stanza TEXT, 
       content TEXT,
       position INTEGER,
+      lang TEXT,
       FOREIGN KEY(hymns_number_id) REFERENCES ${HymnsNumberSql.TABLE_NAME}(id)
      )
    """;

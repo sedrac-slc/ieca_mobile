@@ -8,12 +8,12 @@ class NumberBackgroundCenter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = AppTheme.colorScheme(context);
+    final colorBar = AppTheme.colorBackgroundAppBar(context);
     return  Container(
       padding: const EdgeInsets.all(5),
       height: 30,
       constraints: const BoxConstraints( minWidth: 30, minHeight: 30,),
-      decoration: BoxDecoration(color: colorScheme.primary, borderRadius: BorderRadius.circular(50),),
+      decoration: BoxDecoration(color: colorBar, borderRadius: BorderRadius.circular(50),),
       child: Center(
         child: Text(
           number.toString(),

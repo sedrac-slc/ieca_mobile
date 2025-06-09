@@ -1,5 +1,4 @@
 import 'package:ieca_mobile/db/_import.dart';
-import 'package:ieca_mobile/db/sql/InvocationTitleSql.dart';
 import 'package:ieca_mobile/models/InvocationTitle.dart';
 
 class InvocationTitleSeeder{
@@ -10,7 +9,7 @@ class InvocationTitleSeeder{
   static final LENT = InvocationTitle(id: 5, name: "Da Quaresma", position: 5);
   static final PALM_SUNDAY = InvocationTitle(id: 6, name: "Do Domingo de Ramos", position: 6);
   static final EASTER = InvocationTitle(id: 7, name: "Da Páscoa", position: 7);
-  static final PENTECOST = InvocationTitle(id: 8, name: "Da Pentecostes", position: 8);
+  static final PENTECOST = InvocationTitle(id: 8, name: "Do Pentecostes", position: 8);
 
 
   static List<InvocationTitle> items() {

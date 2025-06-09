@@ -20,15 +20,18 @@ class LitanyTile extends StatelessWidget {
           ),
         borderRadius: BorderRadius.circular(10),
       ),
-      child: ListTile(
-        leading: NumberBackgroundLeading(number: litanyTitle.position),
-        title: Text(
-          litanyTitle.name,
-          overflow: TextOverflow.ellipsis,
-          style: const TextStyle(fontSize: 13),
+      child: InkWell(
+        onTap: onPressed,
+        child: ListTile(
+          leading: NumberBackgroundLeading(number: litanyTitle.position),
+          title: Text(
+            litanyTitle.name,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(fontSize: 14),
+          ),
+          trailing: IconTrailing(onPressed: onPressed),
+          contentPadding: EdgeInsets.only(right: 5, left: 5),
         ),
-        trailing: IconButton(onPressed: onPressed, icon: Icon(Icons.navigate_next_outlined)),
-        contentPadding: EdgeInsets.only(right: 0, left: 5),
       ),
     );
   }

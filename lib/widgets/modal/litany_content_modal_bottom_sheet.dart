@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:ieca_mobile/enums/_import.dart';
 import 'package:ieca_mobile/models/LitanyTitle.dart';
 import 'package:ieca_mobile/repository/LitanyContentRepository.dart';
 import 'package:ieca_mobile/util/AppTheme.dart';
@@ -21,7 +23,7 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
 
   @override
   Widget build(BuildContext context) {
-    final colorSchema = AppTheme.colorScheme(context);
+    final colorBar = AppTheme.colorBackgroundAppBar(context);
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
@@ -31,6 +33,7 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
         spacing: 10,
         children: <Widget>[
           const ModalButtonTop(),
+          Text(widget.litanyTitle.name, style: GoogleFonts.roboto(fontSize: 16, fontWeight: FontWeight.bold),),
           Expanded(
             child: FutureBuilder(
               future: _litanyContentRepository.getBy(widget.litanyTitle,),
@@ -39,13 +42,27 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
                   return ListView(
                     children: snapshot.requireData.map((it) {
                           return Padding(
-                            padding: const EdgeInsets.only(top: 15, left: 20, right: 20,),
+                            padding: const EdgeInsets.only(bottom: 20, left: 20, right: 20,),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               spacing: 3,
                               children: [
-                                Text(it.litanyPerson(), style: TextStyle(color: colorSchema.primary),),
-                                Text(it.content),
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  spacing: 10,
+                                  children: [
+                                    Text(it.litanyPerson(), style: TextStyle(color: colorBar, fontWeight: FontWeight.w700),),
+                                    if (it.person == LitanyPerson.CONGREGATION) ...[
+                                      Text(it.content, style: TextStyle(fontWeight: FontWeight.w700),)
+                                    ] else ... [
+                                      Text(it.content)
+                                    ],
+                                  ],
+                                ),
+                                Container(
+                                    alignment: Alignment.bottomRight,
+                                    child: Text(it.books, textAlign: TextAlign.right,)
+                                ),
                               ],
                             ),
                           );

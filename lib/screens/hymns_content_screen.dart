@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:ieca_mobile/enums/_import.dart';
 import 'package:ieca_mobile/models/HymnsNumber.dart';
 import 'package:ieca_mobile/repository/HymnsContentRepository.dart';
+import 'package:ieca_mobile/widgets/_import.dart';
 
 class HymnsContentScreen extends StatefulWidget {
   final HymnsNumber hymnsNumber;
@@ -26,22 +29,67 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
         ),
       ),
       body: FutureBuilder(
-        future: _hymnsContentRepository.getBy(widget.hymnsNumber,),
+        future: _hymnsContentRepository.getBy(widget.hymnsNumber),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return ListView(
-              children: snapshot.requireData.map((it) {
-                return Padding(
-                  padding: const EdgeInsets.only(top: 15, left: 20, right: 20,),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    spacing: 3,
+            return Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              spacing: 5,
+              children: [
+                Container(
+                  padding: const EdgeInsets.only(left: 25,right: 25,),
+                  constraints: BoxConstraints(minWidth: 50, minHeight: 50),
+                  child: Row(
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    spacing: 10,
                     children: [
-                      Text(it.content),
+                      Text(widget.hymnsNumber.num.toString(), style: GoogleFonts.roboto(fontSize: 18),),
+                      Text("(${widget.hymnsNumber.label})", style: GoogleFonts.roboto(fontSize: 18, fontWeight: FontWeight.w300, fontStyle: FontStyle.italic),)
                     ],
                   ),
-                );
-              }).toList(),
+                ),
+                Expanded(
+                  child: ListView(
+                    children: snapshot.requireData.map((it) {
+                          return Padding(
+                            padding: const EdgeInsets.only(top: 15, left: 20,right: 20,),
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              spacing: 5,
+                              children: [
+                                if (it.typeStanza == HymnsContentCode.VERSE) ...  [
+                                  Row(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    spacing: 10,
+                                    children: [
+                                      NumberBackgroundCenter(number: it.position),
+                                      Expanded(
+                                        child: Text(
+                                          it.content,
+                                          style: GoogleFonts.roboto(fontSize: 20),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ] else ...[
+                                  Container(
+                                    padding: const EdgeInsets.only(left: 40),
+                                    child: Text(
+                                      it.content,
+                                      style: GoogleFonts.roboto(
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w900,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ],
+                            ),
+                          );
+                        }).toList(),
+                  ),
+                ),
+              ],
             );
           } else {
             return Center(

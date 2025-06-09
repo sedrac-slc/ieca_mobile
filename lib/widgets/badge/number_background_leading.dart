@@ -8,24 +8,20 @@ class NumberBackgroundLeading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = AppTheme.colorScheme(context);
+    final colorBar = AppTheme.colorBackgroundAppBar(context);
 
     return Container(
       alignment: Alignment.center,
-      decoration: BoxDecoration(
-        color: colorScheme.primary,
-        borderRadius: BorderRadius.circular(10),
-        border: Border.all(
-          color: colorScheme.outline.withAlpha(40),
-          width: 0.8,
-        ),
-      ),
       height: 30,
       width: 30,
+      decoration: BoxDecoration(
+        color: colorBar,
+        borderRadius: BorderRadius.circular(50),
+      ),
       child: Text(
         number.toString(),
         style: TextStyle(
-          color: colorScheme.onPrimary,
+          color:  Colors.white,
           fontWeight: FontWeight.w800,
           fontSize: 14,
         ),

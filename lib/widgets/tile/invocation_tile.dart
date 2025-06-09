@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/models/InvocationTitle.dart';
 import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/widgets/_import.dart';
 
 class InvocationTile extends StatelessWidget {
   final InvocationTitle item;
@@ -12,7 +13,6 @@ class InvocationTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ColorScheme colorScheme = AppTheme.colorScheme(context);
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
     return Container(
       decoration: BoxDecoration(
         color: colorScheme.surfaceContainerHigh,
@@ -27,20 +27,10 @@ class InvocationTile extends StatelessWidget {
           title: Text(
             item.name,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.poppins(fontSize: 13),
+            style: GoogleFonts.roboto(fontSize: 14),
           ),
-          trailing: Container(
-            constraints: BoxConstraints(minHeight: 10, minWidth: 10),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(50),
-              color: colorBar,
-            ),
-            child: IconButton(
-                onPressed: onPressed,
-                icon: Icon(Icons.navigate_next_outlined, color: Colors.white)
-            ),
-          ),
-          contentPadding: EdgeInsets.only(right: 0, left: 20),
+          trailing: IconTrailing(onPressed: onPressed),
+          contentPadding: EdgeInsets.only(right: 5, left: 5),
         ),
       ),
     );

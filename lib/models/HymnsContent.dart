@@ -11,7 +11,7 @@ class HymnsContent{
   HymnsContent({
     required this.id,
     required this.hymnsNumber,
-    required this.position,
+    this.position = 0,
     required this.content,
     required this.typeStanza,
     this.lang = "pt"

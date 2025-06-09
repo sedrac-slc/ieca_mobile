@@ -8,19 +8,19 @@ class NumberHymns extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorScheme = AppTheme.colorScheme(context);
+    final colorBar = AppTheme.colorBackgroundAppBar(context);
 
     return Container(
       alignment: Alignment.center,
       constraints: BoxConstraints(maxHeight: 60, minWidth: 60),
       decoration: BoxDecoration(
-        color: colorScheme.primary,
+        color: colorBar,
         borderRadius: BorderRadius.circular(50),
       ),
       child: Text(
         number.toString(),
         style: TextStyle(
-          color: colorScheme.onPrimary,
+          color: Colors.white,
           fontWeight: FontWeight.w800,
           fontSize: 20,
         ),

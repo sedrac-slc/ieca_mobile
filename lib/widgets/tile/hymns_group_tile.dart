@@ -27,7 +27,7 @@ class HymnsGroupTile extends StatelessWidget {
           title: Text(
             hymnsGroup.name,
             overflow: TextOverflow.ellipsis,
-            style: const TextStyle(fontSize: 13),
+            style: const TextStyle(fontSize: 14),
           ),
           trailing: Container(
             padding: EdgeInsets.only(left: 5, right: 5, top: 5, bottom: 5),

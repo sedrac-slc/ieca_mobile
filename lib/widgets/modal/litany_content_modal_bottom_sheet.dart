@@ -28,12 +28,16 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.max,
         spacing: 10,
         children: <Widget>[
           const ModalButtonTop(),
-          Text(widget.litanyTitle.name, style: GoogleFonts.roboto(fontSize: 16, fontWeight: FontWeight.bold),),
+          Container(
+            padding: const EdgeInsets.only(left: 20, right: 20, top: 5, bottom: 5),
+            alignment: Alignment.topLeft,
+            child: Text(widget.litanyTitle.name, style: GoogleFonts.roboto(fontSize: 16, fontWeight: FontWeight.bold),),
+          ),
           Expanded(
             child: FutureBuilder(
               future: _litanyContentRepository.getBy(widget.litanyTitle,),
@@ -42,10 +46,9 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
                   return ListView(
                     children: snapshot.requireData.map((it) {
                           return Padding(
-                            padding: const EdgeInsets.only(bottom: 20, left: 20, right: 20,),
+                            padding: const EdgeInsets.only(bottom: 15, left: 20, right: 20,),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
-                              spacing: 3,
                               children: [
                                 Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -53,9 +56,13 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
                                   children: [
                                     Text(it.litanyPerson(), style: TextStyle(color: colorBar, fontWeight: FontWeight.w700),),
                                     if (it.person == LitanyPerson.CONGREGATION) ...[
-                                      Text(it.content, style: TextStyle(fontWeight: FontWeight.w700),)
+                                      _BackgroundPanel(
+                                          child: Text(it.content, style: TextStyle(fontWeight: FontWeight.w700),)
+                                      )
                                     ] else ... [
-                                      Text(it.content)
+                                      _BackgroundPanel(
+                                          child: Text(it.content)
+                                      )
                                     ],
                                   ],
                                 ),
@@ -78,6 +85,24 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
           ),
         ],
       ),
+    );
+  }
+}
+
+class _BackgroundPanel extends StatelessWidget{
+  final Widget child;
+
+  const _BackgroundPanel({required this.child});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(5),
+      decoration: BoxDecoration(
+          color: Colors.grey.withAlpha(50),
+          borderRadius: BorderRadius.circular(10)
+      ),
+      child: child,
     );
   }
 }

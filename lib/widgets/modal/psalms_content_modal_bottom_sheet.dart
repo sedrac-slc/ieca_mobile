@@ -32,6 +32,11 @@ class _PsalmsContentModalBottomSheetState extends State<PsalmsContentModalBottom
         spacing: 10,
         children: <Widget>[
           const ModalButtonTop(),
+          Container(
+              alignment: Alignment.topLeft,
+              padding: const EdgeInsets.only(left: 20, right: 20,),
+              child: Text(widget.psalmsTitle.name, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),)
+          ),
           Expanded(
             child: FutureBuilder(
               future: _psalmsContentRepository.getBy(widget.psalmsTitle,),

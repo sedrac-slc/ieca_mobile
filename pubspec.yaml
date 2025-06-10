@@ -52,15 +52,11 @@ dev_dependencies:
 
 flutter_native_splash:
   color: "#8b4a63"
-  image: "assets/img/logo_ieca_min.png"
   android: true
   ios: true
 
   android_12:
-    image: "assets/img/logo_ieca_min.png"
     icon_background_color: "#8b4a63"
-    image_dark: "assets/img/logo_ieca_min.png"
-    icon_background_color_dark: "#B46DEB"
 
 flutter_launcher_icons:
   android: "launcher_icon"
@@ -89,6 +85,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/lottie/notfound.lottie
+    - assets/img/ieca_200x200.png
     - assets/img/logo_ieca.png
     - assets/img/logo.png
 

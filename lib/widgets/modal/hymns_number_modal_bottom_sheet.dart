@@ -29,39 +29,41 @@ class _HymnsNumberModalBottomSheetState extends State<HymnsNumberModalBottomShee
         children: <Widget>[
           const ModalButtonTop(),
           Expanded(
-            child: FutureBuilder(
-              future: _hymnsNumberRepository.getBy(widget.hymnsGroup),
-              builder: (context, snapshot) {
-                if (snapshot.hasData) {
-                  return Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: GridView.count(
-                      crossAxisCount: 5,
-                      crossAxisSpacing: 5,
-                      mainAxisSpacing: 10,
-                      childAspectRatio: 1.0,
-                      shrinkWrap: true,
-                      physics: NeverScrollableScrollPhysics(),
-                      children: snapshot.requireData.map((it) {
-                            return InkWell(
-                              child: NumberHymns(number: it.num,),
-                              onTap: () {
-                                Navigator.push( context,
-                                  MaterialPageRoute(
-                                    builder: (context) => HymnsContentScreen(hymnsNumber: it),
-                                  ),
-                                );
-                              },
-                            );
-                          }).toList(),
-                    ),
-                  );
-                } else {
-                  return Center(
-                    child: RepaintBoundary(child: CircularProgressIndicator()),
-                  );
-                }
-              },
+            child: SingleChildScrollView(
+              child: FutureBuilder(
+                future: _hymnsNumberRepository.getBy(widget.hymnsGroup),
+                builder: (context, snapshot) {
+                  if (snapshot.hasData) {
+                    return Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: GridView.count(
+                        crossAxisCount: 5,
+                        crossAxisSpacing: 5,
+                        mainAxisSpacing: 10,
+                        childAspectRatio: 1.0,
+                        shrinkWrap: true,
+                        physics: NeverScrollableScrollPhysics(),
+                        children: snapshot.requireData.map((it) {
+                              return InkWell(
+                                child: NumberHymns(number: it.num,),
+                                onTap: () {
+                                  Navigator.push( context,
+                                    MaterialPageRoute(
+                                      builder: (context) => HymnsContentScreen(hymnsNumber: it),
+                                    ),
+                                  );
+                                },
+                              );
+                            }).toList(),
+                      ),
+                    );
+                  } else {
+                    return Center(
+                      child: RepaintBoundary(child: CircularProgressIndicator()),
+                    );
+                  }
+                },
+              ),
             ),
           ),
         ],

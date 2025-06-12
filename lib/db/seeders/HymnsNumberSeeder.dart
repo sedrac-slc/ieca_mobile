@@ -83,6 +83,13 @@ class HymnsNumberSeeder{
   static final PASSION_AND_DEATH_OF_JESUS_74 = HymnsNumber(id: 74, num: 74, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música:  H.C.c/M. 595;  M.M. 20", code: HymnBookCode.HC_M,  lang: AppLang.PT);
   static final PASSION_AND_DEATH_OF_JESUS_75 = HymnsNumber(id: 75, num: 75, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: C.C. 35", code: HymnBookCode.CC,  lang: AppLang.PT);
 
+  static final RESURRECTION_OF_JESUS_76 = HymnsNumber(id: 76, num: 76, hymnsGroup: HymnsGroupSeeder.RESURRECTION_OF_JESUS, label: "Música: C.C. 101; Lyra 55", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final RESURRECTION_OF_JESUS_77 = HymnsNumber(id: 77, num: 77, hymnsGroup: HymnsGroupSeeder.RESURRECTION_OF_JESUS, label: "Música: Lyra 53", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final RESURRECTION_OF_JESUS_78 = HymnsNumber(id: 78, num: 78, hymnsGroup: HymnsGroupSeeder.RESURRECTION_OF_JESUS, label: "Música: Lyra 49; C.C. 402", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final RESURRECTION_OF_JESUS_79 = HymnsNumber(id: 79, num: 79, hymnsGroup: HymnsGroupSeeder.RESURRECTION_OF_JESUS, label: "Música:  Lyra 52", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final RESURRECTION_OF_JESUS_80 = HymnsNumber(id: 80, num: 80, hymnsGroup: HymnsGroupSeeder.RESURRECTION_OF_JESUS, label: "Música:  L.V. 107; C.Sr. 98", code: HymnBookCode.LV,  lang: AppLang.PT);
+  static final RESURRECTION_OF_JESUS_81 = HymnsNumber(id: 81, num: 81, hymnsGroup: HymnsGroupSeeder.RESURRECTION_OF_JESUS, label: "Música: C.C. 99;  Lya 54", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final RESURRECTION_OF_JESUS_82 = HymnsNumber(id: 82, num: 82, hymnsGroup: HymnsGroupSeeder.RESURRECTION_OF_JESUS, label: "Música: C.C. 100; Lyra 56", code: HymnBookCode.CC,  lang: AppLang.PT);
 
   static List<HymnsNumber> items() {
     return [
@@ -110,6 +117,9 @@ class HymnsNumberSeeder{
       PASSION_AND_DEATH_OF_JESUS_66, PASSION_AND_DEATH_OF_JESUS_67, PASSION_AND_DEATH_OF_JESUS_68, PASSION_AND_DEATH_OF_JESUS_69,
       PASSION_AND_DEATH_OF_JESUS_70, PASSION_AND_DEATH_OF_JESUS_71, PASSION_AND_DEATH_OF_JESUS_72, PASSION_AND_DEATH_OF_JESUS_73,
       PASSION_AND_DEATH_OF_JESUS_74, PASSION_AND_DEATH_OF_JESUS_75,
+
+      RESURRECTION_OF_JESUS_76, RESURRECTION_OF_JESUS_77, RESURRECTION_OF_JESUS_78, RESURRECTION_OF_JESUS_79,
+      RESURRECTION_OF_JESUS_80, RESURRECTION_OF_JESUS_81, RESURRECTION_OF_JESUS_82,
 
     ];
   }

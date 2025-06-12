@@ -64,6 +64,25 @@ class HymnsNumberSeeder{
   static final TRIUMPHAL_ENTRY_OF_JESUS_IN_JERUSALEM_56 = HymnsNumber(id: 56, num: 56, hymnsGroup: HymnsGroupSeeder.TRIUMPHAL_ENTRY_OF_JESUS_IN_JERUSALEM, label: "Música: L.V.93 P.H. 111", code: HymnBookCode.PH,  lang: AppLang.PT);
   static final TRIUMPHAL_ENTRY_OF_JESUS_IN_JERUSALEM_57 = HymnsNumber(id: 57, num: 57, hymnsGroup: HymnsGroupSeeder.TRIUMPHAL_ENTRY_OF_JESUS_IN_JERUSALEM, label: "Música: S.H. 594; Lyra 257", code: HymnBookCode.SH,  lang: AppLang.PT);
 
+  static final PASSION_AND_DEATH_OF_JESUS_58 = HymnsNumber(id: 58, num: 58, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: Lyra 42; P.H. 46; C.Sr. 166", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_59 = HymnsNumber(id: 59, num: 59, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: Lyra 43", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_60 = HymnsNumber(id: 60, num: 60, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: C.C. 87", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_61 = HymnsNumber(id: 61, num: 61, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: Lyra 45", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_62 = HymnsNumber(id: 62, num: 62, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: Lyra 46", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_63 = HymnsNumber(id: 63, num: 63, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: Lyra 47  e 190", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_64 = HymnsNumber(id: 64, num: 64, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: M.M. 51; Lyra 48;  P.H. 125", code: HymnBookCode.MM,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_65 = HymnsNumber(id: 65, num: 65, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: C.C. 244", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_66 = HymnsNumber(id: 66, num: 66, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: C.C. 282", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_67 = HymnsNumber(id: 67, num: 67, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música:  M.M. 101", code: HymnBookCode.MM,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_68 = HymnsNumber(id: 68, num: 68, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: C.C. 84", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_69 = HymnsNumber(id: 69, num: 69, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: Lyra 44", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_70 = HymnsNumber(id: 70, num: 70, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: C.C. 92", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_71 = HymnsNumber(id: 71, num: 71, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: C.C. 281", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_72 = HymnsNumber(id: 72, num: 72, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: C.C.344", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_73 = HymnsNumber(id: 73, num: 73, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: C.C. 86", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_74 = HymnsNumber(id: 74, num: 74, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música:  H.C.c/M. 595;  M.M. 20", code: HymnBookCode.HC_M,  lang: AppLang.PT);
+  static final PASSION_AND_DEATH_OF_JESUS_75 = HymnsNumber(id: 75, num: 75, hymnsGroup: HymnsGroupSeeder.PASSION_AND_DEATH_OF_JESUS, label: "Música: C.C. 35", code: HymnBookCode.CC,  lang: AppLang.PT);
+
 
   static List<HymnsNumber> items() {
     return [
@@ -85,6 +104,12 @@ class HymnsNumberSeeder{
       BIRTH_OF_JESUS_54,
 
       TRIUMPHAL_ENTRY_OF_JESUS_IN_JERUSALEM_55, TRIUMPHAL_ENTRY_OF_JESUS_IN_JERUSALEM_56, TRIUMPHAL_ENTRY_OF_JESUS_IN_JERUSALEM_57,
+
+      PASSION_AND_DEATH_OF_JESUS_58, PASSION_AND_DEATH_OF_JESUS_59, PASSION_AND_DEATH_OF_JESUS_60, PASSION_AND_DEATH_OF_JESUS_61,
+      PASSION_AND_DEATH_OF_JESUS_62, PASSION_AND_DEATH_OF_JESUS_63, PASSION_AND_DEATH_OF_JESUS_64, PASSION_AND_DEATH_OF_JESUS_65,
+      PASSION_AND_DEATH_OF_JESUS_66, PASSION_AND_DEATH_OF_JESUS_67, PASSION_AND_DEATH_OF_JESUS_68, PASSION_AND_DEATH_OF_JESUS_69,
+      PASSION_AND_DEATH_OF_JESUS_70, PASSION_AND_DEATH_OF_JESUS_71, PASSION_AND_DEATH_OF_JESUS_72, PASSION_AND_DEATH_OF_JESUS_73,
+      PASSION_AND_DEATH_OF_JESUS_74, PASSION_AND_DEATH_OF_JESUS_75,
 
     ];
   }

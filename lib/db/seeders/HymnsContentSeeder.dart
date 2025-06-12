@@ -10,6 +10,7 @@ class HymnsContentSeeder{
       ...HymnsPraiseToWorship.list,
       ...HymnsBirthOfJesus.list,
       ...HymnsTriumphalEntryOfJesusInJerusalem.list,
+      ...HymnsPassionAndDeathOfJesus.list,
     ];
   }
 

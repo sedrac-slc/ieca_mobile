@@ -1,2 +1,7 @@
 dart run flutter_native_splash:create
 dart run flutter_launcher_icons
+
+
+static final HOLY_SPIRIT_82 = HymnsNumber(id: 82, num: 82, hymnsGroup: HymnsGroupSeeder.HOLY_SPIRIT, label: "", code: HymnBookCode.CC,  lang: AppLang.PT);
+
+HymnsContent(id: 343, position: 3, content: "", hymnsNumber: HymnsNumberSeeder.RESURRECTION_OF_JESUS_82, typeStanza: HymnsContentCode.VERSE),

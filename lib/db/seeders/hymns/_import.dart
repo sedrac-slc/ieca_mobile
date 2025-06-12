@@ -4,3 +4,6 @@ export 'hymns_praise_to_worship.dart';
 export 'hymns_triumphal_entry_of_jesus_in_jerusalem.dart';
 export 'hymns_passion_and_death_of_jesus.dart';
 export 'hymns_resurrection_of_jesus.dart';
+export 'hymns_holy_spirit.dart';
+export 'hymns_church.dart';
+export 'hymns_baptism.dart';

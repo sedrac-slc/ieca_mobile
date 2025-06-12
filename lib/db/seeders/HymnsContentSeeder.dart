@@ -12,6 +12,9 @@ class HymnsContentSeeder{
       ...HymnsTriumphalEntryOfJesusInJerusalem.list,
       ...HymnsPassionAndDeathOfJesus.list,
       ...HymnsResurrectionOfJesus.list,
+      ...HymnsHolySpirit.list,
+      ...HymnsChurch.list,
+      ...HymnsBaptism.list
     ];
   }
 

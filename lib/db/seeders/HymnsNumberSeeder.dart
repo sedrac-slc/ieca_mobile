@@ -91,6 +91,31 @@ class HymnsNumberSeeder{
   static final RESURRECTION_OF_JESUS_81 = HymnsNumber(id: 81, num: 81, hymnsGroup: HymnsGroupSeeder.RESURRECTION_OF_JESUS, label: "Música: C.C. 99;  Lya 54", code: HymnBookCode.CC,  lang: AppLang.PT);
   static final RESURRECTION_OF_JESUS_82 = HymnsNumber(id: 82, num: 82, hymnsGroup: HymnsGroupSeeder.RESURRECTION_OF_JESUS, label: "Música: C.C. 100; Lyra 56", code: HymnBookCode.CC,  lang: AppLang.PT);
 
+  static final HOLY_SPIRIT_83 = HymnsNumber(id: 83, num: 83, hymnsGroup: HymnsGroupSeeder.HOLY_SPIRIT, label: "Música: Lyra 25", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final HOLY_SPIRIT_84 = HymnsNumber(id: 84, num: 84, hymnsGroup: HymnsGroupSeeder.HOLY_SPIRIT, label: "Música: Lyra 26;   P.H. 267", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final HOLY_SPIRIT_85 = HymnsNumber(id: 85, num: 85, hymnsGroup: HymnsGroupSeeder.HOLY_SPIRIT, label: "Música: Lyra 27;H.C.c/M.192, 2ª Mús", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final HOLY_SPIRIT_86 = HymnsNumber(id: 86, num: 86, hymnsGroup: HymnsGroupSeeder.HOLY_SPIRIT, label: "Música: Lyra 28; C.Sr.198", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final HOLY_SPIRIT_87 = HymnsNumber(id: 87, num: 87, hymnsGroup: HymnsGroupSeeder.HOLY_SPIRIT, label: "Música: Lyra 30", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final HOLY_SPIRIT_88 = HymnsNumber(id: 88, num: 88, hymnsGroup: HymnsGroupSeeder.HOLY_SPIRIT, label: "Música: C.C. 116", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final HOLY_SPIRIT_89 = HymnsNumber(id: 89, num: 89, hymnsGroup: HymnsGroupSeeder.HOLY_SPIRIT, label: "Música: Lyra 29", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final HOLY_SPIRIT_90 = HymnsNumber(id: 90, num: 90, hymnsGroup: HymnsGroupSeeder.HOLY_SPIRIT, label: "Música: Lyra 26 «Supl.»; C.Sr. 40", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final HOLY_SPIRIT_91 = HymnsNumber(id: 91, num: 91, hymnsGroup: HymnsGroupSeeder.HOLY_SPIRIT, label: "Música: S.H. 218; P.H.234", code: HymnBookCode.SH,  lang: AppLang.PT);
+
+  static final CHURCH_92 = HymnsNumber(id: 92, num: 92, hymnsGroup: HymnsGroupSeeder.CHURCH, label: "Música: Lyra 57;  P.H. 54", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final CHURCH_93 = HymnsNumber(id: 93, num: 93, hymnsGroup: HymnsGroupSeeder.CHURCH, label: "Música: Lyra  58", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final CHURCH_94 = HymnsNumber(id: 94, num: 94, hymnsGroup: HymnsGroupSeeder.CHURCH, label: "Música: Lyra 59; C.C. 573; P.H. 37", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final CHURCH_95 = HymnsNumber(id: 95, num: 95, hymnsGroup: HymnsGroupSeeder.CHURCH, label: "Música: Lyra 61; C.C. 388; P.H. 490", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final CHURCH_96 = HymnsNumber(id: 96, num: 96, hymnsGroup: HymnsGroupSeeder.CHURCH, label: "Música: Lyra 104; P.H. 391; H.C.c/M. 275", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final CHURCH_97 = HymnsNumber(id: 97, num: 97, hymnsGroup: HymnsGroupSeeder.CHURCH, label: "Música: C.C. 168", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final CHURCH_98 = HymnsNumber(id: 98, num: 98, hymnsGroup: HymnsGroupSeeder.CHURCH, label: "Música: Lyra 94; C.C. 444, 2ª Mús. 381", code: HymnBookCode.LYARA,  lang: AppLang.PT);
+  static final CHURCH_99 = HymnsNumber(id: 99, num: 99, hymnsGroup: HymnsGroupSeeder.CHURCH, label: "Música: H.C.c/M 275; Lyra 104", code: HymnBookCode.HC_M,  lang: AppLang.PT);
+  static final CHURCH_100 = HymnsNumber(id: 100, num: 100, hymnsGroup: HymnsGroupSeeder.CHURCH, label: "Música: S.H. 220", code: HymnBookCode.SH,  lang: AppLang.PT);
+  static final CHURCH_101 = HymnsNumber(id: 101, num: 101, hymnsGroup: HymnsGroupSeeder.CHURCH, label: "Música: C.C. 379", code: HymnBookCode.CC,  lang: AppLang.PT);
+
+  static final BAPTISM_102 = HymnsNumber(id: 102, num: 102, hymnsGroup: HymnsGroupSeeder.BAPTISM, label: "Música: C.C.145", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final BAPTISM_103 = HymnsNumber(id: 103, num: 103, hymnsGroup: HymnsGroupSeeder.BAPTISM, label: "Música: C.C. 147; Lyra 94", code: HymnBookCode.CC,  lang: AppLang.PT);
+  static final BAPTISM_104 = HymnsNumber(id: 104, num: 104, hymnsGroup: HymnsGroupSeeder.BAPTISM, label: "Música: S.H. 386; C.C. 407", code: HymnBookCode.SH,  lang: AppLang.PT);
+
   static List<HymnsNumber> items() {
     return [
 
@@ -120,6 +145,13 @@ class HymnsNumberSeeder{
 
       RESURRECTION_OF_JESUS_76, RESURRECTION_OF_JESUS_77, RESURRECTION_OF_JESUS_78, RESURRECTION_OF_JESUS_79,
       RESURRECTION_OF_JESUS_80, RESURRECTION_OF_JESUS_81, RESURRECTION_OF_JESUS_82,
+
+      HOLY_SPIRIT_83, HOLY_SPIRIT_84, HOLY_SPIRIT_85, HOLY_SPIRIT_86, HOLY_SPIRIT_87, HOLY_SPIRIT_88, HOLY_SPIRIT_89,
+      HOLY_SPIRIT_90, HOLY_SPIRIT_91,
+
+      CHURCH_92, CHURCH_93, CHURCH_94, CHURCH_95, CHURCH_96, CHURCH_97, CHURCH_98, CHURCH_99, CHURCH_100, CHURCH_101,
+
+      BAPTISM_102, BAPTISM_103, BAPTISM_104,
 
     ];
   }

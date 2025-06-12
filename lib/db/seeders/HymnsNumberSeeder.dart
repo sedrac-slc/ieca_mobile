@@ -116,6 +116,21 @@ class HymnsNumberSeeder{
   static final BAPTISM_103 = HymnsNumber(id: 103, num: 103, hymnsGroup: HymnsGroupSeeder.BAPTISM, label: "Música: C.C. 147; Lyra 94", code: HymnBookCode.CC,  lang: AppLang.PT);
   static final BAPTISM_104 = HymnsNumber(id: 104, num: 104, hymnsGroup: HymnsGroupSeeder.BAPTISM, label: "Música: S.H. 386; C.C. 407", code: HymnBookCode.SH,  lang: AppLang.PT);
 
+  static final HOLY_COMMUNION_105 = HymnsNumber(id: 105, num: 105, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: Lyra 103", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final HOLY_COMMUNION_106 = HymnsNumber(id: 106, num: 106, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: S.H. 260; C.C. 137", code: HymnBookCode.SH, lang: AppLang.PT);
+  static final HOLY_COMMUNION_107 = HymnsNumber(id: 107, num: 107, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: Lyra 70", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final HOLY_COMMUNION_108 = HymnsNumber(id: 108, num: 108, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: H.E.c/M.S. 444; Lyra 71; 2ª Mús. C.C. 133)", code: HymnBookCode.HEc_MS, lang: AppLang.PT);
+  static final HOLY_COMMUNION_109 = HymnsNumber(id: 109, num: 109, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: S.H. 512; H.C.c/M. 322", code: HymnBookCode.SH, lang: AppLang.PT);
+  static final HOLY_COMMUNION_110 = HymnsNumber(id: 110, num: 110, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: Lyra 72", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final HOLY_COMMUNION_111 = HymnsNumber(id: 111, num: 111, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: Lyra 100", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final HOLY_COMMUNION_112 = HymnsNumber(id: 112, num: 112, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: Lyra 79; C.Sr. 568", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final HOLY_COMMUNION_113 = HymnsNumber(id: 113, num: 113, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: H.E.c/M.S.197; P.H.406", code: HymnBookCode.HC_M, lang: AppLang.PT);
+  static final HOLY_COMMUNION_114 = HymnsNumber(id: 114, num: 114, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: C.C. 142", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final HOLY_COMMUNION_115 = HymnsNumber(id: 115, num: 115, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: C.C. 93", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final HOLY_COMMUNION_116 = HymnsNumber(id: 116, num: 116, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: C.C. 314", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final HOLY_COMMUNION_117 = HymnsNumber(id: 117, num: 117, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: C.C. 123", code: HymnBookCode.CC, lang: AppLang.PT);
+
+
   static List<HymnsNumber> items() {
     return [
 
@@ -152,6 +167,10 @@ class HymnsNumberSeeder{
       CHURCH_92, CHURCH_93, CHURCH_94, CHURCH_95, CHURCH_96, CHURCH_97, CHURCH_98, CHURCH_99, CHURCH_100, CHURCH_101,
 
       BAPTISM_102, BAPTISM_103, BAPTISM_104,
+
+      HOLY_COMMUNION_105, HOLY_COMMUNION_106, HOLY_COMMUNION_107, HOLY_COMMUNION_108, HOLY_COMMUNION_109, HOLY_COMMUNION_110,
+      HOLY_COMMUNION_111, HOLY_COMMUNION_112, HOLY_COMMUNION_113, HOLY_COMMUNION_114, HOLY_COMMUNION_115, HOLY_COMMUNION_116, HOLY_COMMUNION_117,
+
 
     ];
   }

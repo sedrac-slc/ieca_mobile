@@ -14,7 +14,8 @@ class HymnsContentSeeder{
       ...HymnsResurrectionOfJesus.list,
       ...HymnsHolySpirit.list,
       ...HymnsChurch.list,
-      ...HymnsBaptism.list
+      ...HymnsBaptism.list,
+      ...HymnsHolyCommunion.list
     ];
   }
 

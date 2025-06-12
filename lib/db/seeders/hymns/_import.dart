@@ -7,3 +7,4 @@ export 'hymns_resurrection_of_jesus.dart';
 export 'hymns_holy_spirit.dart';
 export 'hymns_church.dart';
 export 'hymns_baptism.dart';
+export 'hymns_holy_communion.dart';

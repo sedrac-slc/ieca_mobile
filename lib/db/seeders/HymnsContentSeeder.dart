@@ -1,6 +1,5 @@
 import 'package:ieca_mobile/db/_import.dart';
-import 'package:ieca_mobile/db/seeders/hymns/hymns_call_to_worship.dart';
-import 'package:ieca_mobile/db/seeders/hymns/hymns_praise_to_worship.dart';
+import 'package:ieca_mobile/db/seeders/hymns/_import.dart';
 import 'package:ieca_mobile/models/HymnsContent.dart';
 
 class HymnsContentSeeder{
@@ -8,7 +7,9 @@ class HymnsContentSeeder{
   static List<HymnsContent> items() {
     return [
       ...HymnsCallToWorship.list,
-      ...HymnsPraiseToWorship.list
+      ...HymnsPraiseToWorship.list,
+      ...HymnsBirthOfJesus.list,
+      ...HymnsTriumphalEntryOfJesusInJerusalem.list,
     ];
   }
 

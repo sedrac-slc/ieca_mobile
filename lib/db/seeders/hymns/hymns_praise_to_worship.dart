@@ -85,7 +85,64 @@ class HymnsPraiseToWorship{
     HymnsContent(id: 79, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_21, position: 3, content: "Terno, terno, terno é o Senhor; Cheio de compaixão e de graça! Terno, terno, terno é o Senhor Como nós em tudo tentado! Alto refúgio, fonte de graça Para Seu povo, Deus Salvador. Terno, terno, terno é o Senhor; Cheio de ternura e de graça.", typeStanza: HymnsContentCode.VERSE),
     HymnsContent(id: 80, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_21, position: 4, content: "Compassivo sempre é o Senhor; Tudo sabendo, tudo sentindo! Compassivo sempre é o Senhor; Nossas dores todas levando! Mesmo na morte a todos amando, Dando-Se a Si por nós sobre a cruz. Compassivo sempre é o Senhor. Nossas dores todas levando!", typeStanza: HymnsContentCode.VERSE),
 
-    //HymnsContent(id: 81, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_21, position: 5, content: "", typeStanza: HymnsContentCode.VERSE),
-    //HymnsContent(id: 74, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_20, position: 1, content: "", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 81, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_22, position: 1, content: "Ó Cristão, tem esperança, Cristo é teu fiel amigo, Tua luz e confiança; Ele é teu amor.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 82, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_22, position: 2, content: "Ó Jesus em Ti confio; Fui por tua morte salvo, Salvo enfim além do rio Viverei feliz.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 83, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_22, position: 3, content: "Te verei na glória eterna, Sobre o trono majestoso. Cantarei canção suprema, Dando a Ti louvor.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 84, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_22, position: 4, content: "Glória a Ti, Jesus clemente, Seja dada aqui na terra; Glória a Ti, eternamente Lá nos altos céus.", typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 85, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_23, position: 1, content: "Vinde louvai ao Senhor; Glória, glória a Jesus; Glória dai ao Santo Espírito, Ao Deus trino nossa luz. Adorai-o com fervor.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 86, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_23, content: "Grande é seu poder e amor; Sempiterno Criador", typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 87, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_23, position: 2, content: "Ele omnipotente Deus Fez as águas, terra e céus.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 88, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_23, position: 3, content: "Sol e lua e estrela são Obra da divina mão", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 89, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_23, position: 4, content: "Com mão forte ao povo seu Grandiosa herança deu.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 90, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_23, position: 5, content: "Príncipes e reis feriu E Seu povo redimiu.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 91, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_23, position: 6, content: "Sua misericórdia traz Aos humildes gozo e paz.", typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 92, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_24, position: 1, content: "Glória a Deus, o Pai Eterno, Cujo trono é os Céus: O universo lhe pertence, Glória sim, ao nosso Deus.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 93, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_24, content: "Eu te louvo! Eu te louvo! Oh! Jesus meu Salvador! Dai-lhe glória ó remidos! Pois seu sangue limpa o pecador.", typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 94, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_24, position: 2, content: "Glória ao Filho mui amado, Que merece o louvor, Demos glória ao Seu nome, Ao Cordeiro, ao Redentor.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 95, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_24, position: 3, content: "Demos nós, ao Santo Espírito Mil louvores por Seu dom; Por sua graça tão imensa, Glória, a Ele. Ele é bom!", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 96, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_24, position: 4, content: "Glória, glória ao Pai Bendito, Glória, glória a Jesus; Glória dai ao Santo Espírito, Ao Deus trino nossa luz.", typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 97, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_25, position: 1, content: "Teu divinal amor veio-me buscar; Tudo com gratidão quero consagrar. Aceita, meu Senhor, de um grato pecador Tributo de louvor, dado com fervor.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 98, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_25, position: 2, content: "Atende, meu Jesus, essa petição; Tão débil sou, e mau é meu coração. Teu nome a exaltar, a nova a publicar, Teu reino a dilatar, vem-me habilitar.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 99, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_25, position: 3, content: "Oh! Dá-me mais paixão de um amor real, P’ra Te servir e ser muito mais leal! As almas a ganhar, sempre na luz a andar, E os filhos a amar, vem-me habilitar.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 100, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_25, position: 4, content: "Tudo o que sou, Senhor, eu Te votarei; Do mundo vil e mau nunca mais serei; Teu rosto quando vir, amor no Céu luzir, A glória do porvir vou enfim fruir.", typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 101, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_26, position: 1, content: "Deus é o Criador; Eternamente é Rei. Ele criou o universo; Eternamente é Rei. Ele criou o mar; Eternamente é Rei. Ele criou o sol; Eternamente é Rei.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 102, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_26, content: "Adorai, adorai, adorai, adorai, Eternamente é Rei. Cantai, cantai, cantai, cantai, Eternamente é Rei. É Santo, é Santo, é Santo, é Santo, Eternamente é Rei.", typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 103, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_26, position: 2, content: "Deus é o Criador; Ele criou a chuva; Ele criou o vento; Ele criou o arvoredo;", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 104, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_26, position: 3, content: "Deus é o Criador; Ele criou a vida; Ele criou o homem; Ele criou o mantimento;", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 105, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_26, position: 4, content: "Enviou Jesus Cristo; Ele é o Salvador dos homens; E é Espírito Santo; Limpa o coração;", typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 106, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_27, position: 1, content: "A nosso Pai no Céu Tributa lábio meu, O Teu louvor. Jesus o Filho deu. O qual na cruz morreu, Do mal nos defendeu. A Deus louvai.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 107, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_27, position: 2, content: "A nosso Salvador, A nosso Redentor, Demos louvor. Seu corpo se partiu, E ao pobre pecador Na cruz o céu lhe abriu. A Deus louvai.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 108, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_27, position: 3, content: "A Deus Consolador Mandado por Jesus Demos louvor. De Cristo o grande amor Revela Instruidor. Sê meu renovador A Deus louvai.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 109, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_27, position: 4, content: "Louvemos com ardor, Com gozo e com fervor O trino Deus! Eternamente ali, Em canto abrasador, Trindade santa, a Ti Louvor nos céus!", typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 110, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_28, position: 1, content: "Omnipotente Rei, Aqui presente sê No teu poder; O Teu excelso amor, Inspira-nos louvor; Queremos-te, Senhor, Engrandecer.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 111, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_28, position: 2, content: "Ó encarnado Deus, Nos ouve lá dos céus A petição. Vem-nos abençoar, E vem fazer brotar O que se semear No coração.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 112, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_28, position: 3, content: "Vem tu, Consolador, Sê testificador Da redenção. No templo vem entrar, A obra completar. Das manchas vem limpar O coração.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 113, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_28, position: 4, content: "Ó grande trino Deus, Sim, te adoramos nós, E só a Ti! Santificar-nos-ás, Ao céu nos levarás, A glória nos darás, Contigo aí.", typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 114, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_29, position: 1, content: "Oh! com júbilo cantemos; Aleluia! Oh! com gratidão cantemos; Aleluia! Com os sons harmoniosos, Adoremos nosso Deus. Seu amor é tão imenso. Aleluia!", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 115, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_29, position: 2, content: "Alegrem-se os corações; Aleluia! Exaltai o Salvador; Aleluia! Jesus é o nosso Guia, E também o nosso refúgio; Sua compaixão é imensa Aleluia!", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 116, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_29, position: 3, content: "O louvor não cesse nunca; Aleluia! Tanto aqui como no céu, Aleluia! Testemunhas da esperança; Somos os da Boa-Nova; Vamos divulgá-la ao mundo; Aleluia!", typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 117, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_30, position: 1, content: "Bendize, ó tu, meu coração, Bendize ao Salvador, E tudo quanto houver em mim, Derrame-lhe louvor.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 118, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_30, position: 2, content: "Bendize, ó tu, meu coração, Bendize ao Salvador, Não fiques esquecido, pois, Do Seu divino amor.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 119, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_30, position: 3, content: "Ele os delitos, com amor E graça perdoou, E com divina compaixão Jesus te aliviou.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 120, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_30, position: 4, content: "O teu desejo satisfaz Com verdadeiros bens; A vida renovada assim, Tu, como as águias tens.", typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 121, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_31, position: 1, content: "A Deus dêmos glória, com grande fervor; Seu Filho bendito por nós todos deu; A graça concede ao mais vil pecador, Abrindo-lhe a porta de entrada no Céu.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 122, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_31, content: "Exultai! Exultai! Vinde todos louvar A Jesus, Salvador: A Jesus Redentor; A Deus demos glória, Porquanto do Céu, Seu Filho bendito por nós todos deu.", typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 123, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_31, position: 2, content: "Óh! graça real, foi assim que Jesus, Morrendo, Seu sangue por nós derramou! Herança nos céus, com os santos em luz, Comprou-nos Jesus, pois o preço pagou.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 124, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_31, position: 3, content: "A crer nos convida tal rasgo de amor, Nos merecimentos do Filho de Deus; E quem, pois confia no seu Salvador, Vai vê-lo sentado na glória dos céus.", typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 125, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_32, position: 1, content: "Saudai o nome de Jesus! Arcanjos, vos prostrai! Ao filho do eterno Deus Com glória coroai.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 126, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_32, position: 2, content: "Ó escolhida geração Do bom eterno Pai: Ao grande Autor da Salvação, Com glória coroai.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 127, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_32, position: 3, content: "Ó perdoados, cujo amor Bem triunfante vai, Ao Deus-Varão, Conquistador, Com glória coroai.", typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 128, hymnsNumber: HymnsNumberSeeder.PRAISE_AND_WORSHIP_32, position: 4, content: "Ó raças, tribos e nações, Ao Rei do mundo honrai; A quem quebrou vossos grilhões Com glória coroai.", typeStanza: HymnsContentCode.VERSE),
+
   ];
 }

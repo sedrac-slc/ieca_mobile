@@ -2,6 +2,7 @@ import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/screens/navigation_bar/_import.dart';
 import 'package:flutter/material.dart';
 import 'package:ieca_mobile/util/AppIconData.dart';
+import 'package:ieca_mobile/util/AppTheme.dart';
 
 class PageScreen extends StatefulWidget {
   const PageScreen({super.key});
@@ -12,7 +13,7 @@ class PageScreen extends StatefulWidget {
 
 class _PageScreenState extends State<PageScreen> {
   final PageController _pageController = PageController(initialPage: 0);
-  ValueNotifier<int> currentPage = ValueNotifier(0);
+  int currentPage = 0;
 
   final List<WidgetBuilder> _pages = [
     (_) => const HomeScreen(),
@@ -25,32 +26,48 @@ class _PageScreenState extends State<PageScreen> {
   @override
   void dispose() {
     _pageController.dispose();
-    currentPage.dispose();
     super.dispose();
+  }
+
+  void onChangePage(int n) {
+    setState(() {
+      currentPage = n;
+    });
   }
 
   @override
   Widget build(BuildContext context) {
+    final colorBar = AppTheme.colorBackgroundAppBar(context);
     return Scaffold(
       body: PageView.builder(
         physics: const ClampingScrollPhysics(),
         controller: _pageController,
         itemCount: _pages.length,
-        onPageChanged: (page) => currentPage.value = page,
+        onPageChanged: onChangePage,
         itemBuilder: (context, index) => _pages[index](context),
       ),
-      bottomNavigationBar: ValueListenableBuilder<int>(
-        valueListenable: currentPage,
-        builder: (_, _, _) {
-          return NavigationBar(
+      bottomNavigationBar: NavigationBar(
             height: 70,
             elevation: 0,
             labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
-            selectedIndex: currentPage.value,
+            selectedIndex: currentPage,
             destinations: [
               NavigationDestination(icon: Icon(AppIconData.home), label: AppLocalizations.of(context)!.home,),
               NavigationDestination(icon: Icon(AppIconData.invocation), label: AppLocalizations.of(context)!.invocation,),
-              NavigationDestination(icon: Icon(AppIconData.hymns), label: AppLocalizations.of(context)!.hymns,),
+              Container(
+                padding: EdgeInsets.only(top: 15),
+                child: NavigationDestination(
+                  icon: Container(
+                    constraints: BoxConstraints(minWidth: 50, minHeight: 50),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(50),
+                      color: colorBar
+                    ),
+                    child: Icon(AppIconData.hymns, color: Colors.white, size: 40,),
+                  ),
+                  label: "",
+                ),
+              ),
               NavigationDestination(icon: Icon(AppIconData.litanies), label: AppLocalizations.of(context)!.litanies,),
               NavigationDestination(icon: Icon(AppIconData.psalms), label: AppLocalizations.of(context)!.psalms,),
             ],
@@ -61,9 +78,7 @@ class _PageScreenState extends State<PageScreen> {
                 curve: Curves.easeOut,
               );
             },
-          );
-        },
-      ),
+          )
     );
   }
 }

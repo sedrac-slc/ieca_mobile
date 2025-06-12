@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:ieca_mobile/util/AppTheme.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
 
 class HistoricGroup extends StatelessWidget {
@@ -10,6 +11,7 @@ class HistoricGroup extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colorScheme = AppTheme.colorScheme(context);
     return Container(
       alignment: Alignment.topLeft,
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -27,7 +29,7 @@ class HistoricGroup extends StatelessWidget {
               height: 200,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Colors.white,
+                color: colorScheme.onTertiary,
               ),
               child:
                   children.isEmpty

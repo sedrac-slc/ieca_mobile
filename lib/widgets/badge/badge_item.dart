@@ -13,7 +13,7 @@ class BadgeItem extends StatelessWidget {
     final ColorScheme colorScheme = AppTheme.colorScheme(context);
     return Container(
       decoration: BoxDecoration(
-        color: isSelected ? colorScheme.secondary : Colors.white60,
+        color: isSelected ? colorScheme.primary : Colors.white60,
         borderRadius: BorderRadius.circular(50),
         border: Border.all(color: Colors.grey),
       ),

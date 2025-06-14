@@ -195,6 +195,32 @@ class HymnsNumberSeeder{
   static final INVITATION_TO_THE_SINNER_176 = HymnsNumber(id: 176, num: 176, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 350", code: HymnBookCode.CC, lang: AppLang.PT);
   static final INVITATION_TO_THE_SINNER_177 = HymnsNumber(id: 177, num: 177, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: Lyra 138", code: HymnBookCode.LYARA, lang: AppLang.PT);
 
+  static final PRAYER_178 = HymnsNumber(id: 178, num: 178, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: Lyra 103; 2ª Mús. C.C. 161", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_179 = HymnsNumber(id: 179, num: 179, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: Lyra 116", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_180 = HymnsNumber(id: 180, num: 180, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: Lyra 104, H.C. c/M. 275", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_181 = HymnsNumber(id: 181, num: 181, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: C.C. 273", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final PRAYER_182 = HymnsNumber(id: 182, num: 182, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: Lyra 108", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_183 = HymnsNumber(id: 183, num: 183, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: Lyra 112 C.C.404", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_184 = HymnsNumber(id: 184, num: 184, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: M.M.44; H.C.c/M.424 S.H.344", code: HymnBookCode.MM, lang: AppLang.PT);
+  static final PRAYER_185 = HymnsNumber(id: 185, num: 185, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: Lyra 114", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_186 = HymnsNumber(id: 186, num: 186, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: C.C.357", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final PRAYER_187 = HymnsNumber(id: 187, num: 187, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: C.C. 327; Lyra 118", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final PRAYER_188 = HymnsNumber(id: 188, num: 188, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: C.Sr. 313; Lyra 120", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_189 = HymnsNumber(id: 189, num: 189, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: C.Sr. 310;  C.C. 148; P.H. 230", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_190 = HymnsNumber(id: 190, num: 190, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: C.C. 514", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final PRAYER_191 = HymnsNumber(id: 191, num: 191, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: Lyra 113", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_192 = HymnsNumber(id: 192, num: 192, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: Lyra 123", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_193 = HymnsNumber(id: 193, num: 193, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: Lyra 126", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_194 = HymnsNumber(id: 194, num: 194, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: Lyra 127", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_195 = HymnsNumber(id: 195, num: 195, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: S.H.170  C.C.294", code: HymnBookCode.SH, lang: AppLang.PT);
+  static final PRAYER_196 = HymnsNumber(id: 196, num: 196, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: Lyra 128", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_197 = HymnsNumber(id: 197, num: 197, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: H.C.c/ 259  S.H. 111", code: HymnBookCode.HC_M, lang: AppLang.PT);
+  static final PRAYER_198 = HymnsNumber(id: 198, num: 198, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: C.C. 239", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final PRAYER_199 = HymnsNumber(id: 199, num: 199, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: Lyra 105", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final PRAYER_200 = HymnsNumber(id: 200, num: 200, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: C.C. 154", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final PRAYER_201 = HymnsNumber(id: 201, num: 201, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: C.C.417", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final PRAYER_202 = HymnsNumber(id: 202, num: 202, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: C.C. 159", code: HymnBookCode.CC, lang: AppLang.PT);
+
   static List<HymnsNumber> items() {
     return [
 
@@ -251,6 +277,10 @@ class HymnsNumberSeeder{
       INVITATION_TO_THE_SINNER_165, INVITATION_TO_THE_SINNER_166, INVITATION_TO_THE_SINNER_167, INVITATION_TO_THE_SINNER_168, INVITATION_TO_THE_SINNER_169,
       INVITATION_TO_THE_SINNER_170, INVITATION_TO_THE_SINNER_171, INVITATION_TO_THE_SINNER_172, INVITATION_TO_THE_SINNER_173, INVITATION_TO_THE_SINNER_174,
       INVITATION_TO_THE_SINNER_175, INVITATION_TO_THE_SINNER_176, INVITATION_TO_THE_SINNER_177,
+
+      PRAYER_178, PRAYER_179, PRAYER_180, PRAYER_181, PRAYER_182, PRAYER_183, PRAYER_184, PRAYER_185, PRAYER_186, PRAYER_187, PRAYER_188,
+      PRAYER_189, PRAYER_190, PRAYER_191, PRAYER_192, PRAYER_193, PRAYER_194, PRAYER_195, PRAYER_196, PRAYER_197, PRAYER_198, PRAYER_199,
+      PRAYER_200, PRAYER_201, PRAYER_202,
 
     ];
   }

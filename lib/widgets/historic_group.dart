@@ -29,7 +29,7 @@ class HistoricGroup extends StatelessWidget {
               height: 200,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: colorScheme.onTertiary,
+                color: colorScheme.onPrimary,
               ),
               child:
                   children.isEmpty

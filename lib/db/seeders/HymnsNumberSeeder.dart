@@ -130,6 +130,36 @@ class HymnsNumberSeeder{
   static final HOLY_COMMUNION_116 = HymnsNumber(id: 116, num: 116, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: C.C. 314", code: HymnBookCode.CC, lang: AppLang.PT);
   static final HOLY_COMMUNION_117 = HymnsNumber(id: 117, num: 117, hymnsGroup: HymnsGroupSeeder.HOLY_COMMUNION, label: "Música: C.C. 123", code: HymnBookCode.CC, lang: AppLang.PT);
 
+  static final CHRISTIAN_HOME_118 = HymnsNumber(id: 118, num: 118, hymnsGroup: HymnsGroupSeeder.CHRISTIAN_HOME, label: "Música: Lyra 63", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHRISTIAN_HOME_119 = HymnsNumber(id: 119, num: 119, hymnsGroup: HymnsGroupSeeder.CHRISTIAN_HOME, label: "Música: Lyra 66", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHRISTIAN_HOME_120 = HymnsNumber(id: 120, num: 120, hymnsGroup: HymnsGroupSeeder.CHRISTIAN_HOME, label: "Música: Lyra 64", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHRISTIAN_HOME_121 = HymnsNumber(id: 121, num: 121, hymnsGroup: HymnsGroupSeeder.CHRISTIAN_HOME, label: "Música: L.V. 153; C.Sr. 543", code: HymnBookCode.LV, lang: AppLang.PT);
+  static final CHRISTIAN_HOME_122 = HymnsNumber(id: 122, num: 122, hymnsGroup: HymnsGroupSeeder.CHRISTIAN_HOME, label: "Música: C.C. 129", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CHRISTIAN_HOME_123 = HymnsNumber(id: 123, num: 123, hymnsGroup: HymnsGroupSeeder.CHRISTIAN_HOME, label: "Música: Lyra 65  e  2ª Mús. 74", code: HymnBookCode.LYARA, lang: AppLang.PT);
+
+  static final MOTHERS_124 = HymnsNumber(id: 124, num: 124, hymnsGroup: HymnsGroupSeeder.MOTHERS, label: "Música: S.H. 622", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final MOTHERS_125 = HymnsNumber(id: 125, num: 125, hymnsGroup: HymnsGroupSeeder.MOTHERS, label: "Música: M.V.174", code: HymnBookCode.LYARA, lang: AppLang.PT);
+
+  static final CHILDREN_126 = HymnsNumber(id: 126, num: 126, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: Lyra 260 C.C. 317", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_127 = HymnsNumber(id: 127, num: 127, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música:  C.C. 525", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_128 = HymnsNumber(id: 128, num: 128, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: C. Sr. 6, Lyra 261", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_129 = HymnsNumber(id: 129, num: 129, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: C.C.539", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_130 = HymnsNumber(id: 130, num: 130, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: C.C. 534", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_131 = HymnsNumber(id: 131, num: 131, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: Lyra 267; 2ª Mús. C.C. 522", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_132 = HymnsNumber(id: 132, num: 132, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: C.C. 524", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_133 = HymnsNumber(id: 133, num: 133, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: C.C. 538", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_134 = HymnsNumber(id: 134, num: 134, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: C.C. 542", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_135 = HymnsNumber(id: 135, num: 135, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: Lyra 271", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_136 = HymnsNumber(id: 136, num: 136, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: Lyra 270", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_137 = HymnsNumber(id: 137, num: 137, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: H.C.c/M. 168; C.C. 531; Lyra 273", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_138 = HymnsNumber(id: 138, num: 138, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: C.C. 359", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CHILDREN_139 = HymnsNumber(id: 139, num: 139, hymnsGroup: HymnsGroupSeeder.CHILDREN, label: "Música: C.C. 529", code: HymnBookCode.LYARA, lang: AppLang.PT);
+
+  static final YOUTH_140 = HymnsNumber(id: 140, num: 140, hymnsGroup: HymnsGroupSeeder.YOUTH, label: "Música:  Lira Evangélica Nova 327", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final YOUTH_141 = HymnsNumber(id: 141, num: 141, hymnsGroup: HymnsGroupSeeder.YOUTH, label: "Música: fonte anónima", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final YOUTH_142 = HymnsNumber(id: 142, num: 142, hymnsGroup: HymnsGroupSeeder.YOUTH, label: "Música: Lyra 264", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final YOUTH_143 = HymnsNumber(id: 143, num: 143, hymnsGroup: HymnsGroupSeeder.YOUTH, label: "Música: C.C. 278.", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final YOUTH_144 = HymnsNumber(id: 144, num: 144, hymnsGroup: HymnsGroupSeeder.YOUTH, label: "Música: C.C. 554", code: HymnBookCode.LYARA, lang: AppLang.PT);
 
   static List<HymnsNumber> items() {
     return [
@@ -171,6 +201,14 @@ class HymnsNumberSeeder{
       HOLY_COMMUNION_105, HOLY_COMMUNION_106, HOLY_COMMUNION_107, HOLY_COMMUNION_108, HOLY_COMMUNION_109, HOLY_COMMUNION_110,
       HOLY_COMMUNION_111, HOLY_COMMUNION_112, HOLY_COMMUNION_113, HOLY_COMMUNION_114, HOLY_COMMUNION_115, HOLY_COMMUNION_116, HOLY_COMMUNION_117,
 
+      CHRISTIAN_HOME_118, CHRISTIAN_HOME_119, CHRISTIAN_HOME_120, CHRISTIAN_HOME_121, CHRISTIAN_HOME_122, CHRISTIAN_HOME_123,
+
+      MOTHERS_124, MOTHERS_125,
+
+      CHILDREN_126, CHILDREN_127, CHILDREN_128, CHILDREN_129, CHILDREN_130, CHILDREN_131, CHILDREN_132, CHILDREN_133,
+      CHILDREN_134, CHILDREN_135, CHILDREN_136, CHILDREN_137, CHILDREN_138, CHILDREN_139,
+
+      YOUTH_140, YOUTH_141, YOUTH_142, YOUTH_143, YOUTH_144,
 
     ];
   }

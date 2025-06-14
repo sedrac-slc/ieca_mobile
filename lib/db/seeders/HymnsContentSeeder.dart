@@ -15,7 +15,11 @@ class HymnsContentSeeder{
       ...HymnsHolySpirit.list,
       ...HymnsChurch.list,
       ...HymnsBaptism.list,
-      ...HymnsHolyCommunion.list
+      ...HymnsHolyCommunion.list,
+      ...HymnsChristianHome.list,
+      ...HymnsMothers.list,
+      ...HymnsChildren.list,
+      ...HymnsYouth.list,
     ];
   }
 

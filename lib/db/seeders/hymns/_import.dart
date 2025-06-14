@@ -8,3 +8,7 @@ export 'hymns_holy_spirit.dart';
 export 'hymns_church.dart';
 export 'hymns_baptism.dart';
 export 'hymns_holy_communion.dart';
+export 'hymns_christian_home.dart';
+export 'hymns_mothers.dart';
+export 'hymns_children.dart';
+export 'hymns_youth.dart';

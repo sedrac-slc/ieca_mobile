@@ -51,12 +51,12 @@ dev_dependencies:
   flutter_launcher_icons: ^0.14.3
 
 flutter_native_splash:
-  color: "#8b4a63"
+  color: "#fc6665"
   android: true
   ios: true
 
   android_12:
-    icon_background_color: "#8b4a63"
+    icon_background_color: "#fc6665"
 
 flutter_launcher_icons:
   android: "launcher_icon"

@@ -161,6 +161,40 @@ class HymnsNumberSeeder{
   static final YOUTH_143 = HymnsNumber(id: 143, num: 143, hymnsGroup: HymnsGroupSeeder.YOUTH, label: "Música: C.C. 278.", code: HymnBookCode.LYARA, lang: AppLang.PT);
   static final YOUTH_144 = HymnsNumber(id: 144, num: 144, hymnsGroup: HymnsGroupSeeder.YOUTH, label: "Música: C.C. 554", code: HymnBookCode.LYARA, lang: AppLang.PT);
 
+  static final INVITATION_TO_THE_SINNER_145 = HymnsNumber(id: 145, num: 145, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: Lyra 77", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_146 = HymnsNumber(id: 146, num: 146, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 237", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_147 = HymnsNumber(id: 147, num: 147, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 266", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_148 = HymnsNumber(id: 148, num: 148, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 183", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_149 = HymnsNumber(id: 149, num: 149, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 231", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_150 = HymnsNumber(id: 150, num: 150, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: Lyra 86; C.C. 192", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_151 = HymnsNumber(id: 151, num: 151, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: Lyra 88", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_152 = HymnsNumber(id: 152, num: 152, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 191", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_153 = HymnsNumber(id: 153, num: 153, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: Lyra 83", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_154 = HymnsNumber(id: 154, num: 154, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: Lyra 92", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_155 = HymnsNumber(id: 155, num: 155, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 225", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_156 = HymnsNumber(id: 156, num: 156, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.A. 277; Lyra 89", code: HymnBookCode.CA, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_157 = HymnsNumber(id: 157, num: 157, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: H.E.c/M.S. 263 Lyra 90", code: HymnBookCode.HEc_MS, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_158 = HymnsNumber(id: 158, num: 158, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 345", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_159 = HymnsNumber(id: 159, num: 159, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: H.C.c/M. 80; Lyra 93", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_160 = HymnsNumber(id: 160, num: 160, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.Sr. 551; Lyra 136", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_161 = HymnsNumber(id: 161, num: 161, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 62", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_162 = HymnsNumber(id: 162, num: 162, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C.213", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_163 = HymnsNumber(id: 163, num: 163, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 252", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_164 = HymnsNumber(id: 164, num: 164, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 219", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_165 = HymnsNumber(id: 165, num: 165, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: Lyra 99", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_166 = HymnsNumber(id: 166, num: 166, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 234", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_167 = HymnsNumber(id: 167, num: 167, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 200", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_168 = HymnsNumber(id: 168, num: 168, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 336", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_169 = HymnsNumber(id: 169, num: 169, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 251", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_170 = HymnsNumber(id: 170, num: 170, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 217", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_171 = HymnsNumber(id: 171, num: 171, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 222", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_172 = HymnsNumber(id: 172, num: 172, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: A.C. 4", code: HymnBookCode.AC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_173 = HymnsNumber(id: 173, num: 173, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: Lyra 161", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_174 = HymnsNumber(id: 174, num: 174, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 186", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_175 = HymnsNumber(id: 175, num: 175, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C.198", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_176 = HymnsNumber(id: 176, num: 176, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: C.C. 350", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final INVITATION_TO_THE_SINNER_177 = HymnsNumber(id: 177, num: 177, hymnsGroup: HymnsGroupSeeder.INVITATION_TO_THE_SINNER, label: "Música: Lyra 138", code: HymnBookCode.LYARA, lang: AppLang.PT);
+
   static List<HymnsNumber> items() {
     return [
 
@@ -209,6 +243,14 @@ class HymnsNumberSeeder{
       CHILDREN_134, CHILDREN_135, CHILDREN_136, CHILDREN_137, CHILDREN_138, CHILDREN_139,
 
       YOUTH_140, YOUTH_141, YOUTH_142, YOUTH_143, YOUTH_144,
+
+      INVITATION_TO_THE_SINNER_145, INVITATION_TO_THE_SINNER_146, INVITATION_TO_THE_SINNER_147, INVITATION_TO_THE_SINNER_148, INVITATION_TO_THE_SINNER_149,
+      INVITATION_TO_THE_SINNER_150, INVITATION_TO_THE_SINNER_151, INVITATION_TO_THE_SINNER_152, INVITATION_TO_THE_SINNER_153, INVITATION_TO_THE_SINNER_154,
+      INVITATION_TO_THE_SINNER_155, INVITATION_TO_THE_SINNER_156, INVITATION_TO_THE_SINNER_157, INVITATION_TO_THE_SINNER_158, INVITATION_TO_THE_SINNER_159,
+      INVITATION_TO_THE_SINNER_160, INVITATION_TO_THE_SINNER_161, INVITATION_TO_THE_SINNER_162, INVITATION_TO_THE_SINNER_163, INVITATION_TO_THE_SINNER_164,
+      INVITATION_TO_THE_SINNER_165, INVITATION_TO_THE_SINNER_166, INVITATION_TO_THE_SINNER_167, INVITATION_TO_THE_SINNER_168, INVITATION_TO_THE_SINNER_169,
+      INVITATION_TO_THE_SINNER_170, INVITATION_TO_THE_SINNER_171, INVITATION_TO_THE_SINNER_172, INVITATION_TO_THE_SINNER_173, INVITATION_TO_THE_SINNER_174,
+      INVITATION_TO_THE_SINNER_175, INVITATION_TO_THE_SINNER_176, INVITATION_TO_THE_SINNER_177,
 
     ];
   }

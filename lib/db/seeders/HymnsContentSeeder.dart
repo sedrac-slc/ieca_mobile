@@ -20,6 +20,7 @@ class HymnsContentSeeder{
       ...HymnsMothers.list,
       ...HymnsChildren.list,
       ...HymnsYouth.list,
+      ...HymnsInvitationToTheSinner.list,
     ];
   }
 

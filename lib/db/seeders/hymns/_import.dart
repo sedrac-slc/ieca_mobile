@@ -12,3 +12,4 @@ export 'hymns_christian_home.dart';
 export 'hymns_mothers.dart';
 export 'hymns_children.dart';
 export 'hymns_youth.dart';
+export 'hymns_invitation_to_the_sinner.dart';

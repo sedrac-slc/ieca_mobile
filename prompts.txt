@@ -1,0 +1,37 @@
+Tendo o seguinte hino constituído por estrofe, essas estrofe eram gerar
+a classe HymnsContent, da seguinte forma:
+
+HymnsContent(id: , position: 4, content: "", hymnsNumber: HymnsNumberSeeder.FAITH_AND_SECURITY_234, typeStanza: HymnsContentCode.VERSE),
+
+Se a estrofe é coro o HymnsContentCode é CHOIR sem ter position:
+
+HymnsContent(id: , content: "", hymnsNumber: HymnsNumberSeeder.FAITH_AND_SECURITY_234, typeStanza: HymnsContentCode.CHOIR),
+
+considera para o hino abaixo começa com id 1156 a primeira estrofe que irá
+gerar o HymnsContent e deve seguir de forma sequencial e o hymnsNumber é
+FAITH_AND_SECURITY_275, o hymnsNumber será sequencial quando eu informa outro hino para você fazer de novo este processo
+
+Hino
+1. Na Terra abençoada estou,
+Por Beulah peregrino vou;
+Delícias abundantes são;
+E só dos céus saudades dão.
+[coro]
+Oh! Bela terra de amor,
+Do alto monte encantador;
+Olhando, vejo além do mar
+Que breve hei-de atravessar,
+A praia áurea, eternal,
+Querido lar Celestial!
+2. Comigo anda o Salvador,
+Conversa em tons de santo amor;
+Me guia sempre pela mão,
+À beira-céu os passos vão.
+3. A brisa traz o belo odor,
+Do paraíso ao redor,
+De flores que não murcharão,
+De frutos que supernos são.
+4. No zéfiro celestial
+Flutua o canto angelical,
+De triunfante multidão,
+Que entoa a grande redenção.

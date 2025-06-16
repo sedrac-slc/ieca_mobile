@@ -14,3 +14,5 @@ export 'hymns_children.dart';
 export 'hymns_youth.dart';
 export 'hymns_invitation_to_the_sinner.dart';
 export 'hymns_prayer.dart';
+export 'hymns_consecration.dart';
+export 'hymns_faith_and_security.dart';

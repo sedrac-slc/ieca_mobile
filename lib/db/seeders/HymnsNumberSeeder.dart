@@ -221,6 +221,83 @@ class HymnsNumberSeeder{
   static final PRAYER_201 = HymnsNumber(id: 201, num: 201, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: C.C.417", code: HymnBookCode.CC, lang: AppLang.PT);
   static final PRAYER_202 = HymnsNumber(id: 202, num: 202, hymnsGroup: HymnsGroupSeeder.PRAYER, label: "Música: C.C. 159", code: HymnBookCode.CC, lang: AppLang.PT);
 
+  static final CONSECRATION_203 = HymnsNumber(id: 203, num: 203, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: C.C. 175", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_204 = HymnsNumber(id: 204, num: 204, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: Lyra 130; 2ª Mús. C.C. 284", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CONSECRATION_205 = HymnsNumber(id: 205, num: 205, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: Lyra 133  P.H. 120", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CONSECRATION_206 = HymnsNumber(id: 206, num: 206, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: Lyra 144; P.H. 199 e 223", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_207 = HymnsNumber(id: 207, num: 207, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: Lyra 134", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CONSECRATION_208 = HymnsNumber(id: 208, num: 208, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: C.C. 176", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_209 = HymnsNumber(id: 209, num: 209, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: C.C. 207", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_210 = HymnsNumber(id: 210, num: 210, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: Lyra 140", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CONSECRATION_211 = HymnsNumber(id: 211, num: 211, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: Lyra 145 C.Sr. 321  P.H. 469", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_212 = HymnsNumber(id: 212, num: 212, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: Lyra 143", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CONSECRATION_213 = HymnsNumber(id: 213, num: 213, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: C.C. 303", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_214 = HymnsNumber(id: 214, num: 214, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: C.C.465", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_215 = HymnsNumber(id: 215, num: 215, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: H.C.c/M. 599; Lyra 150", code: HymnBookCode.HC_M, lang: AppLang.PT);
+  static final CONSECRATION_216 = HymnsNumber(id: 216, num: 216, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música. The Hymnary nº 383", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_217 = HymnsNumber(id: 217, num: 217, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: Lyra 153", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CONSECRATION_218 = HymnsNumber(id: 218, num: 218, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: Lyra 154", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CONSECRATION_219 = HymnsNumber(id: 219, num: 219, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: Lyra155", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_220 = HymnsNumber(id: 220, num: 220, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: C.C. 292", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_221 = HymnsNumber(id: 221, num: 221, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: L.V. 179; Lyra 159", code: HymnBookCode.LV, lang: AppLang.PT);
+  static final CONSECRATION_222 = HymnsNumber(id: 222, num: 222, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: P.H.213", code: HymnBookCode.PH, lang: AppLang.PT);
+  static final CONSECRATION_223 = HymnsNumber(id: 223, num: 223, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: C.C. 295", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_224 = HymnsNumber(id: 224, num: 224, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: C.Sr. 464  C.S. 171", code: HymnBookCode.CSr, lang: AppLang.PT);
+  static final CONSECRATION_225 = HymnsNumber(id: 225, num: 225, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música:  César H. G.Pataca- Agosto/1998", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_226 = HymnsNumber(id: 226, num: 226, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: C.C. 270", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_227 = HymnsNumber(id: 227, num: 227, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: C.Sr. 343", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final CONSECRATION_228 = HymnsNumber(id: 228, num: 228, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: C.C: 388; Lyra 61; P.H. 490", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_229 = HymnsNumber(id: 229, num: 229, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: C.C. 170; C.Sr. 447; Lyra supl.153", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final CONSECRATION_230 = HymnsNumber(id: 230, num: 230, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: S.H. antigo 127", code: HymnBookCode.SH, lang: AppLang.PT);
+  static final CONSECRATION_231 = HymnsNumber(id: 231, num: 231, hymnsGroup: HymnsGroupSeeder.CONSECRATION, label: "Música: Lyra Supl. 148; P.H. 174", code: HymnBookCode.LYARA, lang: AppLang.PT);
+
+  static final FAITH_AND_SECURITY_232 = HymnsNumber(id: 232, num: 232, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: H.C. c/M. 123; Lyra 133", code: HymnBookCode.HC_M, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_233 = HymnsNumber(id: 233, num: 233, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: S.S.S. 520", code: HymnBookCode.SSS, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_234 = HymnsNumber(id: 234, num: 234, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra Supl. 148; P.H. 174", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_235 = HymnsNumber(id: 235, num: 235, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 318; Lyra 168", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_236 = HymnsNumber(id: 236, num: 236, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 170; S.H. 375; M.M. 15", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_237 = HymnsNumber(id: 237, num: 237, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C: 398", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_238 = HymnsNumber(id: 238, num: 238, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 164", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_239 = HymnsNumber(id: 239, num: 239, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 375; S.H. 409", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_240 = HymnsNumber(id: 240, num: 240, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 329; Lyra 175; S.H. 379", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_241 = HymnsNumber(id: 241, num: 241, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 299; Lyra 176", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_242 = HymnsNumber(id: 242, num: 242, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 165 C.C: 93", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_243 = HymnsNumber(id: 243, num: 243, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 348", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_244 = HymnsNumber(id: 244, num: 244, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 377; 179", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_245 = HymnsNumber(id: 245, num: 245, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 166", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_246 = HymnsNumber(id: 246, num: 246, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 167; 2ª Mús. C.C. 394", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_247 = HymnsNumber(id: 247, num: 247, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 183; C.C. 365", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_248 = HymnsNumber(id: 248, num: 248, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música:C.C. 356;Lyra 184", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_249 = HymnsNumber(id: 249, num: 249, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 155; Lyra 185; S.H. 140", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_250 = HymnsNumber(id: 250, num: 250, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 343", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_251 = HymnsNumber(id: 251, num: 251, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 171", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_252 = HymnsNumber(id: 252, num: 252, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 172", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_253 = HymnsNumber(id: 253, num: 253, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 301; Lyra 189", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_254 = HymnsNumber(id: 254, num: 254, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 323; Lyra 191", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_255 = HymnsNumber(id: 255, num: 255, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 192", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_256 = HymnsNumber(id: 256, num: 256, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 505", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_257 = HymnsNumber(id: 257, num: 257, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 177", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_258 = HymnsNumber(id: 258, num: 258, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 180 P.H. 219 M.M. 49", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_259 = HymnsNumber(id: 259, num: 259, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 199", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_260 = HymnsNumber(id: 260, num: 260, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 182", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_261 = HymnsNumber(id: 261, num: 261, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 186; M.M. 116; C.Sr.266", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_262 = HymnsNumber(id: 262, num: 262, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 188", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_263 = HymnsNumber(id: 263, num: 263, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 190", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_264 = HymnsNumber(id: 264, num: 264, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 196", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_265 = HymnsNumber(id: 265, num: 265, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 201  H.C. c/M.120P.H.28", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_266 = HymnsNumber(id: 266, num: 266, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: P.H. 213", code: HymnBookCode.PH, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_267 = HymnsNumber(id: 267, num: 267, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: Lyra 202 P.H. 327", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_268 = HymnsNumber(id: 268, num: 268, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: H.C.c/M. 581", code: HymnBookCode.HC_M, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_269 = HymnsNumber(id: 269, num: 269, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 371", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_270 = HymnsNumber(id: 270, num: 270, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 371", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_271 = HymnsNumber(id: 271, num: 271, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 283", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_272 = HymnsNumber(id: 272, num: 272, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 476", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_273 = HymnsNumber(id: 273, num: 273, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 328", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_274 = HymnsNumber(id: 274, num: 274, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: C.C. 366", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_275 = HymnsNumber(id: 275, num: 275, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: S.H. 26; Lyra 280", code: HymnBookCode.SH, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_276 = HymnsNumber(id: 276, num: 276, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: S.H. 585, C.C. 481", code: HymnBookCode.SH, lang: AppLang.PT);
+  static final FAITH_AND_SECURITY_277 = HymnsNumber(id: 277, num: 277, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: S.H. 585; C.C. 390", code: HymnBookCode.SH, lang: AppLang.PT);
+
   static List<HymnsNumber> items() {
     return [
 
@@ -281,6 +358,19 @@ class HymnsNumberSeeder{
       PRAYER_178, PRAYER_179, PRAYER_180, PRAYER_181, PRAYER_182, PRAYER_183, PRAYER_184, PRAYER_185, PRAYER_186, PRAYER_187, PRAYER_188,
       PRAYER_189, PRAYER_190, PRAYER_191, PRAYER_192, PRAYER_193, PRAYER_194, PRAYER_195, PRAYER_196, PRAYER_197, PRAYER_198, PRAYER_199,
       PRAYER_200, PRAYER_201, PRAYER_202,
+
+      CONSECRATION_203, CONSECRATION_204, CONSECRATION_205, CONSECRATION_206, CONSECRATION_207, CONSECRATION_208, CONSECRATION_209, CONSECRATION_210,
+      CONSECRATION_211, CONSECRATION_212, CONSECRATION_213, CONSECRATION_214, CONSECRATION_215, CONSECRATION_216, CONSECRATION_217, CONSECRATION_218,
+      CONSECRATION_219, CONSECRATION_220, CONSECRATION_221, CONSECRATION_222, CONSECRATION_223, CONSECRATION_224, CONSECRATION_225, CONSECRATION_226,
+      CONSECRATION_227, CONSECRATION_228, CONSECRATION_229, CONSECRATION_230, CONSECRATION_231,
+
+      FAITH_AND_SECURITY_232, FAITH_AND_SECURITY_233, FAITH_AND_SECURITY_234, FAITH_AND_SECURITY_235, FAITH_AND_SECURITY_236, FAITH_AND_SECURITY_237,
+      FAITH_AND_SECURITY_238, FAITH_AND_SECURITY_239, FAITH_AND_SECURITY_240, FAITH_AND_SECURITY_241, FAITH_AND_SECURITY_242, FAITH_AND_SECURITY_243, FAITH_AND_SECURITY_244,
+      FAITH_AND_SECURITY_245, FAITH_AND_SECURITY_246, FAITH_AND_SECURITY_247, FAITH_AND_SECURITY_248, FAITH_AND_SECURITY_249, FAITH_AND_SECURITY_250, FAITH_AND_SECURITY_251,
+      FAITH_AND_SECURITY_252, FAITH_AND_SECURITY_253, FAITH_AND_SECURITY_254, FAITH_AND_SECURITY_255, FAITH_AND_SECURITY_256, FAITH_AND_SECURITY_257, FAITH_AND_SECURITY_258,
+      FAITH_AND_SECURITY_259, FAITH_AND_SECURITY_260, FAITH_AND_SECURITY_261, FAITH_AND_SECURITY_262, FAITH_AND_SECURITY_263, FAITH_AND_SECURITY_264, FAITH_AND_SECURITY_265,
+      FAITH_AND_SECURITY_266, FAITH_AND_SECURITY_267, FAITH_AND_SECURITY_268, FAITH_AND_SECURITY_269, FAITH_AND_SECURITY_270, FAITH_AND_SECURITY_271, FAITH_AND_SECURITY_272,
+      FAITH_AND_SECURITY_273, FAITH_AND_SECURITY_274, FAITH_AND_SECURITY_275, FAITH_AND_SECURITY_276, FAITH_AND_SECURITY_277,
 
     ];
   }

@@ -24,6 +24,7 @@ class HymnsContentSeeder{
       ...HymnsPrayer.list,
       ...HymnsConsecration.list,
       ...HymnsFaithAndSecurity.list,
+      ...HymnsTestimonyAndWork.list
     ];
   }
 

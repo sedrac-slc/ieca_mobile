@@ -298,6 +298,34 @@ class HymnsNumberSeeder{
   static final FAITH_AND_SECURITY_276 = HymnsNumber(id: 276, num: 276, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: S.H. 585, C.C. 481", code: HymnBookCode.SH, lang: AppLang.PT);
   static final FAITH_AND_SECURITY_277 = HymnsNumber(id: 277, num: 277, hymnsGroup: HymnsGroupSeeder.FAITH_AND_SECURITY, label: "Música: S.H. 585; C.C. 390", code: HymnBookCode.SH, lang: AppLang.PT);
 
+  static final TESTIMONY_AND_WORK_278 = HymnsNumber(id: 278, num: 278, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: C.C. 169; S.H. 338; H.C.c/M.349", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_279 = HymnsNumber(id: 279, num: 279, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: Lyra 205", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_280 = HymnsNumber(id: 280, num: 280, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: Lyra 206; C.C. 216", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_281 = HymnsNumber(id: 281, num: 281, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: H.C.c/M. 371; Lyra 214", code: HymnBookCode.HC_M, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_282 = HymnsNumber(id: 282, num: 282, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: S.H. 453; C.C. 312;  Lyra 216", code: HymnBookCode.SH, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_283 = HymnsNumber(id: 283, num: 283, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: Lyra 217", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_284 = HymnsNumber(id: 284, num: 284, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: Lyra 218", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_285 = HymnsNumber(id: 285, num: 285, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: H.E.c/M.S. 337; Lyra 210", code: HymnBookCode.SH, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_286 = HymnsNumber(id: 286, num: 286, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: L.V. 175; Lyra 211", code: HymnBookCode.LV, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_287 = HymnsNumber(id: 287, num: 287, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: Lyra 230; C.C. 500", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_288 = HymnsNumber(id: 288, num: 288, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: C.C. 194; 2ª Mús. Lyra 223", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_289 = HymnsNumber(id: 289, num: 289, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: C.Sr. 345;  Lyra 213", code: HymnBookCode.CSr, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_290 = HymnsNumber(id: 290, num: 290, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: Lyra 212", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_291 = HymnsNumber(id: 291, num: 291, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: C.C. 76; Lyra 228", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_292 = HymnsNumber(id: 292, num: 292, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: S.H. 356, C.C. 461;  Lyra 229", code: HymnBookCode.SH, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_293 = HymnsNumber(id: 293, num: 293, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: C.C. 194; 2ª Mús.Lyra 223; 3ª Mús.C.C. 446", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_294 = HymnsNumber(id: 294, num: 294, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: Lyra 231; H.C.c/M. 323; S.H. 171", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_295 = HymnsNumber(id: 295, num: 295, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: C.C. 429", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_296 = HymnsNumber(id: 296, num: 296, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: C.C. 376", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_297 = HymnsNumber(id: 297, num: 297, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: C.C. 289", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_298 = HymnsNumber(id: 298, num: 298, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: C.C. 422; S.H. 440", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_299 = HymnsNumber(id: 299, num: 299, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: C.C. 428; S.H. 454;  H.C.c/M. 372", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_300 = HymnsNumber(id: 300, num: 300, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: S.H. 443; H.C.c/M.211; C.C.81", code: HymnBookCode.SH, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_301 = HymnsNumber(id: 301, num: 301, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: C.C. 75", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_302 = HymnsNumber(id: 302, num: 302, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: Lyra 96", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final TESTIMONY_AND_WORK_303 = HymnsNumber(id: 303, num: 303, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: S.H. 56, C.C. 443", code: HymnBookCode.SH, lang: AppLang.PT);
+
+
   static List<HymnsNumber> items() {
     return [
 
@@ -372,6 +400,10 @@ class HymnsNumberSeeder{
       FAITH_AND_SECURITY_266, FAITH_AND_SECURITY_267, FAITH_AND_SECURITY_268, FAITH_AND_SECURITY_269, FAITH_AND_SECURITY_270, FAITH_AND_SECURITY_271, FAITH_AND_SECURITY_272,
       FAITH_AND_SECURITY_273, FAITH_AND_SECURITY_274, FAITH_AND_SECURITY_275, FAITH_AND_SECURITY_276, FAITH_AND_SECURITY_277,
 
+      TESTIMONY_AND_WORK_278, TESTIMONY_AND_WORK_279, TESTIMONY_AND_WORK_280, TESTIMONY_AND_WORK_281, TESTIMONY_AND_WORK_282, TESTIMONY_AND_WORK_283, TESTIMONY_AND_WORK_284,
+      TESTIMONY_AND_WORK_285, TESTIMONY_AND_WORK_286, TESTIMONY_AND_WORK_287, TESTIMONY_AND_WORK_288, TESTIMONY_AND_WORK_289, TESTIMONY_AND_WORK_290, TESTIMONY_AND_WORK_291, TESTIMONY_AND_WORK_292,
+      TESTIMONY_AND_WORK_293, TESTIMONY_AND_WORK_294, TESTIMONY_AND_WORK_295, TESTIMONY_AND_WORK_296, TESTIMONY_AND_WORK_297, TESTIMONY_AND_WORK_298, TESTIMONY_AND_WORK_299, TESTIMONY_AND_WORK_300,
+      TESTIMONY_AND_WORK_301, TESTIMONY_AND_WORK_302, TESTIMONY_AND_WORK_303,
     ];
   }
 

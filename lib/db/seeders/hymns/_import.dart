@@ -17,3 +17,7 @@ export 'hymns_prayer.dart';
 export 'hymns_consecration.dart';
 export 'hymns_faith_and_security.dart';
 export 'hymns_testimony_and_work.dart';
+export 'hymns_thanksgiving_to_god.dart';
+export 'hymns_bible.dart';
+export 'hymns_death_of_the_believer.dart';
+export 'hymns_peace.dart';

@@ -5,35 +5,31 @@ HymnsContent(id: , position: 4, content: "", hymnsNumber: HymnsNumberSeeder.FAIT
 
 Se a estrofe é coro o HymnsContentCode é CHOIR sem ter position:
 
-HymnsContent(id: , content: "", hymnsNumber: HymnsNumberSeeder.TESTIMONY_AND_WORK_300, typeStanza: HymnsContentCode.CHOIR),
+HymnsContent(id: , content: "", hymnsNumber: HymnsNumberSeeder.THANKSGIVING_TO_GOD_304, typeStanza: HymnsContentCode.CHOIR),
 
-considera para o hino abaixo começa com id 1261 a primeira estrofe que irá
+considera para o hino abaixo começa com id 1278 a primeira estrofe que irá
 gerar o HymnsContent e deve seguir de forma sequencial e o hymnsNumber é
-TESTIMONY_AND_WORK_300, o hymnsNumber será sequencial quando eu informa outro hino para você fazer de novo este processo e
+THANKSGIVING_TO_GOD_304, o hymnsNumber será sequencial quando eu informa outro hino para você fazer de novo este processo e
 gera o HymnsContent de forma inline sem espaçamento entre eles.
 
 Hino
-1. Avante! Avante! ó crentes!
-Soldados de Jesus!
-Erguei Seu estandarte,
-Lutai por Sua cruz!
-Contra hostes inimigas,
-Ante essas multidões,
-O Comandante excelso
-Dirige os batalhões.
-2. Avante! Avante! ó crentes!
-Por Cristo pelejai;
-Vesti Sua armadura,
-Em seu poder marchai!
-No posto sempre achados,
-Velando em oração;
-Por meio de perigos,
-Seguindo o Capitão!
-3. Avante! Avante! ó crentes!
-Com passo triunfal!
-Hoje há combate horrendo!
-Mui cedo a paz final!
-Então, eternamente,
-Bendito vencedor,
-Por Deus vitorioso!
-Com Cristo, o Salvador!
+1. Com reverente júbilo, nós vimos
+Render-Te muitas graças, Bom Senhor,
+Por esta Igreja em que de Ti haurimos
+Ensinamentos belos, luz e amor.
+2. A nossa Igreja abriu caminho novo,
+Na direcção de um alto e maior bem
+Veio apontar a todo o nosso povo,
+Um alvo nobre e que áureo prémio tem!
+3. Graças, ó Deus, porque nos concedeste
+Quem semeou, bem como quem regou;
+Depois de Ti nos veio, ó Pai celeste,
+O crescimento e fruto que abundou.
+4. Graças te damos pelos fundadores,
+E pelos que os seguiram com amor.
+Ajuda agora, ó Deus, os sucessores,
+A prosseguirem com crescente ardor.
+5. Também rogamos, Pai, que nos concedas
+O grande ensejo de ir compartilhar,
+Com os irmãos por todas as veredas,
+A bênção destes ricos dons sem par.

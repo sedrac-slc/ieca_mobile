@@ -325,6 +325,35 @@ class HymnsNumberSeeder{
   static final TESTIMONY_AND_WORK_302 = HymnsNumber(id: 302, num: 302, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: Lyra 96", code: HymnBookCode.LYARA, lang: AppLang.PT);
   static final TESTIMONY_AND_WORK_303 = HymnsNumber(id: 303, num: 303, hymnsGroup: HymnsGroupSeeder.TESTIMONY_AND_WORK, label: "Música: S.H. 56, C.C. 443", code: HymnBookCode.SH, lang: AppLang.PT);
 
+  static final THANKSGIVING_TO_GOD_304 = HymnsNumber(id: 304, num: 304, hymnsGroup: HymnsGroupSeeder.THANKSGIVING_TO_GOD, label: "Música: The Hymnary 67", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final THANKSGIVING_TO_GOD_305 = HymnsNumber(id: 305, num: 305, hymnsGroup: HymnsGroupSeeder.THANKSGIVING_TO_GOD, label: "Música: Lyra 234", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final THANKSGIVING_TO_GOD_306 = HymnsNumber(id: 306, num: 306, hymnsGroup: HymnsGroupSeeder.THANKSGIVING_TO_GOD, label: "Música: Lyra 233; Rev. Dr. S. RalphCollins", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final THANKSGIVING_TO_GOD_307 = HymnsNumber(id: 307, num: 307, hymnsGroup: HymnsGroupSeeder.THANKSGIVING_TO_GOD, label: "Música: Rev Dr. S.Ralph Collins", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final THANKSGIVING_TO_GOD_308 = HymnsNumber(id: 308, num: 308, hymnsGroup: HymnsGroupSeeder.THANKSGIVING_TO_GOD, label: "Música: Lyra  236", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final THANKSGIVING_TO_GOD_309 = HymnsNumber(id: 309, num: 309, hymnsGroup: HymnsGroupSeeder.THANKSGIVING_TO_GOD, label: "Música: H.C.c/M. 563; S.H. 134; C.C. 19", code: HymnBookCode.HC_M, lang: AppLang.PT);
+  static final THANKSGIVING_TO_GOD_310 = HymnsNumber(id: 310, num: 310, hymnsGroup: HymnsGroupSeeder.THANKSGIVING_TO_GOD, label: "Música: C.C. 392", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final THANKSGIVING_TO_GOD_311 = HymnsNumber(id: 311, num: 311, hymnsGroup: HymnsGroupSeeder.THANKSGIVING_TO_GOD, label: "Música: Lyra 240; S.H. 41; H.C.c/M.458", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final THANKSGIVING_TO_GOD_312 = HymnsNumber(id: 312, num: 312, hymnsGroup: HymnsGroupSeeder.THANKSGIVING_TO_GOD, label: "Música: H.C.c/M. 467; S.H. 65", code: HymnBookCode.HC_M, lang: AppLang.PT);
+  static final THANKSGIVING_TO_GOD_313 = HymnsNumber(id: 313, num: 313, hymnsGroup: HymnsGroupSeeder.THANKSGIVING_TO_GOD, label: "Música: Rev. Dr. S. Ralph Collins", code: HymnBookCode.CC, lang: AppLang.PT);
+
+  static final PEACE_314 = HymnsNumber(id: 314, num: 314, hymnsGroup: HymnsGroupSeeder.PEACE, label: "Música: H.C. c/M. Lyra 198", code: HymnBookCode.HC_M, lang: AppLang.PT);
+
+  static final BIBLE_315 = HymnsNumber(id: 315, num: 315, hymnsGroup: HymnsGroupSeeder.BIBLE, label: "Música: Lyra 250", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final BIBLE_316 = HymnsNumber(id: 316, num: 316, hymnsGroup: HymnsGroupSeeder.BIBLE, label: "Música: Lyra 251", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final BIBLE_317 = HymnsNumber(id: 317, num: 317, hymnsGroup: HymnsGroupSeeder.BIBLE, label: "Música: Lyra 252", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final BIBLE_318 = HymnsNumber(id: 318, num: 318, hymnsGroup: HymnsGroupSeeder.BIBLE, label: "Música: Lyra 253; Rev. Dr. S. Ralph Collins", code: HymnBookCode.LYARA, lang: AppLang.PT);
+
+  static final DEATH_OF_THE_BELIEVER_319 = HymnsNumber(id: 319, num: 319, hymnsGroup: HymnsGroupSeeder.DEATH_OF_THE_BELIEVER, label: "Música: C.Sr. 232", code: HymnBookCode.CSr, lang: AppLang.PT);
+  static final DEATH_OF_THE_BELIEVER_320 = HymnsNumber(id: 320, num: 320, hymnsGroup: HymnsGroupSeeder.DEATH_OF_THE_BELIEVER, label: "Música: Lyra 280", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final DEATH_OF_THE_BELIEVER_321 = HymnsNumber(id: 321, num: 321, hymnsGroup: HymnsGroupSeeder.DEATH_OF_THE_BELIEVER, label: "Música: C.C.374", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final DEATH_OF_THE_BELIEVER_322 = HymnsNumber(id: 322, num: 322, hymnsGroup: HymnsGroupSeeder.DEATH_OF_THE_BELIEVER, label: "Música: CC. 572", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final DEATH_OF_THE_BELIEVER_323 = HymnsNumber(id: 323, num: 323, hymnsGroup: HymnsGroupSeeder.DEATH_OF_THE_BELIEVER, label: "Música: Lyra 283", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final DEATH_OF_THE_BELIEVER_324 = HymnsNumber(id: 324, num: 324, hymnsGroup: HymnsGroupSeeder.DEATH_OF_THE_BELIEVER, label: "Música: Lyra 284", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final DEATH_OF_THE_BELIEVER_325 = HymnsNumber(id: 325, num: 325, hymnsGroup: HymnsGroupSeeder.DEATH_OF_THE_BELIEVER, label: "Música: Lyra 281", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final DEATH_OF_THE_BELIEVER_326 = HymnsNumber(id: 326, num: 326, hymnsGroup: HymnsGroupSeeder.DEATH_OF_THE_BELIEVER, label: "Música: Lyra Supl.283; S.H.Antigo 383", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final DEATH_OF_THE_BELIEVER_327 = HymnsNumber(id: 327, num: 327, hymnsGroup: HymnsGroupSeeder.DEATH_OF_THE_BELIEVER, label: "Música: C.C. 340", code: HymnBookCode.CC, lang: AppLang.PT);
+
+  static final FUTURE_LIFE_328 = HymnsNumber(id: 328, num: 328, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "", code: HymnBookCode.CC, lang: AppLang.PT);
 
   static List<HymnsNumber> items() {
     return [
@@ -404,6 +433,16 @@ class HymnsNumberSeeder{
       TESTIMONY_AND_WORK_285, TESTIMONY_AND_WORK_286, TESTIMONY_AND_WORK_287, TESTIMONY_AND_WORK_288, TESTIMONY_AND_WORK_289, TESTIMONY_AND_WORK_290, TESTIMONY_AND_WORK_291, TESTIMONY_AND_WORK_292,
       TESTIMONY_AND_WORK_293, TESTIMONY_AND_WORK_294, TESTIMONY_AND_WORK_295, TESTIMONY_AND_WORK_296, TESTIMONY_AND_WORK_297, TESTIMONY_AND_WORK_298, TESTIMONY_AND_WORK_299, TESTIMONY_AND_WORK_300,
       TESTIMONY_AND_WORK_301, TESTIMONY_AND_WORK_302, TESTIMONY_AND_WORK_303,
+
+      THANKSGIVING_TO_GOD_304, THANKSGIVING_TO_GOD_305, THANKSGIVING_TO_GOD_306, THANKSGIVING_TO_GOD_307, THANKSGIVING_TO_GOD_308, THANKSGIVING_TO_GOD_309, THANKSGIVING_TO_GOD_310, THANKSGIVING_TO_GOD_311,
+      THANKSGIVING_TO_GOD_312, THANKSGIVING_TO_GOD_313,
+
+      PEACE_314,
+
+      BIBLE_315, BIBLE_316, BIBLE_317, BIBLE_318,
+
+      DEATH_OF_THE_BELIEVER_319, DEATH_OF_THE_BELIEVER_320, DEATH_OF_THE_BELIEVER_321, DEATH_OF_THE_BELIEVER_322, DEATH_OF_THE_BELIEVER_323, DEATH_OF_THE_BELIEVER_324, DEATH_OF_THE_BELIEVER_325, DEATH_OF_THE_BELIEVER_326, DEATH_OF_THE_BELIEVER_327,
+
     ];
   }
 

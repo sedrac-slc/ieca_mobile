@@ -24,7 +24,11 @@ class HymnsContentSeeder{
       ...HymnsPrayer.list,
       ...HymnsConsecration.list,
       ...HymnsFaithAndSecurity.list,
-      ...HymnsTestimonyAndWork.list
+      ...HymnsTestimonyAndWork.list,
+      ...HymnsThanksgivingToGod.list,
+      ...HymnsPeace.list,
+      ...HymnsBible.list,
+      ...HymnsDeathOfTheBeliever.list,
     ];
   }
 

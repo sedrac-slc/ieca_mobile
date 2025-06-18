@@ -353,7 +353,56 @@ class HymnsNumberSeeder{
   static final DEATH_OF_THE_BELIEVER_326 = HymnsNumber(id: 326, num: 326, hymnsGroup: HymnsGroupSeeder.DEATH_OF_THE_BELIEVER, label: "Música: Lyra Supl.283; S.H.Antigo 383", code: HymnBookCode.LYARA, lang: AppLang.PT);
   static final DEATH_OF_THE_BELIEVER_327 = HymnsNumber(id: 327, num: 327, hymnsGroup: HymnsGroupSeeder.DEATH_OF_THE_BELIEVER, label: "Música: C.C. 340", code: HymnBookCode.CC, lang: AppLang.PT);
 
-  static final FUTURE_LIFE_328 = HymnsNumber(id: 328, num: 328, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FUTURE_LIFE_328 = HymnsNumber(id: 328, num: 328, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: Lyra 285; 2ª Mús. C.C. 1", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FUTURE_LIFE_329 = HymnsNumber(id: 329, num: 329, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: Lyra 291; C.C. 388;  2ª Mús. C.C. 516", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FUTURE_LIFE_330 = HymnsNumber(id: 330, num: 330, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: fonte anónima", code: HymnBookCode.NONE, lang: AppLang.PT);
+  static final FUTURE_LIFE_331 = HymnsNumber(id: 331, num: 331, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: C.C. 109; Lyra 286", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FUTURE_LIFE_332 = HymnsNumber(id: 332, num: 332, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: Lyra 287", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FUTURE_LIFE_333 = HymnsNumber(id: 333, num: 333, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: Lyra 288", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FUTURE_LIFE_334 = HymnsNumber(id: 334, num: 334, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: C.C. 380", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FUTURE_LIFE_335 = HymnsNumber(id: 335, num: 335, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: Lyra 290", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FUTURE_LIFE_336 = HymnsNumber(id: 336, num: 336, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: C.C. 108; S.H. 125", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FUTURE_LIFE_337 = HymnsNumber(id: 337, num: 337, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: Lyra 294; C.A. 118; C.Sr. 385", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FUTURE_LIFE_338 = HymnsNumber(id: 338, num: 338, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: Lyra 295;  H.C.c/M. 137", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FUTURE_LIFE_339 = HymnsNumber(id: 339, num: 339, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: Lyra 296", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FUTURE_LIFE_340 = HymnsNumber(id: 340, num: 340, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: C.C. 504", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FUTURE_LIFE_341 = HymnsNumber(id: 341, num: 341, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: C.C. 111;   Lyra 297", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FUTURE_LIFE_342 = HymnsNumber(id: 342, num: 342, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: Lyra Evangélica  Ed.1995  nº 351", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final FUTURE_LIFE_343 = HymnsNumber(id: 343, num: 343, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: The Hymnary 552", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FUTURE_LIFE_344 = HymnsNumber(id: 344, num: 344, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: C.C. 503", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FUTURE_LIFE_345 = HymnsNumber(id: 345, num: 345, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: S.H. 558; C.C. 508", code: HymnBookCode.SH, lang: AppLang.PT);
+  static final FUTURE_LIFE_346 = HymnsNumber(id: 346, num: 346, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: M.M.129", code: HymnBookCode.MM, lang: AppLang.PT);
+  static final FUTURE_LIFE_347 = HymnsNumber(id: 347, num: 347, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: C.C.510", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final FUTURE_LIFE_348 = HymnsNumber(id: 348, num: 348, hymnsGroup: HymnsGroupSeeder.FUTURE_LIFE, label: "Música: C.C. 508", code: HymnBookCode.CC, lang: AppLang.PT);
+
+  static final EVENING_HYMNS_349 = HymnsNumber(id: 349, num: 349, hymnsGroup: HymnsGroupSeeder.EVENING_HYMNS, label: "Música: Lyra 245", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final EVENING_HYMNS_350 = HymnsNumber(id: 350, num: 350, hymnsGroup: HymnsGroupSeeder.EVENING_HYMNS, label: "Música: Lyra 246", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final EVENING_HYMNS_351 = HymnsNumber(id: 351, num: 351, hymnsGroup: HymnsGroupSeeder.EVENING_HYMNS, label: "Música: Lyra 248", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final EVENING_HYMNS_352 = HymnsNumber(id: 352, num: 352, hymnsGroup: HymnsGroupSeeder.EVENING_HYMNS, label: "Música: Lyra 249", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final EVENING_HYMNS_353 = HymnsNumber(id: 353, num: 353, hymnsGroup: HymnsGroupSeeder.EVENING_HYMNS, label: "Música: C.C. 291", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final EVENING_HYMNS_354 = HymnsNumber(id: 354, num: 354, hymnsGroup: HymnsGroupSeeder.EVENING_HYMNS, label: "Música: C.C. 557", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final EVENING_HYMNS_355 = HymnsNumber(id: 355, num: 355, hymnsGroup: HymnsGroupSeeder.EVENING_HYMNS, label: "Música: Lyra 110; S.H. 503", code: HymnBookCode.LYARA, lang: AppLang.PT);
+
+  static final NEW_YEAR_356 = HymnsNumber(id: 356, num: 356, hymnsGroup: HymnsGroupSeeder.NEW_YEAR, label: "Música: Lyra 242  H.C.c/M.275", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final NEW_YEAR_357 = HymnsNumber(id: 357, num: 357, hymnsGroup: HymnsGroupSeeder.NEW_YEAR, label: "Música: Lyra 243", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final NEW_YEAR_358 = HymnsNumber(id: 358, num: 358, hymnsGroup: HymnsGroupSeeder.NEW_YEAR, label: "Música: C.C. 560", code: HymnBookCode.CC, lang: AppLang.PT);
+
+  static final PATRIOTIC_HYMNS_359 = HymnsNumber(id: 359, num: 359, hymnsGroup: HymnsGroupSeeder.PATRIOTIC_HYMNS, label: "Música: C.C.574", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final PATRIOTIC_HYMNS_360 = HymnsNumber(id: 360, num: 360, hymnsGroup: HymnsGroupSeeder.PATRIOTIC_HYMNS, label: "Música: C.C.439", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final PATRIOTIC_HYMNS_361 = HymnsNumber(id: 361, num: 361, hymnsGroup: HymnsGroupSeeder.PATRIOTIC_HYMNS, label: "Música: «Prayer for Africa» Original Zulu Words, 1897-'Nkosi, sikelel' i Afrika.Trad. César H.G.Pataca", code: HymnBookCode.CC, lang: AppLang.PT);
+
+  static final END_OF_SERVICE_362 = HymnsNumber(id: 362, num: 362, hymnsGroup: HymnsGroupSeeder.END_OF_SERVICE, label: "Música: Lyra 298; C.C. 21; P.H. 342", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final END_OF_SERVICE_363 = HymnsNumber(id: 363, num: 363, hymnsGroup: HymnsGroupSeeder.END_OF_SERVICE, label: "Música: Lyra 299", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final END_OF_SERVICE_364 = HymnsNumber(id: 364, num: 364, hymnsGroup: HymnsGroupSeeder.END_OF_SERVICE, label: "Música: C.C. 565", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final END_OF_SERVICE_365 = HymnsNumber(id: 365, num: 365, hymnsGroup: HymnsGroupSeeder.END_OF_SERVICE, label: "Música: Lyra 132;  P.H. 351; S.H. 502", code: HymnBookCode.LYARA, lang: AppLang.PT);
+
+  static final DOXOLOGIES_366 = HymnsNumber(id: 366, num: 366, hymnsGroup: HymnsGroupSeeder.DOXOLOGIES, label: "Música: C.C.8", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final DOXOLOGIES_367 = HymnsNumber(id: 367, num: 367, hymnsGroup: HymnsGroupSeeder.DOXOLOGIES, label: "Música: Lyra 303", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final DOXOLOGIES_368 = HymnsNumber(id: 368, num: 368, hymnsGroup: HymnsGroupSeeder.DOXOLOGIES, label: "Música: C.C. 4", code: HymnBookCode.CC, lang: AppLang.PT);
+  static final DOXOLOGIES_369 = HymnsNumber(id: 369, num: 369, hymnsGroup: HymnsGroupSeeder.DOXOLOGIES, label: "Música: Lyra 308;  P.H.83", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final DOXOLOGIES_370 = HymnsNumber(id: 370, num: 370, hymnsGroup: HymnsGroupSeeder.DOXOLOGIES, label: "Música: Lyra 310", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final DOXOLOGIES_371 = HymnsNumber(id: 371, num: 371, hymnsGroup: HymnsGroupSeeder.DOXOLOGIES, label: "Música: Lyra 311", code: HymnBookCode.LYARA, lang: AppLang.PT);
+  static final DOXOLOGIES_372 = HymnsNumber(id: 372, num: 372, hymnsGroup: HymnsGroupSeeder.DOXOLOGIES, label: "Música:  P.H. 536", code: HymnBookCode.PH, lang: AppLang.PT);
 
   static List<HymnsNumber> items() {
     return [
@@ -443,6 +492,18 @@ class HymnsNumberSeeder{
 
       DEATH_OF_THE_BELIEVER_319, DEATH_OF_THE_BELIEVER_320, DEATH_OF_THE_BELIEVER_321, DEATH_OF_THE_BELIEVER_322, DEATH_OF_THE_BELIEVER_323, DEATH_OF_THE_BELIEVER_324, DEATH_OF_THE_BELIEVER_325, DEATH_OF_THE_BELIEVER_326, DEATH_OF_THE_BELIEVER_327,
 
+      FUTURE_LIFE_328, FUTURE_LIFE_329, FUTURE_LIFE_330, FUTURE_LIFE_331, FUTURE_LIFE_332, FUTURE_LIFE_333, FUTURE_LIFE_334, FUTURE_LIFE_335, FUTURE_LIFE_336, FUTURE_LIFE_337, FUTURE_LIFE_338, FUTURE_LIFE_339, FUTURE_LIFE_340, FUTURE_LIFE_341, FUTURE_LIFE_342, FUTURE_LIFE_343,
+      FUTURE_LIFE_344, FUTURE_LIFE_345, FUTURE_LIFE_346, FUTURE_LIFE_347, FUTURE_LIFE_348,
+
+      EVENING_HYMNS_349, EVENING_HYMNS_350, EVENING_HYMNS_351, EVENING_HYMNS_352, EVENING_HYMNS_353, EVENING_HYMNS_354, EVENING_HYMNS_355,
+
+      NEW_YEAR_356, NEW_YEAR_357, NEW_YEAR_358,
+
+      PATRIOTIC_HYMNS_359, PATRIOTIC_HYMNS_360, PATRIOTIC_HYMNS_361,
+
+      END_OF_SERVICE_362, END_OF_SERVICE_363, END_OF_SERVICE_364, END_OF_SERVICE_365,
+
+      DOXOLOGIES_366, DOXOLOGIES_367, DOXOLOGIES_368, DOXOLOGIES_369, DOXOLOGIES_370, DOXOLOGIES_371, DOXOLOGIES_372,
     ];
   }
 

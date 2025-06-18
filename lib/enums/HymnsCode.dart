@@ -14,6 +14,7 @@ class HymnBookCode {
   static final SH = "SH";
   static final SSS = "SSS";
   static final LYARA = "LYARA";
+  static final NONE = "NONE";
 
   static String describe(String code) {
     if (code == AC) return "Antemas Celestes";

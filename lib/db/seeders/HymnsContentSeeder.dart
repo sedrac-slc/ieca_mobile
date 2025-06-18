@@ -29,6 +29,12 @@ class HymnsContentSeeder{
       ...HymnsPeace.list,
       ...HymnsBible.list,
       ...HymnsDeathOfTheBeliever.list,
+      ...HymnsFutureLife.list,
+      ...HymnsEvening.list,
+      ...HymnsNewYear.list,
+      ...HymnsPatriotic.list,
+      ...HymnsEndOfService.list,
+      ...HymnsDoxologies.list
     ];
   }
 

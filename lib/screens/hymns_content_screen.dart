@@ -16,8 +16,7 @@ class HymnsContentScreen extends StatefulWidget {
 }
 
 class _HymnsContentScreenState extends State<HymnsContentScreen> {
-  final HymnsContentRepository _hymnsContentRepository =
-      HymnsContentRepository();
+  final HymnsContentRepository _hymnsContentRepository = HymnsContentRepository();
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +37,7 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
           if (snapshot.hasData) {
             return Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              spacing: 5,
+              spacing: 1,
               children: [
                 Container(
                   padding: const EdgeInsets.only(left: 25, right: 25),
@@ -50,7 +49,7 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
                         widget.hymnsNumber.num.toString(),
                         style: GoogleFonts.roboto(fontSize: 18),
                       ),
-                      const SizedBox(width: 10),
+                      const SizedBox(width: 5),
                       Expanded(
                         child: Text(
                           "(${widget.hymnsNumber.label})",

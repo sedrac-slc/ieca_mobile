@@ -1,2 +1,9 @@
 dart run flutter_native_splash:create
 dart run flutter_launcher_icons
+
+keytool -genkey -v -keystore ieca-hinario.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias ieca-hinario-alias
+
+keytool -list -v -keystore  android/app/ieca-hinario.jks -alias ieca-hinario-alias
+keytool -list -v -keystore ieca-hinario.jks -alias ieca-hinario-alias
+
+Password: 344334

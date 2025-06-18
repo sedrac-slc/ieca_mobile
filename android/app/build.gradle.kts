@@ -1,8 +1,21 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
+}
+
+val keystoreProperties = Properties()
+val keystorePropertiesFile = rootProject.file("key.properties")
+
+if (keystorePropertiesFile.exists()) {
+    keystorePropertiesFile.inputStream().use {
+        keystoreProperties.load(it)
+    }
+} else {
+    println("WARNING: key.properties not found. Release builds will not be signed.")
 }
 
 android {
@@ -31,11 +44,32 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        create("release") {
+            if (keystoreProperties.isNotEmpty()) {
+                val storeFileProperty = keystoreProperties["storeFile"] as String?
+                val storePasswordProperty = keystoreProperties["storePassword"] as String?
+                val keyAliasProperty = keystoreProperties["keyAlias"] as String?
+                val keyPasswordProperty = keystoreProperties["keyPassword"] as String?
+
+                if (storeFileProperty != null && storePasswordProperty != null && keyAliasProperty != null && keyPasswordProperty != null) {
+                    storeFile = file(storeFileProperty)
+                    storePassword = storePasswordProperty
+                    keyAlias = keyAliasProperty
+                    keyPassword = keyPasswordProperty
+                } else {
+                    println("ERROR: Missing one or more keystore properties in key.properties.")
+                }
+            }
+        }
+    }
+
     buildTypes {
         release {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            // signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 }

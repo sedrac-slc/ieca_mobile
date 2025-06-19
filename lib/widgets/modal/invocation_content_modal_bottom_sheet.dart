@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ieca_mobile/models/InvocationTitle.dart';
-import 'package:ieca_mobile/repository/InvocationContentRepository.dart';
+import 'package:ieca_mobile/models/invocation_title.dart';
+import 'package:ieca_mobile/repository/invocation_content_repository.dart';
 import 'package:ieca_mobile/widgets/items/_import.dart';
 
 class InvocationContentModalBottomSheet extends StatefulWidget {

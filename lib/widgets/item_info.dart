@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/util/app_theme.dart';
+import 'package:ieca_mobile/widgets/_import.dart';
 
 class ItemInfo extends StatelessWidget {
   final IconData icon;
@@ -22,10 +23,12 @@ class ItemInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ColorScheme colorScheme = AppTheme.colorScheme(context);
+    final Brightness brightness = MediaQuery.of(context).platformBrightness;
+    final bool isDarkMode = brightness == Brightness.dark;
 
     return Container(
       decoration: BoxDecoration(
-          color: Colors.white,
+          color: colorScheme.onPrimary,
           borderRadius: BorderRadius.circular(20),
           border: Border.all(color: Colors.grey)
       ),
@@ -39,23 +42,11 @@ class ItemInfo extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Icon(icon, color: colorScheme.primary),
-              Container(
-                padding: const EdgeInsets.all(2),
-                height: 10,
-                constraints: const BoxConstraints( minWidth: 25, minHeight: 25,),
-                decoration: BoxDecoration(color: colorScheme.error, borderRadius: BorderRadius.circular(50),),
-                child: Center(
-                  child: Text(
-                    total.toString(),
-                    style: totalTextStyle ?? const TextStyle(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold),
-                    textAlign: TextAlign.center,
-                  ),
-                ),
-              ),
+              Icon(icon, color: isDarkMode ? Colors.white : colorScheme.primary),
+              NumberBackgroundCenter(number: total)
             ],
           ),
-          Text(text, style: textStyle ?? TextStyle(color: colorScheme.outline),),
+          Text(text, style: textStyle ?? TextStyle(color: isDarkMode ? Colors.white : colorScheme.outline),),
         ],
       ),
     );

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ieca_mobile/models/PsalmsTitle.dart';
-import 'package:ieca_mobile/repository/PsalmsContentRepository.dart';
+import 'package:ieca_mobile/models/psalms_title.dart';
+import 'package:ieca_mobile/repository/psalms_content_repository.dart';
 import 'package:ieca_mobile/widgets/items/_import.dart';
 
 class PsalmsContentModalBottomSheet extends StatefulWidget {

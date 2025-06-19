@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/enums/_import.dart';
-import 'package:ieca_mobile/models/HymnsNumber.dart';
-import 'package:ieca_mobile/repository/HymnsContentRepository.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/models/hymns_number.dart';
+import 'package:ieca_mobile/repository/hymns_content_repository.dart';
+import 'package:ieca_mobile/util/app_theme.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
 
 class HymnsContentScreen extends StatefulWidget {

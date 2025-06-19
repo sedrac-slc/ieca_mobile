@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/util/app_theme.dart';
 
 class BadgeItem extends StatelessWidget {
   final String text;

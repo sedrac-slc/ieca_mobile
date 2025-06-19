@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ieca_mobile/models/LitanyTitle.dart';
-import 'package:ieca_mobile/repository/LitanyContentRepository.dart';
+import 'package:ieca_mobile/models/litany_title.dart';
+import 'package:ieca_mobile/repository/litany_content_repository.dart';
 import 'package:ieca_mobile/widgets/items/litany_content_item.dart';
 
 class LitanyContentModalBottomSheet extends StatefulWidget {

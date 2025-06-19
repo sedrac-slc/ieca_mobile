@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ieca_mobile/util/AppAsset.dart';
+import 'package:ieca_mobile/util/app_asset.dart';
 
 class LogoIeca extends StatelessWidget {
   const LogoIeca({super.key});

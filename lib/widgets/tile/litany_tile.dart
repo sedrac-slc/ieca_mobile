@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ieca_mobile/models/LitanyTitle.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/models/litany_title.dart';
+import 'package:ieca_mobile/util/app_theme.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
 
 class LitanyTile extends StatelessWidget {

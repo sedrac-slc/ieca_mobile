@@ -1,7 +1,7 @@
 import 'package:ieca_mobile/l10n/app_localizations.dart';
-import 'package:ieca_mobile/repository/HymnsGroupRepository.dart';
-import 'package:ieca_mobile/models/HymnsGroup.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/repository/hymns_group_repository.dart';
+import 'package:ieca_mobile/models/hymns_group.dart';
+import 'package:ieca_mobile/util/app_theme.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
 import 'package:flutter/material.dart';
 
@@ -39,6 +39,7 @@ class _HymnsScreenState extends State<HymnsScreen> {
         backgroundColor: colorBar,
       ),
       body: Column(
+        spacing: 10,
         children: [
           Container(
             padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ieca_mobile/models/InvocationTitle.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/models/invocation_title.dart';
+import 'package:ieca_mobile/util/app_theme.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
 
 class InvocationTile extends StatelessWidget {

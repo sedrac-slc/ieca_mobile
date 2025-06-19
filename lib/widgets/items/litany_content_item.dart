@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ieca_mobile/enums/_import.dart';
 import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/util/app_theme.dart';
 
 class LitanyContentItem extends StatelessWidget {
   final LitanyContent litanyContent;

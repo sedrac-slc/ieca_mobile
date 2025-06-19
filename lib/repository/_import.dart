@@ -1,8 +1,8 @@
-export 'HymnsGroupRepository.dart';
-export 'HymnsNumberRepository.dart';
-export 'InvocationContentRepository.dart';
-export 'InvocationTitleRepository.dart';
-export 'LitanyContentRepository.dart';
-export 'LitanyTitleRepository.dart';
-export 'PsalmsContentRepository.dart';
-export 'PsalmsTitleRepository.dart';
+export 'hymns_group_repository.dart';
+export 'hymns_number_repository.dart';
+export 'invocation_content_repository.dart';
+export 'invocation_title_repository.dart';
+export 'litany_content_repository.dart';
+export 'litany_title_repository.dart';
+export 'psalms_content_repository.dart';
+export 'psalms_title_repository.dart';

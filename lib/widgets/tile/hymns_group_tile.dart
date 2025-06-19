@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
-import 'package:ieca_mobile/models/HymnsGroup.dart';
+import 'package:ieca_mobile/util/app_theme.dart';
+import 'package:ieca_mobile/models/hymns_group.dart';
 
 class HymnsGroupTile extends StatelessWidget {
   final HymnsGroup hymnsGroup;
@@ -40,7 +40,7 @@ class HymnsGroupTile extends StatelessWidget {
             child: Center(
               child: Text(
                 "${hymnsGroup.beginning} - ${hymnsGroup.finished}",
-                style: TextStyle(color: colorScheme.onPrimary),
+                style: TextStyle(color: Colors.white),
               ),
             ),
           ),

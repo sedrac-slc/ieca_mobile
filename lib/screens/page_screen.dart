@@ -1,8 +1,8 @@
 import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/screens/navigation_bar/_import.dart';
 import 'package:flutter/material.dart';
-import 'package:ieca_mobile/util/AppIconData.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/util/app_icon_data.dart';
+import 'package:ieca_mobile/util/app_theme.dart';
 
 class PageScreen extends StatefulWidget {
   const PageScreen({super.key});

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/util/app_theme.dart';
 
 class HymnsInfo extends StatelessWidget {
   final String text;

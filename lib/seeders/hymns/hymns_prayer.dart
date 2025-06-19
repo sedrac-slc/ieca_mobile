@@ -1,0 +1,133 @@
+import 'package:ieca_mobile/enums/_import.dart';
+import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/seeders/_import.dart';
+
+class HymnsPrayer {
+  static List<HymnsContent> list = [
+    HymnsContent(id: 758, position: 1, content: "Senhor Jesus, oh, vem-me conceder\nTua promessa do Consolador;\nDos altos céus me outorga teu poder,\nPoder do Espírito renovador.", hymnsNumber: HymnsNumberSeeder.PRAYER_178, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 759, content: "Confiado no Senhor,\nConsolado em seu amor,\nSeguirei no meu caminho,\nSem tristeza e sem temor.", hymnsNumber: HymnsNumberSeeder.PRAYER_178, typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 760, position: 2, content: "Senhor, aviva minha ténue fé;\nAteia em mim o ardor celestial;\nO coração meu, guia por mercê,\nExtirpa, expulsa tudo que é carnal.", hymnsNumber: HymnsNumberSeeder.PRAYER_178, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 761, position: 3, content: "Vem tu fazer em mim habitação,\nEm templo teu transforma-me, Senhor,\nAqui me entrego em tua santa mão,\nA teu espírito renovador.", hymnsNumber: HymnsNumberSeeder.PRAYER_178, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 762, position: 4, content: "Outorga força p'ra testemunhar\nNo meu viver, falar e proceder;\nCorrecta vida, santa, modelar,\nTambém repleta de fervor, poder.", hymnsNumber: HymnsNumberSeeder.PRAYER_178, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 763, position: 1, content: "A Ti oramos com fervor, Deus Eterno!\nNão temos força para a caminhada;\nMas tendo a luz do teu amor, bem supremo;\nAvante iremos sem temer mais nada.", hymnsNumber: HymnsNumberSeeder.PRAYER_179, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 764, position: 2, content: "Quando abatidos pelas lutas do mundo,\nAs nossas forças venham a falhar-nos,\nQue o Teu poder e amor imenso, profundo;\nSeu pronto auxílio e força venham dar-nos.", hymnsNumber: HymnsNumberSeeder.PRAYER_179, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 765, position: 3, content: "Dispensador do Pão bendito da Vida,\nCom Ele os nossos corações sustenta.\nDa Tua graça dá-nos plena medida;\nSaber divino em nós, ó Deus, aumenta.", hymnsNumber: HymnsNumberSeeder.PRAYER_179, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 766, position: 4, content: "Tu, Lavrador dos corações do Teu povo\nSemeia dentro de nós amor, candura;\nEm nosso peito cresça, afoito, o homem novo.\nEm fé, justiça e em alegria pura.", hymnsNumber: HymnsNumberSeeder.PRAYER_179, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 767, position: 1, content: "Ó Deus, ó Criador,\nÓ grande Protector\nDe todas as pessoas\nPossuidoras da fé;\nAntes que Tu criasses\nA terra e o vasto mar,\nJá Tu existias\nE sempiterno és Tu.", hymnsNumber: HymnsNumberSeeder.PRAYER_180, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 768, position: 2, content: "Pessoas simples somos,\nComo erva do campo.\nDe manhã crescendo bem,\nMas, logo é ceifada.\nAssim são nossos dias,\nQue passam como sonhos.\nDê-nos sabedoria,\nP'ra Te reconhecermos.", hymnsNumber: HymnsNumberSeeder.PRAYER_180, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 769, position: 3, content: "Senhor, nossos pecados,\nEmbora clandestinos,\nDescubra-os nosso Deus;\nSofrimento nos trazem.\nTua compaixão rogamos;\nSenhor Deus, vem salvar-nos.\nTeu povo, vem ajudar\nP'ra não  ser desviado.", hymnsNumber: HymnsNumberSeeder.PRAYER_180, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 770, position: 1, content: "Salvador benigno, atende,\nNão vás, pois, além!\nEstás abençoando a outros,\nSalva-me também.", hymnsNumber: HymnsNumberSeeder.PRAYER_181, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 771, content: "Cristo! Cristo!\nNão vás, pois além!\nEstás abençoando a outros,\nSalva-me também.", hymnsNumber: HymnsNumberSeeder.PRAYER_181, typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 772, position: 2, content: "Aos teus pés estou prostrado\nCom a contrição;\nPeço-te que me consoles\nEste coração.", hymnsNumber: HymnsNumberSeeder.PRAYER_181, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 773, position: 3, content: "Em virtude do Teu sangue,\nBusco teu favor;\nQue minha alma atribulada\nGoze O teu amor.", hymnsNumber: HymnsNumberSeeder.PRAYER_181, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 774, position: 4, content: "És a fonte de conforto\nDe onde a vida vem,\nDá-me alívio mesmo agora,\nE perdão também.", hymnsNumber: HymnsNumberSeeder.PRAYER_181, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 775, position: 1, content: "Sou cego, ó Jesus,\nMe vem guiar;\nPorque o dia é como a noite\nSejas Tu a me conduzir;\nVem me guiar,\nSou cego ó Jesus.", hymnsNumber: HymnsNumberSeeder.PRAYER_182, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 776, position: 2, content: "Sou infiel, ó Jesus;\nVem me educar;\nQuero ouvir a Tua voz,\nSou ovelha e Tu, o Pastor;\nVem me educar;\nSou infiel, ó Jesus.", hymnsNumber: HymnsNumberSeeder.PRAYER_182, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 777, position: 3, content: "Sou pobre, ó Jesus,\nDesamparado;\nVem restaurar com Teu amor,\nTodo o pecado dissipar;\nDesamparado,\nSou pobre, Jesus.", hymnsNumber: HymnsNumberSeeder.PRAYER_182, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 778, position: 4, content: "Eu Te amo, ó Jesus,\nVem me amparar;\nQue a pobreza e cegueira\nNão me afastem de Ti, Senhor;\nVem me amparar;\nEu Te amo, ó Jesus.", hymnsNumber: HymnsNumberSeeder.PRAYER_182, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 779, position: 1, content: "Ó Senhor eu reconheço,\nTu me dás graça e favor.\nÓ justiça transcendente,\nAlegrar-me, vem Senhor.\nVem Senhor, vem Senhor,\nAlegrar-me, vem Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_183, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 780, position: 2, content: "Ó Pai, não me desampares,\nSim, um pecador eu sou.\nNão renego a Tua graça,\nTenha compaixão de mim.\nCompaixão, compaixão,\nTenha compaixão de mim.", hymnsNumber: HymnsNumberSeeder.PRAYER_183, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 781, position: 3, content: "Não me abandones, Cristo,\nTe confio e Te amo.\nQuero a Tua liberdade,\nVem salvar-me, vem Senhor.\nVem Senhor, vem Senhor,\nVem salvar-me, vem Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_183, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 782, position: 4, content: "Não me deixes, ó Espírito,\nPorque cego  eu estou.\nTu que purificador, és.\nPurifica-me, Senhor.\nVem Senhor, vem Senhor,\nPurifica-me, Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_183, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 783, position: 1, content: "Fala a minh'alma, ó Cristo!\nFala-lhe com amor!\nSegreda com ternura:\n«Eu sou teu Salvador!»\nFaze-me bem disposto\nPara Te obedecer,\nSempre louvar Teu nome\nE dedicar-Te o ser.", hymnsNumber: HymnsNumberSeeder.PRAYER_184, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 784, content: "Faze-me ouvir bem manso,\nEm suave murmurar:\n«Na cruz verti Meu sangue\nPara te libertar».\nFala-me cada dia,\nFala com terno amor,\nSegreda ao meu ouvido:\n«Tu tens um Salvador!»", hymnsNumber: HymnsNumberSeeder.PRAYER_184, typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 785, position: 2, content: "Fala sempre aos Teus filhos,\nDá-lhes Tua direcção;\nEnche-os de grande gozo,\nNa lida, na oração;\nFaze-os bem consagrados,\nProntos a trabalhar,\nPara do Reino eterno\nA vida abreviar.", hymnsNumber: HymnsNumberSeeder.PRAYER_184, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 786, position: 3, content: "Como na antiguidade\nMostravas Teu querer,\nRevela-me hoje e sempre\nQual seja o meu dever;\nA Ti somente eu quero\nLouvores entoar,\nTeu nome eternamente\nEngrandecer e honrar.", hymnsNumber: HymnsNumberSeeder.PRAYER_184, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 787, position: 1, content: "Sou cego ó Deus, em direcção\nÀ longa e vasta estrada vil\nMe venham tuas divinas mãos\nGuiar, Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_185, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 788, position: 2, content: "Embora tenha feito o mal,\nAmargurado meu coração,\nMe venham Tuas lindas mãos\nGuiar, Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_185, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 789, position: 3, content: "Não importa fardo leve transportar,\nO fardo pesado carregar.\nMe venham Tuas fortes mãos\nGuiar, Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_185, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 790, position: 4, content: "Ainda que dano eu sofrer,\nAinda que fome eu sentir.\nMe venham Tuas piedosas mãos\nGuiar, Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_185, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 791, position: 1, content: "Guia-me, meu Salvador;\nSempre me conduz, Senhor;\nCerto, firme e forte estou,\nPois contigo andando vou.", hymnsNumber: HymnsNumberSeeder.PRAYER_186, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 792, content: "Guia, guia,\nSempre guia, Salvador;\nCom ternura, com amor,\nGuia-me, meu Redentor.", hymnsNumber: HymnsNumberSeeder.PRAYER_186, typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 793, position: 2, content: "Confiado sempre em Ti,\nBom auxílio consegui;\nOh! Dirige-me, Senhor,\nNeste mundo enganador!", hymnsNumber: HymnsNumberSeeder.PRAYER_186, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 794, position: 3, content: "Tu me guiarás a mim,\n' Te chegar da vida o fim,\nPara a terra do fulgor,\nNa presença do Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_186, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 795, position: 1, content: "Guia, Cristo, minha nau\nSobre o revoltoso mar;\nTão enfurecido e mau,\nQuer fazê-la naufragar.\nVem, Jesus, oh! vem guiar,\nMinha nau vem pilotar!", hymnsNumber: HymnsNumberSeeder.PRAYER_187, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 796, position: 2, content: "Como sabe serenar\nBoa mãe o filho seu,\nVem, acalma, assim, o mar\nQue se eleva até ao céu.\nVem, Jesus, oh! vem guiar,\nMinha nau vem pilotar!", hymnsNumber: HymnsNumberSeeder.PRAYER_187, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 797, position: 3, content: "Se, no porto quando entrar,\nMais o mar se enfurecer,\nQue me possa deleitar\nEm ouvir Jesus dizer:\n«Entra, pobre viajor,\nNo descanso do Senhor».", hymnsNumber: HymnsNumberSeeder.PRAYER_187, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 798, position: 1, content: "Santa hora de oração,\nReina paz divinal,\nE volvemos a Cristo,\nO Amigo leal;\nHora santa em que a Jesus\nNós podemos falar,\nQue poder para a alma!\nOh, quão doce é orar!", hymnsNumber: HymnsNumberSeeder.PRAYER_188, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 799, content: "Doce é orar,\nCom fervor orar!\nQue poder para a alma!\nOh! quão doce é orar!", hymnsNumber: HymnsNumberSeeder.PRAYER_188, typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 800, position: 2, content: "Santa hora de oração,\nQuando a alma conduz\nOs pesares da vida\nAos pés de Jesus,\nE prorrompe em Seu louvor\nCom as ondas do mar,\nQue poder para a alma!\nOh, quão doce é orar!", hymnsNumber: HymnsNumberSeeder.PRAYER_188, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 801, position: 3, content: "Santa hora de oração,\nQuando o vil tentador\nÉ vencido com forças\nQue vêm do Senhor,\nQuando o céu se pode ver,\nSua glória sem par,\nQue poder para a alma!\nOh, quão doce é orar!", hymnsNumber: HymnsNumberSeeder.PRAYER_188, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 802, position: 1, content: "Bendita a hora de oração,\nPois traz-nos paz ao coração,\nE sobrepuja toda a dor,\nTrazendo auxílio do Senhor.\nEm tempo de perturbação,\nNa dor maior, na tentação,\nProcurarei com mais fervor\nA comunhão com o meu Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_189, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 803, position: 2, content: "Bendita a hora de oração,\nProduto só da devoção,\nQue eleva ao céu o seu odor\nEm doce cheiro ao meu Senhor.\nE finda a hora da aflição,\nOs dias maus, a tentação\nEntão darei melhor louvor\nA meu Jesus, a meu Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_189, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 804, position: 3, content: "Bendita a hora de oração,\nPois liga-nos em Comunhão,\nE traz-nos fé e mais amor,\nEnchendo o mundo de dulçor.\nDesejo enquanto aqui me achar\nCom fé, amor, constante orar;\nDepois da morte, do pavor,\nEntão será, sim, só louvor.", hymnsNumber: HymnsNumberSeeder.PRAYER_189, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 805, position: 1, content: "Oh! Quando o momento chegar\nDe eu ir com Jesus habitar,\nEm paz eu verei meu Senhor\nEm todo o seu esplendor.", hymnsNumber: HymnsNumberSeeder.PRAYER_190, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 806, content: "Excelsa paz\nHei-de gozar afinal,\nQuando eu com Jesus me encontrar\nNo reino celestial.", hymnsNumber: HymnsNumberSeeder.PRAYER_190, typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 807, position: 2, content: "Que graça real, eficaz,\nA qual me outorgou plena paz,\nMercê que meu bom Salvador\nMe dispensou com amor.", hymnsNumber: HymnsNumberSeeder.PRAYER_190, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 808, position: 3, content: "Em Cristo há perfeito perdão,\nHá n'Ele real salvação,\nHá n'Ele também essa paz\nQue agora me satisfaz.", hymnsNumber: HymnsNumberSeeder.PRAYER_190, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 809, position: 1, content: "Vem guiar-me, ó Deus eterno,\nNeste mundo ermo e vão\nEu sou débil; Tu és forte;\nOh, vem dar-me a Tua mão\nPão da Vida. Pão da Vida,\nVem nutrir meu coração.", hymnsNumber: HymnsNumberSeeder.PRAYER_191, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 810, position: 2, content: "Abre a fonte cristalina\nDe água pura e salutar;\nE que a nuvem luminosa\nVá comigo a me guiar,\nForte Amigo, Forte Amigo,\nVem na luta me amparar.", hymnsNumber: HymnsNumberSeeder.PRAYER_191, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 811, position: 3, content: "Do Jordão chegando às margens\nVem meu medo expulsar.\nFaz-me, ó vencedor da Morte,\nSalvo à Canaan chegar;\nE louvores, e louvores\nSempre, sempre, Te hei-de dar.", hymnsNumber: HymnsNumberSeeder.PRAYER_191, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 812, position: 1, content: "Fala Senhor, ao Teu servo;\n'Stou esperando Tua voz.\nQuero agora escutá-la;\nFala, fala, ó Senhor.\nEsperando estou, de Ti.\nQuando Tu falares p'ra mim.", hymnsNumber: HymnsNumberSeeder.PRAYER_192, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 813, position: 2, content: "Chama-me p'lo nome, chama,\nP'ra reconhecer Tua voz.\nFala p'ra que eu possa ouvir-te,\nCom imensa ânsia ouvir.\nP'ra onde me dirigir,\nPara ali eu seguirei.", hymnsNumber: HymnsNumberSeeder.PRAYER_192, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 814, position: 3, content: "Difunde em mim a Tua palavra\nP'ra não estar em confusão.\nFala Senhor, pois bem sabes,\nGrande é a santidade em Ti.\nEu desejo encher-me sim;\nAbençoa-me Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_192, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 815, position: 4, content: "Fala, Senhor e me ajuda,\nPara sempre Te seguir.\nE obedecer-Te sempre\nEm Tudo o que a mim ordenar.\nPurifica-me, Senhor;\nFaça-me um cumpridor.", hymnsNumber: HymnsNumberSeeder.PRAYER_192, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 816, position: 1, content: "Guia-nos ó nosso Deus Pai,\nPorque sós nos desviamos,\nTu Senhor és poderoso;\nNão há outro amparador;\nSe junto viver connosco,\nCaminhamos sem temor.", hymnsNumber: HymnsNumberSeeder.PRAYER_193, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 817, position: 2, content: "Salve ó Deus a nossa vida,\nTão iníqua e sem destino;\nE no mundo em que vivemos,\nCheio está de tentações;\nDas tristezas e agonias,\nLivra-nos, ó nosso Deus.", hymnsNumber: HymnsNumberSeeder.PRAYER_193, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 818, position: 3, content: "Vivifique-nos ó Cristo,\nViva em nossos corações;\nReine Tua força em nós,\nFortaleça a nossa fé.\nP’ra que certos bem marchemos,\nTriunfantes contra o mal.", hymnsNumber: HymnsNumberSeeder.PRAYER_193, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 819, position: 1, content: "Ó Deus escolhe os servos Teus,\nIsentos d’uma vida vã;\nPropensos apenas sim, a justiça,\nNo pensamento e nas acções.", hymnsNumber: HymnsNumberSeeder.PRAYER_194, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 820, position: 2, content: "Aos dignos chame ó Deus de amor,\nQue dão exemplo verdadeiro,\nP'ra serem fortes, na tua obra,\nMostrando um testemunho firme.", hymnsNumber: HymnsNumberSeeder.PRAYER_194, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 821, position: 3, content: "Ó Deus, escolhe homens francos,\nDoutos de amor e paciência,\nQue são bondosos e reverentes,\nSublimes em actos e palavras.", hymnsNumber: HymnsNumberSeeder.PRAYER_194, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 822, position: 4, content: "Ó Deus, escolhe corajosos,\nQue lutam contra a injustiça,\nSão estes homens, mui preciosos,\nPara as nações, com amor, servir.", hymnsNumber: HymnsNumberSeeder.PRAYER_194, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 823, position: 1, content: "Careço de Jesus,\nSempre de ti Senhor.\nSomente a tua voz\nTem para mim valor.", hymnsNumber: HymnsNumberSeeder.PRAYER_195, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 824, content: "De Ti Senhor careço,\nSempre de Ti careço;\nOh! Dá-me a Tua bênção\nAspiro a Ti.", hymnsNumber: HymnsNumberSeeder.PRAYER_195, typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 825, position: 2, content: "Careço de Jesus,\nUnido a Ti Senhor.\nPecado e tentação\nPerdem o seu vigor.", hymnsNumber: HymnsNumberSeeder.PRAYER_195, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 826, position: 3, content: "Careço de Jesus,\nRege meu coração.\nEnsina-me a viver\nEm santa rectidão.", hymnsNumber: HymnsNumberSeeder.PRAYER_195, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 827, position: 4, content: "Careço de Jesus,\nNas trevas e na luz.\nSem Ti a vida é vã;\nSou pobre sem Jesus.", hymnsNumber: HymnsNumberSeeder.PRAYER_195, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 828, position: 5, content: "Careço de Jesus,\nDo sol dos altos céus.\nLiga-me sempre a Ti,\nFilho do eterno Deus.", hymnsNumber: HymnsNumberSeeder.PRAYER_195, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 829, position: 1, content: "As Tuas mãos dirigem meu destino,\nÓ Deus de amor, que sempre seja assim!\nTeus são os meus poderes, minha vida,\nEm tudo, eterno Pai, dispõe de mim.", hymnsNumber: HymnsNumberSeeder.PRAYER_196, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 830, position: 2, content: "As Tuas mãos dirigem meu destino,\nGravadas dantes na sangrenta cruz;\nPor meus pecados foram trespassadas\nBem posso nelas descansar, Jesus.", hymnsNumber: HymnsNumberSeeder.PRAYER_196, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 831, position: 3, content: "As Tuas mãos dirigem meu destino:\nAcasos, para mim não haverá.\nO grande Pai vigia o meu caminho,\nE sem motivo não me afligirá.", hymnsNumber: HymnsNumberSeeder.PRAYER_196, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 832, position: 4, content: "Meus dias, sejam curtos ou compridos\nPassados em tristezas ou prazer,\nEm sombra ou luz, é tudo como ordenas!\nEu tenho por benvindo o Teu querer.", hymnsNumber: HymnsNumberSeeder.PRAYER_196, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 833, position: 1, content: "Luz do mundo, Jesus Cristo!\nVem, dissipa as ilusões,\nTira o véu dos nossos olhos,\nIlumina os corações.\nPara ver-te, para ver-te!\nCumpre nossas orações! (2x)", hymnsNumber: HymnsNumberSeeder.PRAYER_197, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 834, position: 2, content: "Nos desertos deste mundo,\nOnde reina Satanás,\nResplandeça o Evangelho,\nBrilhem Tua graça e paz;\nLuz divina, luz divina,\nVença toda luz falaz! (2x)", hymnsNumber: HymnsNumberSeeder.PRAYER_197, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 835, position: 3, content: "Onde as trevas do pecado\nObscurecem teu amor,\nFaze a luz do Teu ensino\nDominar, ó Salvador.\nResplandeça, resplandeça\nTua glória, ó Redentor! (2x)", hymnsNumber: HymnsNumberSeeder.PRAYER_197, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 836, position: 4, content: "Luz dos homens! Luz da vida!\nBrilha com poder nos Teus!\nEsclarece as suas almas,\nMostra-lhes o Dom de Deus!\nLuz do mundo, luz do mundo!\nEis o resplendor dos céus! (2x)", hymnsNumber: HymnsNumberSeeder.PRAYER_197, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 837, position: 1, content: "Tu anseias hoje mesmo a salvação?\nTens desejo de banir a escuridão?\nAbre, então, de par em par teu coração!\nDeixa a luz do céu entrar!", hymnsNumber: HymnsNumberSeeder.PRAYER_198, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 838, content: "Deixa a luz do céu entrar! (2x)\nAbre bem a porta do teu coração!\nDeixa a luz do céu entrar!", hymnsNumber: HymnsNumberSeeder.PRAYER_198, typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 839, position: 2, content: "Cristo, a luz do céu, em ti quer habitar,\nPara as trevas do pecado dissipar,\nTeu caminho e coração iluminar!\nDeixa a luz do céu entrar!", hymnsNumber: HymnsNumberSeeder.PRAYER_198, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 840, position: 3, content: "Que alegria andar ao brilho dessa luz!\nVida eterna e paz no coração produz!\nOh, aceita agora o Salvador Jesus!\nDeixa a luz do céu entrar!", hymnsNumber: HymnsNumberSeeder.PRAYER_198, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 841, position: 1, content: "Vem, ó Todo-poderoso,\nAdorável Criador,\nPai eterno e caridoso,\nVem, revela o Teu amor.", hymnsNumber: HymnsNumberSeeder.PRAYER_199, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 842, position: 2, content: "Vem, ó Salvador benigno,\nDeus de nossa salvação.\nVem, confirma o Teu ensino;\nVive em cada coração.", hymnsNumber: HymnsNumberSeeder.PRAYER_199, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 843, position: 3, content: "Vem, Espírito de graça,\nNosso culto abençoar.\nDeus Consolador, enlaça\nTeus fiéis neste lugar.", hymnsNumber: HymnsNumberSeeder.PRAYER_199, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 844, position: 4, content: "Esclarece nossas mentes\nDeus de graça Deus de amor,\nPara que sejamos crentes\nDignos de Jesus, Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_199, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 845, position: 1, content: "Firme nas promessas do meu Salvador,\nCantarei louvores ao meu Criador.\nFico pelos séculos do seu Amor.\nFirme nas promessas de Jesus.", hymnsNumber: HymnsNumberSeeder.PRAYER_200, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 846, content: "Firme, firme,\nFirme nas promessas de Jesus meu Mestre.\nFirme, firme,\nSim, firme nas promessas de Jesus.", hymnsNumber: HymnsNumberSeeder.PRAYER_200, typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 847, position: 2, content: "Firme nas promessas, não irei falhar,\nVindo as tempestades a me consternar;\nPelo Verbo eterno eu hei-de trabalhar,\nFirme nas promessas de Jesus.", hymnsNumber: HymnsNumberSeeder.PRAYER_200, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 848, position: 3, content: "Firme nas promessas sempre vejo assim\nPurificação no sangue para mim;\nPlena liberdade gozarei, sem fim,\nFirme nas promessas de Jesus.", hymnsNumber: HymnsNumberSeeder.PRAYER_200, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 849, position: 4, content: "Firme nas promessas do Senhor Jesus,\nEm amor ligado com a sua cruz,\nCada dia mais alegro-me na luz,\nFirme nas promessas de Jesus.", hymnsNumber: HymnsNumberSeeder.PRAYER_200, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 850, position: 1, content: "Não somente pra fazer\nUm feito singular\nÉ mister agir com muito ardor,\nMas as coisas mais humildes\nPara executar,\nDeves fazê-las com fervor.", hymnsNumber: HymnsNumberSeeder.PRAYER_201, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 851, content: "Brilha no meio do teu viver, (2x)\nPois talvez algum aflito possas socorrer;\nBrilha no meio do teu viver.", hymnsNumber: HymnsNumberSeeder.PRAYER_201, typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 852, position: 2, content: "Oh, talvez alguma vida\nPossas alegrar\nCom palavras doces, em amor;\nOu talvez algumas almas\nTristes alcançar\nCom a mensagem do Senhor.", hymnsNumber: HymnsNumberSeeder.PRAYER_201, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 853, position: 3, content: "Por maior que seja teu esforço\nA exercer,\nPor mais firme a tua devoção,\nEm redor, oh, quantas almas\nVivem sem prazer!\nJazem na negra escuridão.", hymnsNumber: HymnsNumberSeeder.PRAYER_201, typeStanza: HymnsContentCode.VERSE),
+
+    HymnsContent(id: 854, position: 1, content: "Dirijo a Ti, Jesus, minha oração,\nA Ti que tudo vês no coração.\nEu venho-Te adorar,\nTua graça suplicar;\nÓ vem-me abençoar;\nVem já, meu Deus!", hymnsNumber: HymnsNumberSeeder.PRAYER_202, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 855, position: 2, content: "Dirijo a Ti, Jesus, minha oração,\nDo mal que pratiquei,\nA confissão.\nSê Tu, ó meu Senhor,\nPropício ao pecador;\nConcede, em teu amor,\nPleno perdão!", hymnsNumber: HymnsNumberSeeder.PRAYER_202, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 856, position: 3, content: "Dirijo a Ti, Jesus, minha oração,\nA Ti que amparo és em aflição;\nÓ vem-me consolar,\nMinha alma confortar,\nP'ra nunca me afastar\nDe Ti, Senhor!", hymnsNumber: HymnsNumberSeeder.PRAYER_202, typeStanza: HymnsContentCode.VERSE),
+    HymnsContent(id: 857, position: 4, content: "Escuta, meu Jesus, esta oração,\nQue humilde faço a Ti\nCom gratidão.\nTu és meu Mediador,\nMeu Rei e Salvador;\nPossa eu em teu amor\nSempre viver!", hymnsNumber: HymnsNumberSeeder.PRAYER_202, typeStanza: HymnsContentCode.VERSE),
+
+  ];
+}

@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ieca_mobile/enums/PsalmsPerson.dart';
 import 'package:ieca_mobile/models/PsalmsTitle.dart';
 import 'package:ieca_mobile/repository/PsalmsContentRepository.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
-import 'package:ieca_mobile/widgets/modal_button_top.dart';
+import 'package:ieca_mobile/widgets/items/_import.dart';
 
 class PsalmsContentModalBottomSheet extends StatefulWidget {
   final PsalmsTitle psalmsTitle;
@@ -22,16 +20,15 @@ class _PsalmsContentModalBottomSheetState extends State<PsalmsContentModalBottom
 
   @override
   Widget build(BuildContext context) {
-    final colorSchema = AppTheme.colorScheme(context);
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
+      padding: const EdgeInsets.only(top: 40),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
         spacing: 10,
         children: <Widget>[
-          const ModalButtonTop(),
           Container(
               alignment: Alignment.topLeft,
               padding: const EdgeInsets.only(left: 20, right: 20,),
@@ -46,13 +43,7 @@ class _PsalmsContentModalBottomSheetState extends State<PsalmsContentModalBottom
                     children: snapshot.requireData.map((it) {
                           return Padding(
                             padding: const EdgeInsets.only(top: 15, left: 20, right: 20,),
-                            child: Text(
-                              it.content,
-                              style: TextStyle(
-                                fontWeight: it.person == PsalmsPerson.CONGREGATION ? FontWeight.w700 : null,
-                                color: it.person == PsalmsPerson.CONGREGATION ? colorSchema.primary : null,
-                              ),
-                            ),
+                            child: PsalmsContentItem(psalmsContent: it),
                           );
                         }).toList(),
                   );

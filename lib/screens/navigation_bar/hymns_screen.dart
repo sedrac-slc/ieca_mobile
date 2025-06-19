@@ -43,7 +43,9 @@ class _HymnsScreenState extends State<HymnsScreen> {
           Container(
             padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
             color: colorBar,
-            child: InputSearch(),
+            child: InputSearch(onSearch: (text) {
+
+            },),
           ),
           BadgeContainer(
             text: "Tipo",

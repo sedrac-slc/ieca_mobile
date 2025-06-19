@@ -7,3 +7,4 @@ export 'LitanyContent.dart';
 export 'LitanyTitle.dart';
 export 'PsalmsContent.dart';
 export 'PsalmsTitle.dart';
+export 'LanguageSection.dart';

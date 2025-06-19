@@ -6,9 +6,8 @@ class PsalmsContent {
   final PsalmsTitle psalmsTitle;
   final String content;
   final int position;
-  final String lang;
 
-  PsalmsContent({required this.id, required this.person, required this.psalmsTitle, required this.content, required this.position, required this.lang});
+  PsalmsContent({required this.id, required this.person, required this.psalmsTitle, required this.content, required this.position});
 
   Map<String, dynamic> toMap() {
     return {
@@ -17,7 +16,6 @@ class PsalmsContent {
       'psalmsTitle': psalmsTitle.toMap(),
       'content': content,
       'position': position,
-      'lang': lang,
     };
   }
 
@@ -28,13 +26,12 @@ class PsalmsContent {
       psalmsTitle: item,
       content: map['content'] as String,
       position: map['position'] as int,
-      lang: map['lang'] as String,
     );
   }
 
   @override
   String toString() {
-    return "PersonContent(id= $id, person= $person, content=$content, position=$position, lang=$lang)";
+    return "PersonContent(id= $id, person= $person, content=$content, position=$position)";
   }
 
 }

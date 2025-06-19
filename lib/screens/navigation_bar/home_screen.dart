@@ -1,12 +1,37 @@
+import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/l10n/app_localizations.dart';
+import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/repository/LanguageSectionRepository.dart';
+import 'package:ieca_mobile/seeders/_import.dart';
 import 'package:ieca_mobile/util/AppIconData.dart';
 import 'package:ieca_mobile/util/AppTheme.dart';
 import 'package:flutter/material.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
 import 'package:ieca_mobile/widgets/logo_ieca.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  ValueNotifier<LanguageSection> _languageSection = ValueNotifier(LanguageSectionSeeder.PORTUGUES);
+  ValueNotifier<List<LanguageSection>> _languageSections = ValueNotifier([]);
+
+  @override
+  void initState() {
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      await _initData();
+    });
+    super.initState();
+  }
+
+  _initData() async {
+    final repository = LanguageSectionRepository();
+    _languageSections.value = await repository.getAll();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -55,6 +80,40 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
+          ),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+            width: MediaQuery.of(context).size.width,
+            child: ValueListenableBuilder<List<LanguageSection>>(
+                valueListenable: _languageSections,
+                builder: (_, _, _) {
+                  return Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      Text("Secção do hinário", style: GoogleFonts.roboto(fontSize: 15)),
+                      ValueListenableBuilder<LanguageSection>(
+                          valueListenable: _languageSection,
+                          builder: (_, _, _) {
+                            return DropdownButton<LanguageSection>(
+                              isExpanded: true,
+                              value: _languageSection.value,
+                              icon: const Icon(Icons.keyboard_arrow_down),
+                              items: _languageSections.value.map((LanguageSection item) {
+                                return DropdownMenuItem(value: item, child: Text(item.name));
+                              }).toList(),
+                              onChanged: (LanguageSection? newValue) {
+                                if(newValue != null)  {
+                                  _languageSection.value = newValue;
+                                }
+                              },
+                            );
+                          }
+                      ),
+                    ],
+                  );
+                }
+            )
           ),
           BadgeContainer(
             text: "Histórico",

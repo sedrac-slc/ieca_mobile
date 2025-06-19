@@ -1,9 +1,12 @@
-import 'package:ieca_mobile/l10n/app_localizations.dart';
-import 'package:ieca_mobile/models/InvocationTitle.dart';
+import 'dart:isolate';
+
 import 'package:ieca_mobile/repository/InvocationTitleRepository.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
+import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
+import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/util/AppTheme.dart';
 import 'package:flutter/material.dart';
+import 'package:ieca_mobile/widgets/search/_import.dart';
 
 class InvocationScreen extends StatefulWidget {
   const InvocationScreen({super.key});
@@ -13,7 +16,10 @@ class InvocationScreen extends StatefulWidget {
 }
 
 class _InvocationScreenState extends State<InvocationScreen> {
+  final ValueNotifier<Map<InvocationTitle, List<InvocationContent>>> _invocationSearch = ValueNotifier({},);
   final ValueNotifier<List<InvocationTitle>> _invocationTitles = ValueNotifier([],);
+  final ValueNotifier<bool> _isSearch = ValueNotifier(false);
+  final _repository = InvocationTitleRepository();
 
   @override
   void initState() {
@@ -24,8 +30,15 @@ class _InvocationScreenState extends State<InvocationScreen> {
   }
 
   _initData() async {
-    final repository = InvocationTitleRepository();
-    _invocationTitles.value = await repository.getAll();
+    _invocationTitles.value = await _repository.getAll();
+  }
+
+  @override
+  void dispose() {
+    _invocationSearch.dispose();
+    _invocationTitles.dispose();
+    _isSearch.dispose();
+    super.dispose();
   }
 
   @override
@@ -35,9 +48,7 @@ class _InvocationScreenState extends State<InvocationScreen> {
       appBar: AppBar(
         title: TextTitleBar(text: AppLocalizations.of(context)!.invocation, color: Colors.white,),
         centerTitle: true,
-        actions: <Widget>[
-          const ButtonSetting()
-        ],
+        actions: <Widget>[const ButtonSetting()],
         backgroundColor: colorBar,
       ),
       body: Column(
@@ -46,32 +57,79 @@ class _InvocationScreenState extends State<InvocationScreen> {
           Container(
             padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
             color: colorBar,
-            child: InputSearch(),
+            child: InputSearch(
+                onSearch: (text) async {
+                  _invocationSearch.value = await _repository.getSearch(text);
+                  if(!_isSearch.value) _isSearch.value = true;
+                },
+                onClear: () async {
+                  await _initData();
+                  _isSearch.value = false;
+                },
+            ),
           ),
           Expanded(
             child: Container(
               padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
-              child: ValueListenableBuilder<List<InvocationTitle>>(
-                valueListenable: _invocationTitles,
-                builder: (_, _, _) {
-                  return ListView.separated(
-                    itemCount: _invocationTitles.value.length,
-                    separatorBuilder: (context, index) => Padding(padding: EdgeInsets.symmetric(vertical: 5)),
-                    itemBuilder: (context, index) {
-                      final item = _invocationTitles.value[index];
-                      return InvocationTile(item: item, onPressed: () {
-                        showModalBottomSheet(context: context, builder: (_)  {
-                          return InvocationContentModalBottomSheet(invocationTitle: item);
-                        });
-                      });
-                    },
-                  );
-                },
+              child: ValueListenableBuilder<bool>(
+                valueListenable: _isSearch,
+                builder: (_, value, _) {
+                  return !value
+                      ? ValueListenableBuilder<List<InvocationTitle>>(
+                          valueListenable: _invocationTitles,
+                          builder: (_, _, _)  => _PanelInvocation(invocationTitles: _invocationTitles.value)
+                        )
+                      : ValueListenableBuilder<Map<InvocationTitle, List<InvocationContent>>>(
+                          valueListenable: _invocationSearch,
+                          builder: (_, _, _) => _PanelInvocationSearch(map: _invocationSearch.value)
+                      );
+                }
               ),
             ),
           )
         ],
       ),
+    );
+  }
+}
+
+class _PanelInvocation extends StatelessWidget{
+  final List<InvocationTitle> invocationTitles;
+
+  const _PanelInvocation({required this.invocationTitles});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.separated(
+      itemCount: invocationTitles.length,
+      separatorBuilder: (context, index) => const Padding(padding: EdgeInsets.symmetric(vertical: 5)),
+      itemBuilder: (context, index) {
+        final item = invocationTitles[index];
+        return InvocationTile(item: item, onPressed: () {
+          showModalBottomSheet(context: context, isScrollControlled: true, builder: (_)  {
+            return InvocationContentModalBottomSheet(invocationTitle: item);
+          });
+        });
+      },
+    );
+  }
+}
+
+class _PanelInvocationSearch extends StatelessWidget {
+  final Map<InvocationTitle, List<InvocationContent>> map;
+
+  const _PanelInvocationSearch({required this.map});
+
+  @override
+  Widget build(BuildContext context) {
+    final entries = map.entries.toList();
+    return ListView.separated(
+      itemCount: entries.length,
+      separatorBuilder: (context, index) => const Padding(padding: EdgeInsets.symmetric(vertical: 5)),
+      itemBuilder: (context, index) {
+        final entry = entries[index];
+        return InvocationMapSearch(item: entry,);
+      },
     );
   }
 }

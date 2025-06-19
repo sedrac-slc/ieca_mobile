@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ieca_mobile/enums/_import.dart';
 import 'package:ieca_mobile/models/LitanyTitle.dart';
 import 'package:ieca_mobile/repository/LitanyContentRepository.dart';
-import 'package:ieca_mobile/util/AppTheme.dart';
-import 'package:ieca_mobile/widgets/modal_button_top.dart';
+import 'package:ieca_mobile/widgets/items/litany_content_item.dart';
 
 class LitanyContentModalBottomSheet extends StatefulWidget {
   final LitanyTitle litanyTitle;
@@ -23,16 +21,15 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
 
   @override
   Widget build(BuildContext context) {
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
+      padding: const EdgeInsets.only(top: 40),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         mainAxisSize: MainAxisSize.max,
         spacing: 10,
         children: <Widget>[
-          const ModalButtonTop(),
           Container(
             padding: const EdgeInsets.only(left: 20, right: 20, top: 5, bottom: 5),
             alignment: Alignment.topLeft,
@@ -47,31 +44,7 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
                     children: snapshot.requireData.map((it) {
                           return Padding(
                             padding: const EdgeInsets.only(bottom: 15, left: 20, right: 20,),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  spacing: 10,
-                                  children: [
-                                    Text(it.litanyPerson(), style: TextStyle(color: colorBar, fontWeight: FontWeight.w700),),
-                                    if (it.person == LitanyPerson.CONGREGATION) ...[
-                                      _BackgroundPanel(
-                                          child: Text(it.content, style: TextStyle(fontWeight: FontWeight.w700),)
-                                      )
-                                    ] else ... [
-                                      _BackgroundPanel(
-                                          child: Text(it.content)
-                                      )
-                                    ],
-                                  ],
-                                ),
-                                Container(
-                                    alignment: Alignment.bottomRight,
-                                    child: Text(it.books, textAlign: TextAlign.right,)
-                                ),
-                              ],
-                            ),
+                            child: LitanyContentItem(litanyContent: it),
                           );
                         }).toList(),
                   );
@@ -85,24 +58,6 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
           ),
         ],
       ),
-    );
-  }
-}
-
-class _BackgroundPanel extends StatelessWidget{
-  final Widget child;
-
-  const _BackgroundPanel({required this.child});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(5),
-      decoration: BoxDecoration(
-          color: Colors.grey.withAlpha(50),
-          borderRadius: BorderRadius.circular(10)
-      ),
-      child: child,
     );
   }
 }

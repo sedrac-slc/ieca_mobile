@@ -5,10 +5,9 @@ class InvocationContent {
   final InvocationTitle invocationTitle;
   final String content;
   final int position;
-  final String lang;
   final String books;
 
-  InvocationContent({required this.id, required this.invocationTitle, required this.content, required this.position, required this.lang, this.books = ""});
+  InvocationContent({required this.id, required this.invocationTitle, required this.content, required this.position, this.books = ""});
 
   Map<String, dynamic> toMap() {
     return {
@@ -16,7 +15,6 @@ class InvocationContent {
       'invocationTitle': invocationTitle.toMap(),
       'content': content,
       'position': position,
-      'lang': lang,
       'books': books
     };
   }
@@ -27,9 +25,13 @@ class InvocationContent {
       invocationTitle: item,
       content: map['content'] as String,
       position: map['position'] as int,
-      lang: map['lang'] as String,
       books: map['books'] as String,
     );
+  }
+
+  @override
+  String toString() {
+    return "InvocationContent(id=$id, position=$position, content=$content, books=$books)";
   }
 
 }

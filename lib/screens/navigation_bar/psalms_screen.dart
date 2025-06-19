@@ -1,5 +1,6 @@
 import 'package:ieca_mobile/l10n/app_localizations.dart';
-import 'package:ieca_mobile/models/PsalmsTitle.dart';
+import 'package:ieca_mobile/widgets/search/map/_import.dart';
+import 'package:ieca_mobile/models/_import.dart';
 import 'package:ieca_mobile/repository/PsalmsTitleRepository.dart';
 import 'package:ieca_mobile/util/AppTheme.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
@@ -13,7 +14,10 @@ class PsalmsScreen extends StatefulWidget {
 }
 
 class _PsalmsScreenState extends State<PsalmsScreen> {
+  final ValueNotifier<Map<PsalmsTitle, List<PsalmsContent>>> _psalmsSearch = ValueNotifier({},);
   final ValueNotifier<List<PsalmsTitle>> _psalmsTitles = ValueNotifier([]);
+  final ValueNotifier<bool> _isSearch = ValueNotifier(false);
+  final _repository = PsalmsTitleRepository();
 
   @override
   void initState() {
@@ -24,8 +28,7 @@ class _PsalmsScreenState extends State<PsalmsScreen> {
   }
 
   _initData() async {
-    final repository = PsalmsTitleRepository();
-    _psalmsTitles.value = await repository.getAll();
+    _psalmsTitles.value = await _repository.getAll();
   }
 
   @override
@@ -46,32 +49,79 @@ class _PsalmsScreenState extends State<PsalmsScreen> {
           Container(
               padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
               color: colorBar,
-              child: InputSearch(),
+              child: InputSearch(
+                onSearch: (text) async {
+                  _psalmsSearch.value = await _repository.getSearch(text);
+                  if(!_isSearch.value) _isSearch.value = true;
+                },
+                onClear: () async {
+                  await _initData();
+                  _isSearch.value = false;
+                },
+              ),
           ),
           Expanded(
             child: Container(
               padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10,),
-              child: ValueListenableBuilder<List<PsalmsTitle>>(
-                valueListenable: _psalmsTitles,
-                builder: (_, _, _) {
-                  return ListView.separated(
-                    itemCount: _psalmsTitles.value.length,
-                    separatorBuilder: (context, index) => Padding(padding: EdgeInsets.symmetric(vertical: 5)),
-                    itemBuilder: (context, index) {
-                      final item = _psalmsTitles.value[index];
-                      return PsalmsTile(psalmsTitle: item, onPressed: () {
-                        showModalBottomSheet(context: context, builder: (_) {
-                          return PsalmsContentModalBottomSheet(psalmsTitle: item);
-                        });
-                      });
-                    },
-                  );
-                },
+              child: ValueListenableBuilder<bool>(
+                  valueListenable: _isSearch,
+                  builder: (_, value, _) {
+                    return !value
+                        ? ValueListenableBuilder<List<PsalmsTitle>>(
+                            valueListenable: _psalmsTitles,
+                            builder: (_, _, _)  => _PanelPsalms(psalmsTitles: _psalmsTitles.value)
+                        )
+                        : ValueListenableBuilder<Map<PsalmsTitle, List<PsalmsContent>>>(
+                            valueListenable: _psalmsSearch,
+                            builder: (_, _, _) => _PanelPsalmsSearch(map: _psalmsSearch.value)
+                    );
+                  }
               ),
             ),
           ),
         ],
       ),
+    );
+  }
+}
+
+class _PanelPsalms extends StatelessWidget{
+  final List<PsalmsTitle> psalmsTitles;
+
+  const _PanelPsalms({required this.psalmsTitles});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.separated(
+      itemCount: psalmsTitles.length,
+      separatorBuilder: (context, index) => Padding(padding: EdgeInsets.symmetric(vertical: 5)),
+      itemBuilder: (context, index) {
+        final item = psalmsTitles[index];
+        return PsalmsTile(psalmsTitle: item, onPressed: () {
+          showModalBottomSheet(context: context, isScrollControlled: true, builder: (_) {
+            return PsalmsContentModalBottomSheet(psalmsTitle: item);
+          });
+        });
+      },
+    );
+  }
+}
+
+class _PanelPsalmsSearch extends StatelessWidget {
+  final Map<PsalmsTitle, List<PsalmsContent>> map;
+
+  const _PanelPsalmsSearch({required this.map});
+
+  @override
+  Widget build(BuildContext context) {
+    final entries = map.entries.toList();
+    return ListView.separated(
+      itemCount: entries.length,
+      separatorBuilder: (context, index) => const Padding(padding: EdgeInsets.symmetric(vertical: 5)),
+      itemBuilder: (context, index) {
+        final entry = entries[index];
+        return PsalmsMapSearch(item: entry,);
+      },
     );
   }
 }

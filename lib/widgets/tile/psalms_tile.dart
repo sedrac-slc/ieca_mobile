@@ -3,7 +3,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/models/PsalmsTitle.dart';
 import 'package:ieca_mobile/util/AppTheme.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
-import 'package:ieca_mobile/widgets/badge/number_background_leading.dart';
 
 class PsalmsTile extends StatelessWidget {
   final PsalmsTitle psalmsTitle;
@@ -25,7 +24,6 @@ class PsalmsTile extends StatelessWidget {
       child: InkWell(
         onTap: onPressed,
         child: ListTile(
-          leading: NumberBackgroundLeading(number: psalmsTitle.position),
           title: Text(
             psalmsTitle.name,
             overflow: TextOverflow.ellipsis,

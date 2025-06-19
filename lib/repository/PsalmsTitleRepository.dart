@@ -1,26 +1,18 @@
-import 'package:ieca_mobile/db/_import.dart';
-import 'package:ieca_mobile/models/PsalmsTitle.dart';
+import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:collection/collection.dart';
 
 class PsalmsTitleRepository{
-  late Database database;
-  late List<PsalmsTitle> _list;
 
-  PsalmsTitleRepository() {
-    _initRepository();
+  Future<List<PsalmsTitle>> getAll() async {
+    return await PsalmsTitleSeeder.items();
   }
 
-  List<PsalmsTitle> get list => _list;
-
-  _initRepository() async {
-    database = await DBConn.instance.database;
-  }
-
-  Future< List<PsalmsTitle> > getAll() async {
-    await _initRepository();
-    final List<Map<String, dynamic>> maps = await database.query(PsalmsTitleSql.TABLE_NAME);
-    return List.generate(maps.length, (i) {
-      return PsalmsTitle.fromMap(maps[i]);
-    });
+  Future<Map<PsalmsTitle, List<PsalmsContent>>> getSearch(String text) async {
+    final list = await PsalmsContentSeeder.items();
+    final searchText = text.toLowerCase();
+    final filteredItems = list.where((item) =>item.content.toLowerCase().contains(searchText));
+    return groupBy(filteredItems, (PsalmsContent item) => item.psalmsTitle);
   }
 
 }

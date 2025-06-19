@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/models/InvocationTitle.dart';
 import 'package:ieca_mobile/repository/InvocationContentRepository.dart';
-import 'package:ieca_mobile/widgets/badge/number_background_center.dart';
-import 'package:ieca_mobile/widgets/modal_button_top.dart';
+import 'package:ieca_mobile/widgets/items/_import.dart';
 
 class InvocationContentModalBottomSheet extends StatefulWidget {
   final InvocationTitle invocationTitle;
@@ -28,12 +27,12 @@ class _InvocationContentModalBottomSheetState
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
+      padding: const EdgeInsets.only(top: 40),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
         spacing: 10,
         children: <Widget>[
-          const ModalButtonTop(),
           Expanded(
             child: FutureBuilder(
               future: _invocationContentRepository.getBy(
@@ -53,33 +52,7 @@ class _InvocationContentModalBottomSheetState
                             children: snapshot.requireData.map((it) {
                                   return Padding(
                                     padding: const EdgeInsets.symmetric(vertical: 15),
-                                    child: Row(
-                                      crossAxisAlignment: CrossAxisAlignment.start,
-                                      spacing: 10,
-                                      children: [
-                                        NumberBackgroundCenter(number: it.position),
-                                        Expanded(
-                                          child: Column(
-                                            spacing: 3,
-                                            crossAxisAlignment: CrossAxisAlignment.end,
-                                            children: [
-                                              Container(
-                                                padding: EdgeInsets.symmetric(horizontal: 10),
-                                                decoration: BoxDecoration(
-                                                    color: Colors.grey.withAlpha(50),
-                                                    borderRadius: BorderRadius.circular(10)
-                                                ),
-                                                child: Text(
-                                                  it.content,
-                                                  style: TextStyle(fontSize: 15),
-                                                ),
-                                              ),
-                                              Text(it.books, style: GoogleFonts.roboto(fontWeight: FontWeight.w600),)
-                                            ],
-                                          ),
-                                        ),
-                                      ],
-                                    ),
+                                    child: InvocationContentItem(invocationContent: it)
                                   );
                                 }).toList(),
                           ),

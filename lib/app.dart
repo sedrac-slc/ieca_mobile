@@ -1,6 +1,3 @@
-import 'dart:isolate';
-
-import 'package:ieca_mobile/db/DBConn.dart';
 import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/screens/_import.dart';
 import 'package:ieca_mobile/theme/theme.dart';
@@ -17,15 +14,9 @@ class _IecaAppState extends State<IecaApp> {
 
   @override
   void initState() {
-    _initDatabase();
     super.initState();
   }
 
-  void _initDatabase() async {
-    await Isolate.run((){
-      DBConn.instance.database;
-    });
-  }
 
   @override
   Widget build(BuildContext context) {

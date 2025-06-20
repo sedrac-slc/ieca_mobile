@@ -16,7 +16,7 @@ class HymnsScreen extends StatefulWidget {
 class _HymnsScreenState extends State<HymnsScreen> {
   final ValueNotifier<List<HymnsGroup>> _hymnsGroup = ValueNotifier([]);
   final ValueNotifier<int> _badgeItem = ValueNotifier(0);
-  final _repository = HymnsGroupRepository();
+  final _hymnsGroupRepository = HymnsGroupRepository();
 
   @override
   void initState() {
@@ -27,7 +27,7 @@ class _HymnsScreenState extends State<HymnsScreen> {
   }
 
   _initData() async {
-    _hymnsGroup.value = await _repository.getAll();
+    _hymnsGroup.value = await _hymnsGroupRepository.getAll();
   }
 
   _changeBadgeItem(int pos) async {
@@ -85,7 +85,6 @@ class _HymnsScreenState extends State<HymnsScreen> {
                   builder: (context, value, child) {
                     if(value == BadgeHymns.ADDITIONAL) return _PanelHymns(key: ValueKey(BadgeHymns.ADDITIONAL), type: BadgeHymns.ADDITIONAL,);
                     if(value == BadgeHymns.DOXOLOGY) return _PanelHymns(key: ValueKey(BadgeHymns.DOXOLOGY), type: BadgeHymns.DOXOLOGY,);
-
                     return ValueListenableBuilder<List<HymnsGroup>>(
                       valueListenable: _hymnsGroup,
                       builder: (_, _, _) {

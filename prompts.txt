@@ -1,3 +1,6 @@
+-------------------------------------------------------------------
+Hino
+
 Tendo o seguinte hino constituído por estrofe, essas estrofe eram gerar
 a classe HymnsContent, da seguinte forma:
 
@@ -13,19 +16,23 @@ HYMNS_NUMBER_1, o hymnsNumber será sequencial quando eu informa outro hino para
 gera o HymnsContent de forma inline sem espaçamento entre eles.
 
 Hino
-1. Preciosa a graça de Jesus,
-    Que um dia me salvou.
-    Perdido andei, sem ver a luz,
-    Mas Cristo me encontrou.
-2. A graça então, meu coração
-    Do medo me libertou.
-    Oh, quão preciosa salvação
-    A graça me outorgou!
-3. Promessas deu-me o Salvador,
-    E n’Ele eu posso crer.
-    É meu refúgio e protector
-    Em todo o meu viver.
-4. Perigos mil atravessei
-    E a graça me valeu.
-    Eu são e salvo agora irei
-    Ao santo lar do céu.
+
+
+
+
+-------------------------------------------------------------------
+Invocatoria
+
+ No texto abaixo irás gerar esta classe em dart:
+ InvocationContent(id: 30, position: 30, invocationTitle: UmInvocationTitleSeeder.ADVENT, books: "", content: "").
+ Para cada frase que esta número irá gerar um InvocationContent, por exemplo vou pegar a primeira frase:
+ frase = "1. Yehova o kasi vonembele yaye yikola. Omanu vosi vohile kovaso aye. (Hav.2:20)"
+ id: 30 (vai começar deste número e nos seguintes é sequencial)
+ position: 1,
+ content: Yehova o kasi vonembele yaye yikola. Omanu vosi vohile kovaso aye.
+ books: Hav.2:20 (é o que vem depois o content ou frase que fica entre parenteses)
+ invocationTitle: UmInvocationTitleSeeder.ADVENT (isto é constante)
+
+ -------------------------------------------------------------------
+ 1. Yehova o kasi vonembele yaye yikola. Omanu vosi vohile kovaso
+ aye. (Hav.2:20)

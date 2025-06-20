@@ -1,10 +1,14 @@
 import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/portugues/_import.dart';
+import 'package:ieca_mobile/repository/_import.dart';
+import 'package:ieca_mobile/seeders/_import.dart';
 import 'package:collection/collection.dart';
 
 class PsalmsTitleRepository{
+  final _languageSectionRepository = LanguageSectionRepository();
 
   Future<List<PsalmsTitle>> getAll() async {
+    final language = await _languageSectionRepository.getLanguage();
+    if(language == LanguageSectionSeeder.UMBUNDU) return await UmPsalmsTitleSeeder.items();
     return await PsalmsTitleSeeder.items();
   }
 

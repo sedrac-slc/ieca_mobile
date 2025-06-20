@@ -1,5 +1,5 @@
 import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/portugues/_import.dart';
+import 'package:ieca_mobile/seeders/_import.dart';
 
 class UmInvocationTitleSeeder {
   static final ADVENT = InvocationTitle(id: 11, name: "Akovongo", position: 1, lang: LanguageSectionSeeder.UMBUNDU);

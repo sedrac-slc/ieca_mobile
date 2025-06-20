@@ -1,9 +1,8 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/repository/language_section_repository.dart';
-import 'package:ieca_mobile/repository/preference_repository.dart';
-import 'package:ieca_mobile/seeders/portugues/_import.dart';
+import 'package:ieca_mobile/repository/_import.dart';
+import 'package:ieca_mobile/seeders/_import.dart';
 import 'package:ieca_mobile/util/app_icon_data.dart';
 import 'package:ieca_mobile/util/app_theme.dart';
 import 'package:flutter/material.dart';

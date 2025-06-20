@@ -1,5 +1,5 @@
 import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/portugues/_import.dart';
+import 'package:ieca_mobile/seeders/_import.dart';
 
 class PsalmsTitleSeeder{
   static final PSALMS_19 = PsalmsTitle(id: 1, name: "Salmos 19", position: 1, lang: LanguageSectionSeeder.PORTUGUES);

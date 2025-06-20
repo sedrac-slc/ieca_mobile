@@ -15,4 +15,6 @@ class AppTheme{
     return  isDarkMode ? MaterialTheme.darkScheme().primary : MaterialTheme.lightScheme().primary;
   }
 
+  static Color primary = MaterialTheme.lightScheme().primary;
+
 }

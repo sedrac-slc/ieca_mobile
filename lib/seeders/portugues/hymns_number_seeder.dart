@@ -1,5 +1,6 @@
 import 'package:ieca_mobile/enums/hymn_book_code.dart';
 import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/seeders/_import.dart';
 import 'package:ieca_mobile/seeders/portugues/_import.dart';
 
 class HymnsNumberSeeder{
@@ -503,6 +504,7 @@ class HymnsNumberSeeder{
       END_OF_SERVICE_362, END_OF_SERVICE_363, END_OF_SERVICE_364, END_OF_SERVICE_365,
 
       DOXOLOGIES_366, DOXOLOGIES_367, DOXOLOGIES_368, DOXOLOGIES_369, DOXOLOGIES_370, DOXOLOGIES_371, DOXOLOGIES_372,
+
     ];
   }
 }

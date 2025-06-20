@@ -5,4 +5,9 @@ class HymnsGroupRepository{
   Future<List<HymnsGroup>> getAll() async {
     return await HymnsGroupSeeder.items();
   }
+
+  Future<List<HymnsGroup>> getDoxologies() async {
+    return await [HymnsGroupSeeder.DOXOLOGIES];
+  }
+
 }

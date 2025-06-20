@@ -35,26 +35,38 @@ class _InputSearchState extends State<InputSearch> {
         filled: true,
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
         hintText: widget.hintText,
-        suffixIcon: IconButton(
-          onPressed: () {
-            if (_textEditingController.text.length > 0) {
-              _textEditingController.clear();
-              widget.onClear!();
-            }
-          },
-          icon: ValueListenableBuilder(
-            valueListenable: _textEditingController,
-            builder: (context, value, child) {
-              return Icon(
-                _textEditingController.text.length == 0 ? Icons.search : Icons.clear,
-                color: colorBackgroundAppBar,
-              );
-            },
+        suffixIcon: Padding(
+          padding: const EdgeInsets.all(5),
+          child: Container(
+            height: 10,
+            width: 10,
+            decoration: BoxDecoration(
+              color: colorBackgroundAppBar,
+              borderRadius: BorderRadius.circular(50)
+            ),
+            child: IconButton(
+              onPressed: () {
+                if (_textEditingController.text.length > 0) {
+                  if(widget.onClear != null) widget.onClear!();
+                  _textEditingController.clear();
+                }
+              },
+              icon: ValueListenableBuilder(
+                valueListenable: _textEditingController,
+                builder: (context, value, child) {
+                  return Icon(_textEditingController.text.length == 0 ? Icons.search : Icons.clear, color: Colors.white,);
+                },
+              ),
+            ),
           ),
         ),
       ),
       onChanged: (value) {
-        value.trim().length > 0 ? widget.onSearch(value) : widget.onClear!();
+        if(value.trim().length == 0){
+          if(widget.onClear != null) widget.onClear!();
+          return;
+        }
+        widget.onSearch(value);
       },
     );
   }

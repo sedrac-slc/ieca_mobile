@@ -10,7 +10,9 @@ class LitanyContentItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
+    final Brightness brightness = MediaQuery.of(context).platformBrightness;
+    final bool isDarkMode = brightness == Brightness.dark;
+    final colorBar = isDarkMode ? Colors.grey :  AppTheme.primary;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

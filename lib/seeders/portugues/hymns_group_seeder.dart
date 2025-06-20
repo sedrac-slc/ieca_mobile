@@ -61,7 +61,6 @@ class HymnsGroupSeeder {
       NEW_YEAR,
       PATRIOTIC_HYMNS,
       END_OF_SERVICE,
-      DOXOLOGIES,
     ];
   }
 

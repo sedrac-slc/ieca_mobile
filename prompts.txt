@@ -1,32 +1,31 @@
 Tendo o seguinte hino constituído por estrofe, essas estrofe eram gerar
 a classe HymnsContent, da seguinte forma:
 
-HymnsContent(id: , position: 4, content: "", hymnsNumber: HymnsNumberSeeder.FAITH_AND_SECURITY_234, typeStanza: HymnsContentCode.VERSE),
+HymnsContent(id: , position: 4, content: "", hymnsNumber: HYMNS_NUMBER_1, typeStanza: HymnsContentCode.VERSE),
 
 Se a estrofe é coro o HymnsContentCode é CHOIR sem ter position, a estrofe que tenhem coro esta marcado com este símbolo ou marca "[coro]":
 
-HymnsContent(id: , content: "", hymnsNumber: HymnsNumberSeeder.EVENING_HYMNS_349, typeStanza: HymnsContentCode.CHOIR),
+HymnsContent(id: , content: "", hymnsNumber: HYMNS_NUMBER_1, typeStanza: HymnsContentCode.CHOIR),
 
-considera para o hino abaixo começa com id 1479 a primeira estrofe que irá
+considera para o hino abaixo começa com id 7000 a primeira estrofe que irá
 gerar o HymnsContent e deve seguir de forma sequencial e o hymnsNumber é
-EVENING_HYMNS_349, o hymnsNumber será sequencial quando eu informa outro hino para você fazer de novo este processo e
+HYMNS_NUMBER_1, o hymnsNumber será sequencial quando eu informa outro hino para você fazer de novo este processo e
 gera o HymnsContent de forma inline sem espaçamento entre eles.
 
 Hino
-1. Adeus. Adeus. Adeus.
-Descem sombras vespertinas,
-Perto está a escuridão.
-Lá no céu, serenas, belas,
-Resplandecem as estrelas,
-Adeus. Adeus. Adeus.
-2. Adeus. Adeus. Adeus.
-Através da noite escura
-Há quem guarda bem os Seus,
-O Pastor constante e terno,
-Nosso Protector Supremo.
-Adeus. Adeus. Adeus.
-3. Adeus. Adeus. Adeus.
-Ao nascer o novo dia
-Louvaremos ao Senhor
-Pelo amor que nos atende
-E que sempre nos defende.
+1. Preciosa a graça de Jesus,
+    Que um dia me salvou.
+    Perdido andei, sem ver a luz,
+    Mas Cristo me encontrou.
+2. A graça então, meu coração
+    Do medo me libertou.
+    Oh, quão preciosa salvação
+    A graça me outorgou!
+3. Promessas deu-me o Salvador,
+    E n’Ele eu posso crer.
+    É meu refúgio e protector
+    Em todo o meu viver.
+4. Perigos mil atravessei
+    E a graça me valeu.
+    Eu são e salvo agora irei
+    Ao santo lar do céu.

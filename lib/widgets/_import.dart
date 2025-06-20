@@ -11,3 +11,4 @@ export 'button_setting.dart';
 export 'text_title_bar.dart';
 export 'modal_button_top.dart';
 export 'icon_trailing.dart';
+export 'grid_hymns.dart';

@@ -10,7 +10,9 @@ class PsalmsContentItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = AppTheme.colorBackgroundAppBar(context);
+    final Brightness brightness = MediaQuery.of(context).platformBrightness;
+    final bool isDarkMode = brightness == Brightness.dark;
+    final color = isDarkMode ? Colors.grey :  AppTheme.primary;
     return Text(
       psalmsContent.content,
       style: TextStyle(fontSize: 15, color: PsalmsPerson.CONGREGATION == psalmsContent.person ? color : null),

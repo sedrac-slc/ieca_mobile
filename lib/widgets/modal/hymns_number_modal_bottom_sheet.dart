@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ieca_mobile/models/hymns_group.dart';
 import 'package:ieca_mobile/repository/_import.dart';
-import 'package:ieca_mobile/screens/hymns_content_screen.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
 
 class HymnsNumberModalBottomSheet extends StatefulWidget {
@@ -21,7 +20,7 @@ class _HymnsNumberModalBottomSheetState extends State<HymnsNumberModalBottomShee
 
     return Container(
       width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height,
+      height: MediaQuery.of(context).size.height * 0.78,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         mainAxisSize: MainAxisSize.max,
@@ -36,26 +35,7 @@ class _HymnsNumberModalBottomSheetState extends State<HymnsNumberModalBottomShee
                   if (snapshot.hasData) {
                     return Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: GridView.count(
-                        crossAxisCount: 5,
-                        crossAxisSpacing: 5,
-                        mainAxisSpacing: 10,
-                        childAspectRatio: 1.0,
-                        shrinkWrap: true,
-                        physics: NeverScrollableScrollPhysics(),
-                        children: snapshot.requireData.map((it) {
-                              return InkWell(
-                                child: NumberHymns(number: it.num,),
-                                onTap: () {
-                                  Navigator.push( context,
-                                    MaterialPageRoute(
-                                      builder: (context) => HymnsContentScreen(hymnsNumber: it),
-                                    ),
-                                  );
-                                },
-                              );
-                            }).toList(),
-                      ),
+                      child: GridHymns(hymnsNumbers: snapshot.requireData,),
                     );
                   } else {
                     return Center(

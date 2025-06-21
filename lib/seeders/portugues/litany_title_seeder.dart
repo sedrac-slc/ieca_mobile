@@ -10,7 +10,7 @@ class LitanyTitleSeeder{
   static final CHRISTMAS = LitanyTitle(id: 6, name: "Do Natal", position: 6, lang: LanguageSectionSeeder.PORTUGUES);
   static final PALM_SUNDAY = LitanyTitle(id: 7, name: "Do Domingo De Ramos", position: 7, lang: LanguageSectionSeeder.PORTUGUES);
   static final EASTER = LitanyTitle(id: 8, name: "Da Páscoa", position: 8, lang: LanguageSectionSeeder.PORTUGUES);
-  static final PENTECOST = LitanyTitle(id: 9, name: "Do Pentecostes ", position: 9, lang: LanguageSectionSeeder.PORTUGUES);
+  static final PENTECOST = LitanyTitle(id: 9, name: "Do Pentecostes", position: 9, lang: LanguageSectionSeeder.PORTUGUES);
   static final FIRST_DAY_OF_THE_YEAR = LitanyTitle(id: 10, name: "Do Primeiro Dia Do Ano", position: 10, lang: LanguageSectionSeeder.PORTUGUES);
 
   static List<LitanyTitle> items() {

@@ -6,10 +6,10 @@ class LitanyContent {
   final String person;
   final LitanyTitle litanyTitle;
   final String content;
-  final int position;
+  //final int position;
   final String books;
 
-  const LitanyContent({required this.id, required this.person, required this.litanyTitle, required this.content, required this.position, this.books = ""});
+  const LitanyContent({required this.id, required this.person, required this.litanyTitle, required this.content, this.books = ""});
 
   Map<String, dynamic> toMap() {
     return {
@@ -17,7 +17,6 @@ class LitanyContent {
       'person': person,
       'litanyTitle': litanyTitle.toMap(),
       'content': content,
-      'position': position,
       'books': books
     };
   }
@@ -28,7 +27,6 @@ class LitanyContent {
       person: map['person'] as String,
       litanyTitle: item,
       content: map['content'] as String,
-      position: map['position'] as int,
       books: map['books'] as String,
     );
   }

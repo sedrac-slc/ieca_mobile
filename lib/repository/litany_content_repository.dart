@@ -1,8 +1,19 @@
 import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/portugues/_import.dart';
+import 'package:ieca_mobile/repository/_import.dart';
+import 'package:ieca_mobile/seeders/_import.dart';
 
 class LitanyContentRepository{
+  final _languageSectionRepository = LanguageSectionRepository();
+
+  Future<List<LitanyContent>> getAll() async {
+    final language = await _languageSectionRepository.getLanguage();
+    if(language == LanguageSectionSeeder.UMBUNDU) return await UmLitanyContentSeeder.items();
+    return await LitanyContentSeeder.items();
+  }
+
+
   Future<List<LitanyContent>> getBy(LitanyTitle item) async {
-    return await LitanyContentSeeder.items().where((it) => it.litanyTitle.id == item.id).toList();
+    final items = await getAll();
+    return await items.where((it) => it.litanyTitle.id == item.id).toList();
   }
 }

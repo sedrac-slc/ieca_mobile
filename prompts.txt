@@ -49,3 +49,23 @@ Invocatoria
  3. psalmsTitle começa com PSALMS_19
  4. o position começa de 1 deve ser sequencial
  5. o id começa de 100 deve ser sequencial
+
+ ------------------------------------------------------------------------------
+ Litanias
+ O texto abaixo irá gerar classe dart.
+ LitanyContent(id: 1, person: LitanyPerson.DIRECTOR, litanyTitle: LitanyTitleSeeder.CALL_TO_WORSHIP, books: "", content: ""),
+
+ A regra é a seguinte:
+ 1. o id começa 130
+ 2. person quando o texto começa com Usongui é LitanyPerson.DIRECTOR, e começado com Ekongelo é LitanyPerson.CONGREGATION
+ 3. books, são os textos que ficam entre parênteses no fim das frases
+
+ como exemplo vou pegar o primeiro texto:
+
+ Usongui: Yehova o kasi vonembele yaye yi kola: omanu vosi vohile
+ kovaso aye. (Hav.2:20)
+
+ LitanyContent(id: 130, person: LitanyPerson.DIRECTOR, litanyTitle: UmLitanyTitleSeeder.CALL_TO_WORSHIP, books: "Hav.2:20", content: "Yehova o kasi vonembele yaye yi kola: omanu vosi vohile
+ kovaso aye").
+
+ É a classes a ser geradas devem estar declarada desta forma em linha, não quebra para inicializar os parâmetros da classe LitanyContent

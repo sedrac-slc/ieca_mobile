@@ -1,10 +1,19 @@
 import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/portugues/_import.dart';
+import 'package:ieca_mobile/repository/_import.dart';
+import 'package:ieca_mobile/seeders/_import.dart';
 
 class PsalmsContentRepository{
+  final _languageSectionRepository = LanguageSectionRepository();
+
+  Future<List<PsalmsContent>> getAll() async {
+    final language = await _languageSectionRepository.getLanguage();
+    if(language == LanguageSectionSeeder.UMBUNDU) return await UmPsalmsContentSeeder.items();
+    return await PsalmsContentSeeder.items();
+  }
 
   Future<List<PsalmsContent>> getBy(PsalmsTitle item) async {
-    return await PsalmsContentSeeder.items().where((it) => it.psalmsTitle.id == item.id).toList();
+    final items = await getAll();
+    return await items.where((it) => it.psalmsTitle.id == item.id).toList();
   }
 
 }

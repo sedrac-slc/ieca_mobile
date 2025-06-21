@@ -14,13 +14,6 @@ class HymnsGroupRepository{
     return await [HymnsGroupSeeder.DOXOLOGIES];
   }
 
-  Future<Map<HymnsGroup, List<HymnsContent>>> getSearchL(String text) async {
-    final list = await _hymnsContentRepository.getAll();
-    final searchText = text.toLowerCase();
-    final filteredItems = list.where((item) =>item.content.toLowerCase().contains(searchText));
-    return groupBy(filteredItems, (HymnsContent item) => item.hymnsNumber.hymnsGroup);
-  }
-
   Future<Map<HymnsGroup, Map<HymnsNumber, List<HymnsContent>>>> getSearch(String text) async {
     final searchText = text.toLowerCase();
     final list = await _hymnsContentRepository.getAll();

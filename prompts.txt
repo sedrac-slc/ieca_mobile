@@ -18,8 +18,6 @@ gera o HymnsContent de forma inline sem espaçamento entre eles.
 Hino
 
 
-
-
 -------------------------------------------------------------------
 Invocatoria
 
@@ -36,3 +34,18 @@ Invocatoria
  -------------------------------------------------------------------
  1. Yehova o kasi vonembele yaye yikola. Omanu vosi vohile kovaso
  aye. (Hav.2:20)
+
+
+ --------------------------------------------------------------------
+ Salmos
+
+ Com os texto abaixo irás gerar a classe em dart
+
+ PsalmsContent(id: 1, position: 1, person: PsalmsPerson.DIRECTOR, psalmsTitle: PsalmsTitleSeeder.PSALMS_19, content: ""),
+
+ Regras
+ 1. o texto que começa com [dirigente] é porque person: PsalmsPerson.DIRECTOR
+ 2. o texto que começa com [congregacao] é porque person: PsalmsPerson.CONGREGATION
+ 3. psalmsTitle começa com PSALMS_19
+ 4. o position começa de 1 deve ser sequencial
+ 5. o id começa de 100 deve ser sequencial

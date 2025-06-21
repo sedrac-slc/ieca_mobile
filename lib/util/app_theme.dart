@@ -9,10 +9,16 @@ class AppTheme{
     return isDarkMode ? MaterialTheme.darkScheme() : MaterialTheme.lightScheme();
   }
 
-  static Color colorBackgroundAppBar(BuildContext context){
+  static Color colorAppBar(BuildContext context){
     final Brightness brightness = MediaQuery.of(context).platformBrightness;
     final bool isDarkMode = brightness == Brightness.dark;
     return  isDarkMode ? MaterialTheme.darkScheme().primary : MaterialTheme.lightScheme().primary;
+  }
+
+  static Color colorAppBarDark(BuildContext context){
+    final Brightness brightness = MediaQuery.of(context).platformBrightness;
+    final bool isDarkMode = brightness == Brightness.dark;
+    return  isDarkMode ? Colors.grey : MaterialTheme.lightScheme().primary;
   }
 
   static Color primary = MaterialTheme.lightScheme().primary;

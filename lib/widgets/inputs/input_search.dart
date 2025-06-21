@@ -28,7 +28,7 @@ class _InputSearchState extends State<InputSearch> {
 
   @override
   Widget build(BuildContext context) {
-    var colorBackgroundAppBar = AppTheme.colorBackgroundAppBar(context);
+    var colorBackgroundAppBar = AppTheme.colorAppBar(context);
     return TextField(
       controller: _textEditingController,
       decoration: InputDecoration(

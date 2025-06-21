@@ -8,7 +8,7 @@ class NumberBackgroundCenter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
+    final colorBar = AppTheme.colorAppBar(context);
     return  Container(
       padding: const EdgeInsets.all(5),
       height: 30,

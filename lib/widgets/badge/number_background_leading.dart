@@ -8,7 +8,7 @@ class NumberBackgroundLeading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
+    final colorBar = AppTheme.colorAppBar(context);
 
     return Container(
       alignment: Alignment.center,

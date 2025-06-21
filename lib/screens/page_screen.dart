@@ -37,7 +37,7 @@ class _PageScreenState extends State<PageScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
+    final colorBar = AppTheme.colorAppBar(context);
     return Scaffold(
       body: PageView.builder(
         physics: const ClampingScrollPhysics(),

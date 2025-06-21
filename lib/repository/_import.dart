@@ -1,5 +1,6 @@
 export 'hymns_group_repository.dart';
 export 'hymns_number_repository.dart';
+export 'hymns_content_repository.dart';
 export 'invocation_content_repository.dart';
 export 'invocation_title_repository.dart';
 export 'litany_content_repository.dart';

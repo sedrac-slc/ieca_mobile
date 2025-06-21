@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
+    final colorBar = AppTheme.colorAppBar(context);
     return Scaffold(
       appBar: AppBar(
         leading: const LogoIeca(),

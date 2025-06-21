@@ -33,7 +33,7 @@ class _PsalmsScreenState extends State<PsalmsScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
+    final colorBar = AppTheme.colorAppBar(context);
     return Scaffold(
       appBar: AppBar(
         title: TextTitleBar(text: AppLocalizations.of(context)!.psalms, color: Colors.white,),

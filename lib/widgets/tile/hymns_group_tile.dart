@@ -11,7 +11,7 @@ class HymnsGroupTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ColorScheme colorScheme = AppTheme.colorScheme(context);
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
+    final colorBar = AppTheme.colorAppBar(context);
 
     return Container(
       decoration: BoxDecoration(

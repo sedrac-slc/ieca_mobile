@@ -20,7 +20,8 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
+    final colorBar = AppTheme.colorAppBar(context);
+    final colorDark = AppTheme.colorAppBarDark(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: colorBar,
@@ -103,6 +104,7 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
                                       style: GoogleFonts.roboto(
                                         fontSize: 16,
                                         fontWeight: FontWeight.w900,
+                                        color: colorDark
                                       ),
                                     ),
                                   ),

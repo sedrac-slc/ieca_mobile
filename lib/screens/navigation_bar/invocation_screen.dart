@@ -41,7 +41,7 @@ class _InvocationScreenState extends State<InvocationScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
+    final colorBar = AppTheme.colorAppBar(context);
     return Scaffold(
       appBar: AppBar(
         title: TextTitleBar(text: AppLocalizations.of(context)!.invocation, color: Colors.white,),

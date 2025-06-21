@@ -6,7 +6,7 @@ class ModalButtonTop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
+    final colorBar = AppTheme.colorAppBar(context);
     return InkWell(
       onTap: () => Navigator.pop(context),
       child: Column(

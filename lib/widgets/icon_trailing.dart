@@ -8,7 +8,7 @@ class IconTrailing extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final colorBar = AppTheme.colorBackgroundAppBar(context);
+    final colorBar = AppTheme.colorAppBar(context);
     return Container(
         width: 30,
         height: 30,

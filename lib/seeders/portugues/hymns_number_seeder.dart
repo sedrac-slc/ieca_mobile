@@ -25,7 +25,6 @@ class HymnsNumberSeeder{
   static final PRAISE_AND_WORSHIP_19 = HymnsNumber(id: 19, num: 19, hymnsGroup: HymnsGroupSeeder.PRAISE_AND_WORSHIP, label: "Música: C.C. 406", code: HymnBookCode.CC);
   static final PRAISE_AND_WORSHIP_20 = HymnsNumber(id: 20, num: 20, hymnsGroup: HymnsGroupSeeder.PRAISE_AND_WORSHIP, label: "Música: S.H.195 Lyra 12", code: HymnBookCode.SH);
   static final PRAISE_AND_WORSHIP_21 = HymnsNumber(id: 21, num: 21, hymnsGroup: HymnsGroupSeeder.PRAISE_AND_WORSHIP, label: "Música: H.C.c/M.578", code: HymnBookCode.HC_M);
-
   static final PRAISE_AND_WORSHIP_22 = HymnsNumber(id: 22, num: 22, hymnsGroup: HymnsGroupSeeder.PRAISE_AND_WORSHIP, label: "Música: Lyra 21; H.C.c/M.579", code: HymnBookCode.HC_M);
   static final PRAISE_AND_WORSHIP_23 = HymnsNumber(id: 23, num: 23, hymnsGroup: HymnsGroupSeeder.PRAISE_AND_WORSHIP, label: "Música: Lyra 23", code: HymnBookCode.LYARA);
   static final PRAISE_AND_WORSHIP_24 = HymnsNumber(id: 24, num: 24, hymnsGroup: HymnsGroupSeeder.PRAISE_AND_WORSHIP, label: "Música: Lyra 24; C.A. 10", code: HymnBookCode.CA);

@@ -4,3 +4,8 @@ export 'um_psalms_title_seeder.dart';
 export 'um_psalms_content_seeder.dart';
 export 'um_litany_title_seeder.dart';
 export 'um_litany_content_seeder.dart';
+export 'um_hymns_group_seeder.dart';
+export 'um_hymns_number_seeder.dart';
+export 'um_hymns_content_seeder.dart';
+export 'um_hymns_seeder.dart';
+export 'hymns/_import.dart';

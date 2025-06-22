@@ -52,11 +52,12 @@ class _PageScreenState extends State<PageScreen> {
             labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
             selectedIndex: currentPage,
             destinations: [
-              NavigationDestination(icon: Icon(AppIconData.home), label: AppLocalizations.of(context)!.home,),
-              NavigationDestination(icon: Icon(AppIconData.invocation), label: AppLocalizations.of(context)!.invocation,),
+              NavigationDestination(key: ValueKey(AppIconData.home), icon: Icon(AppIconData.home), label: AppLocalizations.of(context)?.home ?? "Inicio",),
+              NavigationDestination(key: ValueKey(AppIconData.invocation), icon: Icon(AppIconData.invocation), label: AppLocalizations.of(context)?.invocation ?? "Invocatória",),
               Container(
                 padding: EdgeInsets.only(top: 15),
                 child: NavigationDestination(
+                  key: ValueKey(AppIconData.hymns),
                   icon: Container(
                     constraints: BoxConstraints(minWidth: 50, minHeight: 50),
                     decoration: BoxDecoration(
@@ -68,8 +69,8 @@ class _PageScreenState extends State<PageScreen> {
                   label: "",
                 ),
               ),
-              NavigationDestination(icon: Icon(AppIconData.litanies), label: AppLocalizations.of(context)!.litanies,),
-              NavigationDestination(icon: Icon(AppIconData.psalms), label: AppLocalizations.of(context)!.psalms,),
+              NavigationDestination(key: ValueKey(AppIconData.litanies), icon: Icon(AppIconData.litanies), label: AppLocalizations.of(context)?.litanies ?? "Litania",),
+              NavigationDestination(key: ValueKey(AppIconData.psalms), icon: Icon(AppIconData.psalms), label: AppLocalizations.of(context)?.psalms ?? "Salmos",),
             ],
             onDestinationSelected: (page) {
               _pageController.animateToPage(

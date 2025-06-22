@@ -1,13 +1,22 @@
 import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/repository/_import.dart';
 import 'package:ieca_mobile/seeders/_import.dart';
 
 class HymnsNumberRepository {
+  final _languageSectionRepository = LanguageSectionRepository();
+
   Future<List<HymnsNumber>> getBy(HymnsGroup item) async {
-    return await HymnsNumberSeeder.items().where((it) => it.hymnsGroup.id == item.id).toList();
+    var list = HymnsNumberSeeder.items();
+    final language = await _languageSectionRepository.getLanguage();
+    if(language == LanguageSectionSeeder.UMBUNDU) list = await UmHymnsNumberSeeder.items();
+    return await list.where((it) => it.hymnsGroup.id == item.id).toList();
   }
 
   Future<List<HymnsNumber>> getByDoxologies() async {
-    return await getBy(HymnsGroupSeeder.DOXOLOGIES);
+    var list = HymnsGroupSeeder.DOXOLOGIES;
+    final language = await _languageSectionRepository.getLanguage();
+    if(language == LanguageSectionSeeder.UMBUNDU) list = UmHymnsGroupSeeder.DOXOLOGIES;
+    return await getBy(list);
   }
 
   Future<List<HymnsNumber>> getByAdditional() async {

@@ -4,9 +4,12 @@ import 'package:ieca_mobile/seeders/_import.dart';
 import 'package:collection/collection.dart';
 
 class HymnsGroupRepository{
+  final _languageSectionRepository = LanguageSectionRepository();
   final _hymnsContentRepository = HymnsContentRepository();
 
   Future<List<HymnsGroup>> getAll() async {
+    final language = await _languageSectionRepository.getLanguage();
+    if(language == LanguageSectionSeeder.UMBUNDU) return await UmHymnsGroupSeeder.items();
     return await HymnsGroupSeeder.items();
   }
 

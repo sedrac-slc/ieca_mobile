@@ -21,6 +21,4 @@ class AppTheme{
     return  isDarkMode ? Colors.grey : MaterialTheme.lightScheme().primary;
   }
 
-  static Color primary = MaterialTheme.lightScheme().primary;
-
 }

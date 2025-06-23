@@ -7,10 +7,10 @@ class UmHymnsGroupSeeder {
   static final TRIUMPHAL_ENTRY_OF_JESUS_IN_JERUSALEM = HymnsGroup(id: 34, name: "Yesu iñila Ndonjuli vo Yelusalãi", beginning: 55, finished: 57);
   static final PASSION_AND_DEATH_OF_JESUS = HymnsGroup(id: 35, name: "Otokua Lokufa kua Yesu", beginning: 58, finished: 75);
   static final RESURRECTION_OF_JESUS = HymnsGroup(id: 36, name: "Epinduko lia Yesu", beginning: 76, finished: 82);
-  static final HOLY_SPIRIT = HymnsGroup(id: 37, name: "Espiritu Sandu (Ocilelembia Cikola)", beginning: 83, finished: 91);
+  static final HOLY_SPIRIT = HymnsGroup(id: 37, name: "Espiritu Sandu", beginning: 83, finished: 91);
   static final CHURCH = HymnsGroup(id: 38, name: "Ekongelo", beginning: 92, finished: 101);
   static final BAPTISM = HymnsGroup(id: 39, name: "Epapatiso", beginning: 102, finished: 104);
-  static final HOLY_COMMUNION = HymnsGroup(id: 40, name: "Ko Calo ca Ñala (Omesa ya Ñala)", beginning: 105, finished: 117);
+  static final HOLY_COMMUNION = HymnsGroup(id: 40, name: "Omesa Ya Ñala", beginning: 105, finished: 117);
   static final CHRISTIAN_HOME = HymnsGroup(id: 41, name: "Epata lietavo", beginning: 118, finished: 123);
   static final MOTHERS = HymnsGroup(id: 42, name: "Olonjali", beginning: 124, finished: 125);
   static final CHILDREN = HymnsGroup(id: 43, name: "Omãla", beginning: 126, finished: 139);

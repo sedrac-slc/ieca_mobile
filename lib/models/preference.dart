@@ -14,4 +14,5 @@ class Preference{
     return "Preference(id: $id, code: $code, value: $value)";
   }
 
+  static Preference TEST = Preference(code: "code", value: "value");
 }

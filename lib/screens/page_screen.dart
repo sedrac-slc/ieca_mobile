@@ -5,7 +5,9 @@ import 'package:ieca_mobile/util/app_icon_data.dart';
 import 'package:ieca_mobile/util/app_theme.dart';
 
 class PageScreen extends StatefulWidget {
-  const PageScreen({super.key});
+  final List<WidgetBuilder> pages;
+
+  const PageScreen({super.key, this.pages = const []});
 
   @override
   State<PageScreen> createState() => _PageScreenState();
@@ -15,7 +17,7 @@ class _PageScreenState extends State<PageScreen> {
   final PageController _pageController = PageController(initialPage: 0);
   int currentPage = 0;
 
-  final List<WidgetBuilder> _pages = [
+  List<WidgetBuilder> _pages = [
     (_) => const HomeScreen(),
     (_) => const InvocationScreen(),
     (_) => const HymnsScreen(),
@@ -24,15 +26,20 @@ class _PageScreenState extends State<PageScreen> {
   ];
 
   @override
+  void initState() {
+    if(widget.pages.length > 0) _pages = widget.pages;
+    super.initState();
+  }
+
+  @override
   void dispose() {
     _pageController.dispose();
     super.dispose();
   }
 
   void onChangePage(int n) {
-    setState(() {
-      currentPage = n;
-    });
+    currentPage = n;
+    setState(() {});
   }
 
   @override

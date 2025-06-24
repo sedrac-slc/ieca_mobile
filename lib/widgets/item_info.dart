@@ -33,20 +33,25 @@ class ItemInfo extends StatelessWidget {
           border: Border.all(color: Colors.grey)
       ),
       width: 130,
-      padding: const EdgeInsets.all(15),
+      padding: EdgeInsets.all(10),
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Icon(icon, color: isDarkMode ? Colors.white : colorScheme.primary),
               NumberBackgroundCenter(number: total)
             ],
           ),
-          Text(text, style: textStyle ?? TextStyle(color: isDarkMode ? Colors.white : colorScheme.outline),),
+          Text(
+            text,
+            style: textStyle ?? TextStyle(color: isDarkMode ? Colors.white : colorScheme.outline),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+          ),
         ],
       ),
     );

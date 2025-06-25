@@ -15,7 +15,7 @@ class HymnsNumberRepository {
   Future<List<HymnsNumber>> getByDoxologies() async {
     var list = HymnsGroupSeeder.DOXOLOGIES;
     final language = await _languageSectionRepository.getLanguage();
-    if(language == LanguageSectionSeeder.UMBUNDU) list = UmHymnsGroupSeeder.DOXOLOGIES;
+    if(language == LanguageSectionSeeder.UMBUNDU) list = UmHymnsGroupSeeder.ATUMBANGIYO;
     return await getBy(list);
   }
 

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/models/litany_title.dart';
 import 'package:ieca_mobile/repository/litany_content_repository.dart';
+import 'package:ieca_mobile/widgets/button/button_back.dart';
 import 'package:ieca_mobile/widgets/items/litany_content_item.dart';
 
 class LitanyContentModalBottomSheet extends StatefulWidget {
@@ -33,7 +34,14 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
           Container(
             padding: const EdgeInsets.only(left: 20, right: 20, top: 5, bottom: 5),
             alignment: Alignment.topLeft,
-            child: Text(widget.litanyTitle.name, style: GoogleFonts.roboto(fontSize: 16, fontWeight: FontWeight.bold),),
+            child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  Text(widget.litanyTitle.name, style: GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.bold),),
+                  const ButtonBack(),
+                ]
+            ),
           ),
           Expanded(
             child: FutureBuilder(

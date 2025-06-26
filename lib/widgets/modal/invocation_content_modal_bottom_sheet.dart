@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/models/invocation_title.dart';
 import 'package:ieca_mobile/repository/invocation_content_repository.dart';
+import 'package:ieca_mobile/widgets/_import.dart';
 import 'package:ieca_mobile/widgets/items/_import.dart';
 
 class InvocationContentModalBottomSheet extends StatefulWidget {
@@ -46,7 +47,14 @@ class _InvocationContentModalBottomSheetState
                       crossAxisAlignment: CrossAxisAlignment.start,
                       spacing: 10,
                       children: [
-                        Text(widget.invocationTitle.name, style: GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.bold),),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(widget.invocationTitle.name, style: GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.bold),),
+                            const ButtonBack(),
+                          ]
+                        ),
                         Expanded(
                           child: ListView(
                             children: snapshot.requireData.map((it) {

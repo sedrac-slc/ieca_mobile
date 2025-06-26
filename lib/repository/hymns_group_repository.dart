@@ -10,6 +10,7 @@ class HymnsGroupRepository{
   Future<List<HymnsGroup>> getAll() async {
     final language = await _languageSectionRepository.getLanguage();
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmHymnsGroupSeeder.items();
+    if(language == LanguageSectionSeeder.NGANGELA) return await NgHymnsGroupSeeder.items();
     return await HymnsGroupSeeder.items();
   }
 

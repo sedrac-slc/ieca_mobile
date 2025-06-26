@@ -9,6 +9,7 @@ class HymnsNumberRepository {
     var list = HymnsNumberSeeder.items();
     final language = await _languageSectionRepository.getLanguage();
     if(language == LanguageSectionSeeder.UMBUNDU) list = await UmHymnsNumberSeeder.items();
+    if(language == LanguageSectionSeeder.NGANGELA) list = await NgHymnsNumberSeeder.items();
     return await list.where((it) => it.hymnsGroup.id == item.id).toList();
   }
 

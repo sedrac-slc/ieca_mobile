@@ -10,6 +10,7 @@ class InvocationTitleRepository{
   Future<List<InvocationTitle>> getAll() async {
     final language = await _languageSectionRepository.getLanguage();
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmInvocationTitleSeeder.items();
+    if(language == LanguageSectionSeeder.NGANGELA) return await NgInvocationTitleSeeder.items();
     return await InvocationTitleSeeder.items();
   }
 

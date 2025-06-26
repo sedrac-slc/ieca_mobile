@@ -8,6 +8,7 @@ class LitanyContentRepository{
   Future<List<LitanyContent>> getAll() async {
     final language = await _languageSectionRepository.getLanguage();
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmLitanyContentSeeder.items();
+    if(language == LanguageSectionSeeder.NGANGELA) return await NgLitanyContentSeeder.items();
     return await LitanyContentSeeder.items();
   }
 

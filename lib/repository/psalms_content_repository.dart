@@ -8,6 +8,7 @@ class PsalmsContentRepository{
   Future<List<PsalmsContent>> getAll() async {
     final language = await _languageSectionRepository.getLanguage();
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmPsalmsContentSeeder.items();
+    if(language == LanguageSectionSeeder.NGANGELA) return await NgPsalmsContentSeeder.items();
     return await PsalmsContentSeeder.items();
   }
 

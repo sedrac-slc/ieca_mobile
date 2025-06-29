@@ -14,12 +14,13 @@ class NgHymnsGroupSeeder {
   static final VUANGANA_VUA_MUILU = HymnsGroup(id: 70, name: "Vangana Vua Muilu", beginning: 55, finished: 56);
   static final VANIKE = HymnsGroup(id: 71, name: "Vanike", beginning: 57, finished: 57);
   static final MIASO_YA_KU_PASCUA = HymnsGroup(id: 72, name: "Miaso Ya Ku Pascua", beginning: 58, finished: 63);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU = HymnsGroup(id: 73, name: "Miaso Ya Ku Semuka Kua Yesu", beginning: 64, finished: 85);
 
   static List<HymnsGroup> items() {
     return [
       KU_LEMESA,KU_LANIA,KULI_HAMBA,KU_LI_HITA,MBATIZIMU,MESA_YA_MUANGANA,NDZITA_YA_CILI, KUENDA_KUA_MUKUA_YESU,
 
-      KU_TUALA_ZIMPANDE_ZIA_CILI,KU_IZA_KUA_MUANGANA,VUANGANA_VUA_MUILU,VANIKE,MIASO_YA_KU_PASCUA,
+      KU_TUALA_ZIMPANDE_ZIA_CILI,KU_IZA_KUA_MUANGANA,VUANGANA_VUA_MUILU,VANIKE,MIASO_YA_KU_PASCUA,MIASO_YA_KU_SEMUKA_KUA_YESU,
     ];
   }
 

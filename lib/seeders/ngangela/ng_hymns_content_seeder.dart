@@ -18,6 +18,7 @@ class NgHymnsContentSeeder{
       ...NgHymnsVuanganaVuaMuilu.list,
       ...NgHymnsVanike.list,
       ...NgHymnsMiasoYaKuPascua.list,
+      ...NgHymnsMiasoYaKuSemukaKuaYesu.list,
     ];
   }
 }

@@ -4,6 +4,7 @@ export 'ng_invocation_content_seeder.dart';
 export 'ng_litany_title_seeder.dart';
 export 'ng_litany_content_seeder.dart';
 export 'ng_psalms_title_seeder.dart';
+export 'ng_psalms_content_seeder.dart';
 export 'ng_hymns_group_seeder.dart';
 export 'ng_hymns_content_seeder.dart';
 export 'ng_hymns_number_seeder.dart';

@@ -186,6 +186,7 @@ class _PanelHymnsState extends State<_PanelHymns> {
     return ValueListenableBuilder(
         valueListenable: _hymnsNumbers,
         builder: (context, value, child) {
+          if(value.isEmpty) return const ListEmpty();
           return GridHymns(hymnsNumbers: _hymnsNumbers.value,);
         }
     );

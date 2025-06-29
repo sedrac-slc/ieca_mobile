@@ -11,3 +11,4 @@ export 'ng_hymns_ku_iza_kua_muangana.dart';
 export 'ng_hymns_vuangana_vua_muilu.dart';
 export 'ng_hymns_vanike.dart';
 export 'ng_hymns_miaso_ya_ku_pascua.dart';
+export 'ng_hymns_miaso_ya_ku_semuka_kua_yesu.dart';

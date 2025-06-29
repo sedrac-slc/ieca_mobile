@@ -31,22 +31,7 @@ class HistoricGroup extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
                 color: colorScheme.onPrimary,
               ),
-              child:
-                  children.isEmpty
-                      ? Center(
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          spacing: 10,
-                          children: [
-                            Icon(Icons.info_outline, color: Colors.grey, size: 80,),
-                            Text(
-                              "Não tem informação",
-                              style: TextStyle(color: Colors.grey),
-                            ),
-                          ],
-                        ),
-                      )
-                      : Column(children: children),
+              child: children.isEmpty ? const ListEmpty() : Column(children: children),
             ),
           ),
         ],

@@ -79,6 +79,29 @@ class NgHymnsNumberSeeder{
   static final MIASO_YA_KU_PASCUA_62 = HymnsNumber(id: 821, num: 62, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_PASCUA, label: "Música: Port. 81; C.C.99", code: HymnBookCode.CC);
   static final MIASO_YA_KU_PASCUA_63 = HymnsNumber(id: 822, num: 63, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_PASCUA, label: "Música: Port. 75; C.C.3", code: HymnBookCode.CC);
 
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_64 = HymnsNumber(id: 823, num: 64, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 50; C.C.26; Lyra 19", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_65 = HymnsNumber(id: 824, num: 65, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 52; C.C.27", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_66 = HymnsNumber(id: 825, num: 66, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 34;Lyra 31 C.Sr", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_67 = HymnsNumber(id: 826, num: 67, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 48; C.Sr.77", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_68 = HymnsNumber(id: 827, num: 68, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 53; C.Sr. 78", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_69 = HymnsNumber(id: 828, num: 69, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 37; C.Sr. 81; C.C.12; Lyra 34", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_70 = HymnsNumber(id: 829, num: 70, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 51; C.C.28", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_71 = HymnsNumber(id: 830, num: 71, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Português 33; Lyra 40; P.H. 75", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_72 = HymnsNumber(id: 831, num: 72, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música : Port.ês 44; Lyra 41; C.C. 30", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_73 = HymnsNumber(id: 832, num: 73, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 287", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_74 = HymnsNumber(id: 833, num: 74, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 197", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_75 = HymnsNumber(id: 834, num: 75, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 224", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_76 = HymnsNumber(id: 835, num: 76, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 318", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_77 = HymnsNumber(id: 836, num: 77, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 160", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_78 = HymnsNumber(id: 837, num: 78, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 186", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_79 = HymnsNumber(id: 838, num: 79, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 2", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_80 = HymnsNumber(id: 839, num: 80, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 213", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_81 = HymnsNumber(id: 840, num: 81, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 122", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_82 = HymnsNumber(id: 841, num: 82, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 173", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_83 = HymnsNumber(id: 842, num: 83, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 134", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_84 = HymnsNumber(id: 843, num: 84, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: Port. 76", code: HymnBookCode.CC);
+  static final MIASO_YA_KU_SEMUKA_KUA_YESU_85 = HymnsNumber(id: 844, num: 85, hymnsGroup: NgHymnsGroupSeeder.MIASO_YA_KU_SEMUKA_KUA_YESU, label: "Música: H. C. c/M. 325", code: HymnBookCode.HC_M);
+
   static List<HymnsNumber> items() {
     return [
       KU_LEMESA_1, KU_LEMESA_2, KU_LEMESA_3, KU_LEMESA_4, KU_LEMESA_5, KU_LEMESA_6, KU_LEMESA_7, KU_LEMESA_8, KU_LEMESA_9, KU_LEMESA_10,
@@ -109,6 +132,10 @@ class NgHymnsNumberSeeder{
 
       MIASO_YA_KU_PASCUA_58,MIASO_YA_KU_PASCUA_59,MIASO_YA_KU_PASCUA_60,MIASO_YA_KU_PASCUA_61,MIASO_YA_KU_PASCUA_62,MIASO_YA_KU_PASCUA_63,
 
+      MIASO_YA_KU_SEMUKA_KUA_YESU_64,MIASO_YA_KU_SEMUKA_KUA_YESU_65,MIASO_YA_KU_SEMUKA_KUA_YESU_66,MIASO_YA_KU_SEMUKA_KUA_YESU_67,MIASO_YA_KU_SEMUKA_KUA_YESU_68,MIASO_YA_KU_SEMUKA_KUA_YESU_69,
+      MIASO_YA_KU_SEMUKA_KUA_YESU_70,MIASO_YA_KU_SEMUKA_KUA_YESU_71,MIASO_YA_KU_SEMUKA_KUA_YESU_72,MIASO_YA_KU_SEMUKA_KUA_YESU_73,MIASO_YA_KU_SEMUKA_KUA_YESU_74,MIASO_YA_KU_SEMUKA_KUA_YESU_75,
+      MIASO_YA_KU_SEMUKA_KUA_YESU_76,MIASO_YA_KU_SEMUKA_KUA_YESU_77,MIASO_YA_KU_SEMUKA_KUA_YESU_78,MIASO_YA_KU_SEMUKA_KUA_YESU_79,MIASO_YA_KU_SEMUKA_KUA_YESU_80,MIASO_YA_KU_SEMUKA_KUA_YESU_81,
+      MIASO_YA_KU_SEMUKA_KUA_YESU_82,MIASO_YA_KU_SEMUKA_KUA_YESU_83,MIASO_YA_KU_SEMUKA_KUA_YESU_84,MIASO_YA_KU_SEMUKA_KUA_YESU_85,
     ];
   }
 }

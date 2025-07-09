@@ -10,6 +10,7 @@ class LitanyContentRepository{
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmLitanyContentSeeder.items();
     if(language == LanguageSectionSeeder.NGANGELA) return await NgLitanyContentSeeder.items();
     if(language == LanguageSectionSeeder.COKWE) return await CoLitanyContentSeeder.items();
+    if(language == LanguageSectionSeeder.KIMBUNDU) return await KmLitanyContentSeeder.items();
     return await LitanyContentSeeder.items();
   }
 

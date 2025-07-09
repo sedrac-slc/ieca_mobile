@@ -10,6 +10,7 @@ class PsalmsContentRepository{
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmPsalmsContentSeeder.items();
     if(language == LanguageSectionSeeder.NGANGELA) return await NgPsalmsContentSeeder.items();
     if(language == LanguageSectionSeeder.COKWE) return await CoPsalmsContentSeeder.items();
+    if(language == LanguageSectionSeeder.KIMBUNDU) return await KmPsalmsContentSeeder.items();
     return await PsalmsContentSeeder.items();
   }
 

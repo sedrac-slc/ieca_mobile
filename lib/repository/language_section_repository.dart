@@ -44,7 +44,11 @@ class LanguageSectionRepository{
       if(LitanyPerson.CONGREGATION == person) return "Chikungulwila";
       if(LitanyPerson.DIRECTOR_CONGREGATION == person) return "Kasongweji / Chikungulwila";
     }
-
+    if(code == LanguageSectionSeeder.KIMBUNDU.code) {
+      if(LitanyPerson.DIRECTOR == person) return "Mutumini";
+      if(LitanyPerson.CONGREGATION == person) return "Kionge";
+      if(LitanyPerson.DIRECTOR_CONGREGATION == person) return "Mutumini / Kionge";
+    }
     return "";
   }
 

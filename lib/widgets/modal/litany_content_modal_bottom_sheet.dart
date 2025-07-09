@@ -38,7 +38,14 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(widget.litanyTitle.name, style: GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.bold),),
+                  Expanded(
+                    child: Text(
+                      widget.litanyTitle.name,
+                      style: GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.bold),
+                      overflow: TextOverflow.visible,
+                      softWrap: true,
+                    ),
+                  ),
                   const ButtonBack(),
                 ]
             ),

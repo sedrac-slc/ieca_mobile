@@ -12,6 +12,7 @@ class PsalmsTitleRepository{
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmPsalmsTitleSeeder.items();
     if(language == LanguageSectionSeeder.NGANGELA) return await NgPsalmsTitleSeeder.items();
     if(language == LanguageSectionSeeder.COKWE) return await CoPsalmsTitleSeeder.items();
+    if(language == LanguageSectionSeeder.KIMBUNDU) return await KmPsalmsTitleSeeder.items();
     return await PsalmsTitleSeeder.items();
   }
 

@@ -10,6 +10,7 @@ class InvocationContentRepository{
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmInvocationContentSeeder.items();
     if(language == LanguageSectionSeeder.NGANGELA) return await NgInvocationContentSeeder.items();
     if(language == LanguageSectionSeeder.COKWE) return await CoInvocationContentSeeder.items();
+    if(language == LanguageSectionSeeder.KIMBUNDU) return await KmInvocationContentSeeder.items();
     return await InvocationContentSeeder.items();
   }
 

@@ -11,6 +11,7 @@ class InvocationTitleRepository{
     final language = await _languageSectionRepository.getLanguage();
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmInvocationTitleSeeder.items();
     if(language == LanguageSectionSeeder.NGANGELA) return await NgInvocationTitleSeeder.items();
+    if(language == LanguageSectionSeeder.COKWE) return await CoInvocationTitleSeeder.items();
     return await InvocationTitleSeeder.items();
   }
 

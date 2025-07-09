@@ -1,12 +1,27 @@
 import 'package:flutter/material.dart';
 import 'package:ieca_mobile/enums/_import.dart';
 import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/repository/_import.dart';
 import 'package:ieca_mobile/util/app_theme.dart';
 
-class LitanyContentItem extends StatelessWidget {
+class LitanyContentItem extends StatefulWidget {
   final LitanyContent litanyContent;
 
   const LitanyContentItem({super.key, required this.litanyContent});
+
+  @override
+  State<LitanyContentItem> createState() => _LitanyContentItemState();
+}
+
+class _LitanyContentItemState extends State<LitanyContentItem> {
+  final _languageSectionRepository = LanguageSectionRepository();
+  String person = "";
+
+  @override
+  void initState() {
+    person = _languageSectionRepository.litanyPerson(widget.litanyContent.person);
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -18,21 +33,21 @@ class LitanyContentItem extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           spacing: 10,
           children: [
-            Text(litanyContent.litanyPerson(), style: TextStyle(color: colorBar, fontWeight: FontWeight.w700),),
-            if (litanyContent.person == LitanyPerson.CONGREGATION) ...[
+            Text(person, style: TextStyle(color: colorBar, fontWeight: FontWeight.w700),),
+            if (widget.litanyContent.person == LitanyPerson.CONGREGATION) ...[
               _BackgroundPanel(
-                  child: Text(litanyContent.content, style: TextStyle(fontWeight: FontWeight.w700),)
+                  child: Text(widget.litanyContent.content, style: TextStyle(fontWeight: FontWeight.w700),)
               )
             ] else ... [
               _BackgroundPanel(
-                  child: Text(litanyContent.content)
+                  child: Text(widget.litanyContent.content)
               )
             ],
           ],
         ),
         Container(
             alignment: Alignment.bottomRight,
-            child: Text(litanyContent.books, textAlign: TextAlign.right,)
+            child: Text(widget.litanyContent.books, textAlign: TextAlign.right,)
         ),
       ],
     );

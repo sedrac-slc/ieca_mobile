@@ -74,9 +74,9 @@ class _InvocationScreenState extends State<InvocationScreen> {
                 builder: (_, value, _) {
                   return !value
                       ? ValueListenableBuilder<List<InvocationTitle>>(
-                          valueListenable: _invocationTitles,
-                          builder: (_, _, _)  => _PanelInvocation(invocationTitles: _invocationTitles.value)
-                        )
+                        valueListenable: _invocationTitles,
+                        builder: (_, value, _)  => value.isEmpty ? ListEmpty() : _PanelInvocation(invocationTitles: value)
+                      )
                       : ValueListenableBuilder<Map<InvocationTitle, List<InvocationContent>>>(
                           valueListenable: _invocationSearch,
                           builder: (_, _, _) => _PanelInvocationSearch(map: _invocationSearch.value)

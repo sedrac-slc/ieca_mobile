@@ -9,6 +9,7 @@ class LitanyContentRepository{
     final language = await _languageSectionRepository.getLanguage();
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmLitanyContentSeeder.items();
     if(language == LanguageSectionSeeder.NGANGELA) return await NgLitanyContentSeeder.items();
+    if(language == LanguageSectionSeeder.COKWE) return await CoLitanyContentSeeder.items();
     return await LitanyContentSeeder.items();
   }
 

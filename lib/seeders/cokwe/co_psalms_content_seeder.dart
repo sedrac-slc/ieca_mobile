@@ -1,0 +1,58 @@
+import 'package:ieca_mobile/enums/_import.dart';
+import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/seeders/_import.dart';
+
+class CoPsalmsContentSeeder{
+
+  static List<PsalmsContent> items() {
+    return [
+      PsalmsContent(id: 250, position: 1, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_19, content: "Lilu liasolola uhenya wa Zambi; yuma yeswe ya kwilu ya kusolola utotombo wenji! Tangwa liakusolola yuma ku tangwa liakwo, ufuku wakwambulula yuma ku ufuku ukwo. Kutushikwivwa kuhanjika cho, chibwe zumgu kutushi kulivwa; hindu liji lio twakulivwa hashi heswe, sango jo jakuheta ndoo ku songo lia hashi,"),
+      PsalmsContent(id: 251, position: 2, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_19, content: "Maliji jami ni manyonga jami, yikabeme ku meso je. Aa Mwene Zambi, chiswamo chami kanda chilamwiina chami"),
+      PsalmsContent(id: 252, position: 3, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_19, content: "Zambi hanatungila tangwa zuwo kwilu. Kuliakutuhuka chichamene mu zuwo lialio ngwe sandungi; kulili ngwe mutu yoze unazomboka ni chiseke. Kuliakuvumbukila ku songo lia lilu, kuliakunjilila ku songo likwo. Chakuhi nichimwe chize chakuswama ku lutemo walio."),
+      PsalmsContent(id: 253, position: 4, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_19, content: "Maliji jami ni manyonga jami, yikabeme ku meso je. Aa Mwene Zambi, chiswamo chami kanda chilamwiina chami"),
+      PsalmsContent(id: 254, position: 5, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_19, content: "Shimbi ja Mwene Zambi jili jibema, kujakuhuzulula mbunge. Shindakenyo ya Muene Zambi yili yamwenemwene, kuyakukanyamisa yizuzuke. Longeso lia Mwene Zambi lili libema, ni waze akulifunga kaakuwahilila. Maliji jenyi a shimbi kaali a chijila, kaakutemuna meso."),
+      PsalmsContent(id: 255, position: 6, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_19, content: "Maliji jami ni manyonga jami, yikabeme ku meso je. Aa Mwene Zambi, chiswamo chami kanda chilamwiina chami"),
+      PsalmsContent(id: 256, position: 7, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_19, content: "Kulemesa Mwene Zambi chili chibema, kuchakulinduluka ndoo ku miaka yeswe. Ubatwilo wa Mwene Zambi kuwalita, kuuli wa ululi matangwa eswe. Ngunazange shimbi ja Zambi kuhiana oru yibema, jinahiana kuyema wuchi. Kujakungwaha mana, yami kavumbi ke, wakungukundulula mumu nakujifunga."),
+      PsalmsContent(id: 257, position: 8, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_19, content: "Maliji jami ni manyonga jami, yikabeme ku meso je. Aa Mwene Zambi, chiswamo chami kanda chilamwiina chami"),
+      PsalmsContent(id: 258, position: 9, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_19, content: "Niumwe mahasa kunyingika yibi yenyi mwene; Mwene Zambi ngulamwine kama ku yibi yize chanyingikine! Ngufunge kama, ku yibi yize ngunambe kulinga; ngukwase, kanda yinguzeyesa, mba ngubwe mungunu, kuvulumuna ka."),
+      PsalmsContent(id: 259, position: 10, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_19, content: "Maliji jami ni manyonga jami, yikabeme ku meso je. Aa Mwene Zambi, chiswamo chami kanda chilamwiina chami"),
+
+      PsalmsContent(id: 260, position: 1, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_24, content: "Hashi ni yeswe yize yiliho yili ya mbala ya Mwene Zambi; hashi ni eswe waze atwama ho kaali nienyi. Iye watangile he hashi ni kalunga lwiji."),
+      PsalmsContent(id: 261, position: 2, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_24, content: "Iya mahasa kukanduka ha mulundu wa Mwene Zambi? Iya mahasa kunjila mu zuwo lienyi lia chijila?"),
+      PsalmsContent(id: 262, position: 3, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_24, content: "Shina yoze uli ni mbunge yimuwika ni yi tanga ya ululi, yoze keshi kukombelela mahamba, yoze keshi kulishinga ni mahuza. Mwene Zambi manuwahisa ni kumulamwina, Zambi mamusambisa kanawa. Chanacho abwa atu waze akwiza kuli Zambi, waze akwiza ku meso ja Zambi ya Yakoba."),
+      PsalmsContent(id: 263, position: 4, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_24, content: "Azululenu yajilo ya ku chipanga azululenu ku yikolo yikulu, mba mwanangana munene manjila mo."),
+      PsalmsContent(id: 264, position: 5, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_24, content: "Mwe mwanangana munene iya?"),
+      PsalmsContent(id: 265, position: 6, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_24, content: "Mwene Zambi mukwa ndundo, Mwene Zambi mukwa kukumba. Azululenu yajilo ya chipanga azululenu ku yi kolo yikulu mba mwanangana munene anjile mo."),
+      PsalmsContent(id: 266, position: 7, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_24, content: "Mwene mwanangana munene iya?"),
+      PsalmsContent(id: 267, position: 8, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_24, content: "Mwene Zambi Mukwa Ndundo Jeswe, iye mwe Mwanangana!"),
+
+      PsalmsContent(id: 268, position: 9, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_46, content: "Zambi kali uchinyino wetu ni tachi jetu, kanalulika matangwa eswe ni kutukwasa muze twakumona lamba. Ha chino kutuchi kwivwa woma, chibwe mavu nyike, chibwe milundu yilimbile mu kalunga lwiji chibwe tulunga lwiji maabinda ni kututumuna fulufulu, chibwe milundu muyinyika."),
+      PsalmsContent(id: 269, position: 10, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_46, content: "Mwene mukwa Ndundo Jeswe kali hamwe ni yetu; Zambi ya Yakoba kali uchinyino wetu!"),
+      PsalmsContent(id: 270, position: 11, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_46, content: "Kukuli umwe lwiji yoze wakuwahisa akwa limbo lia Zambi, akwa zuwo lia chijila lia Zambi Mukwa Mwilu Mwahiana. Zambi kali mu limbo, atu keechi kulionona; ha chichamene kumeza ni kwakwasa. Akwa mavungu kaanevu woma, mawanangana kaananyiki, Zambi kanakulunguza, hashi hanasangunuka."),
+      PsalmsContent(id: 271, position: 12, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_46, content: "Mwene mukwa Ndundo Jeswe kali hamwe ni yetu; Zambi ya Yakoba kali uchinyino wetu!"),
+      PsalmsContent(id: 272, position: 13, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_46, content: "Tweyenu numone yuma yize alingile, yuma ya kulishimwoka yize alingile hano hashi! Kakuholesa jita hashi heswe, kakumakwona mata, kakubatwola makunga, kakwochacha kebwe! Kanambe ngwenyi: “Litwaminenu kumbunda, nyingikenu ngwenu, yami nguli Zambi; nakuyula mavungu, nakuyula akwa hashi eswe.”"),
+      PsalmsContent(id: 273, position: 14, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_46, content: "Mwene Zambi Mukwa Ndundo Jeswe kali hamwe ni yetu, Zambi ya Yakoba kali uchinyino wetu!"),
+
+      PsalmsContent(id: 274, position: 1, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_67, content: "Zambi tuwile kama keke, tuwahise, tu tale kama ni utu we, hanga akwa hashi anyingike chize unapale, hanga mavungu eswe anyingike ulamwino we."),
+      PsalmsContent(id: 275, position: 2, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_67, content: "Aa Zambi, mavungu akuhalise, mavungu eswe akuhalise!"),
+      PsalmsContent(id: 276, position: 3, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_67, content: "Mavungu awahilile, embe ni chiseke, mumu yena wakubatwila atu ni ululi, yena wakusongwela mavungu eswe."),
+      PsalmsContent(id: 277, position: 4, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_67, content: "Aa Zambi, mavungu akuhalise, mavungu eswe akuhalise!"),
+      PsalmsContent(id: 278, position: 5, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_67, content: "Mavu heemisa mihuko, Zambi, Zambi yetu, hatukwasa. Zambi hatuwahisa; atu eswe a ku yifuchi yeswe amulemese."),
+      PsalmsContent(id: 279, position: 6, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_67, content: "Aa Zambi, mavungu akuhalise, mavungu eswe akuhalise!"),
+
+      PsalmsContent(id: 280, position: 1, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_96, content: "Mwimbilenu Mwene Zambi mwaso waha! Mwimbilenu Mwene Zambi miaso, muchichimiekenu! Matangwa eswe ambujolenu sango jibema ngwenu, hatulamwina!"),
+      PsalmsContent(id: 281, position: 2, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_96, content: "Lumbununenu uhenya wenyi kuli mavungu, ni yitanga yenyi ya kukomwesa."),
+      PsalmsContent(id: 282, position: 3, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_96, content: "Mwene Zambi kali muinene, atu chaatamba kumuchichimieka kuhiana; chaatamba kumulemesa kuhiana mazambi akwo eswe."),
+      PsalmsContent(id: 283, position: 4, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_96, content: "Mazambi ja mavungu akwo kaali lume mahamba, alioze Mwene Zambi mwe watangile lilu. Mwene Zambi kali ni uhenya ni ulamba; ndundo ni ubeme yili mu zuwo lienyi."),
+      PsalmsContent(id: 284, position: 5, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_96, content: "Yenu akwa hashi eswe, fumanyisenu Mwene Zambi, fumanyisenu uhenya wenyi, ni ndundo jenyi! Fumanyisenu jina lia Mwene Zambi; nehenu milambu yenu mu zuwo lienyi. Wayilenu Zambi Munangi muze masoloka. Akwa hashi heswe chikimenu ku meso jenyi!"),
+      PsalmsContent(id: 285, position: 6, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_96, content: "Ambulwilenu mavungu eswe ngwenu: “Mwene Zambi mwe mwanangana! Hanakolesa hashi, kuhahashile kunyika; makabatwila atu eswe ni ululi.”"),
+      PsalmsContent(id: 286, position: 7, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_96, content: "Lilu ni hashi wahililenu! Kalunga lwiji ni yeswe yize yilimo kololokenu! Minda ni yeswe yize yilimo wahililenu! Mitondo yeswe ya mu mishitu kololokenu ni uwahililo ku meso ja Mwene Zambi, mumu kaneza ni hashi."),
+      PsalmsContent(id: 287, position: 8, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_96, content: "Akwa hashi eswe kumakaayula, ni umwenemwene ni ululi."),
+
+      PsalmsContent(id: 288, position: 1, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_100, content: "Yenu akwa hashi heswe, mwimbilenu Mwene Zambi! Muwayilenu ni uwahililo imbenu miaso ya chiseke ku meso jenyi!"),
+      PsalmsContent(id: 289, position: 2, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_100, content: "Tayizenu ngwenu, Mwene mwe Zambi! Mwe watutangile, tuli nienyi; tuili atu jenyi, tuli mapanga jenyi."),
+      PsalmsContent(id: 290, position: 3, person: PsalmsPerson.DIRECTOR, psalmsTitle: CoPsalmsTitleSeeder.MIASO_100, content: "Tunjilenu mu zuwo lienyi ni kusakwilila, mu yiize ya zuwo lienyi ni kuchichimieka. Musakwililenu, fumanyisenu jina lienyi."),
+      PsalmsContent(id: 291, position: 4, person: PsalmsPerson.CONGREGATION, psalmsTitle: CoPsalmsTitleSeeder.MIASO_100, content: "Mwene Zambi kali mubema, zango lienyi kulishi kuhwa; umwenemwene wenyi wakulinduluka ndoo ku miaka yeswe."),
+    ];
+  }
+}

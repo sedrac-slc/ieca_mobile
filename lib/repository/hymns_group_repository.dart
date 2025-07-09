@@ -11,6 +11,7 @@ class HymnsGroupRepository{
     final language = await _languageSectionRepository.getLanguage();
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmHymnsGroupSeeder.items();
     if(language == LanguageSectionSeeder.NGANGELA) return await NgHymnsGroupSeeder.items();
+    if(language == LanguageSectionSeeder.COKWE) return await CoHymnsGroupSeeder.items();
     return await HymnsGroupSeeder.items();
   }
 

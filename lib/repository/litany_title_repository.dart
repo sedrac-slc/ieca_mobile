@@ -11,6 +11,7 @@ class LitanyTitleRepository {
     final language = await _languageSectionRepository.getLanguage();
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmLitanyTitleSeeder.items();
     if(language == LanguageSectionSeeder.NGANGELA) return await NgLitanyTitleSeeder.items();
+    if(language == LanguageSectionSeeder.COKWE) return await CoLitanyTitleSeeder.items();
     return await LitanyTitleSeeder.items();
   }
 

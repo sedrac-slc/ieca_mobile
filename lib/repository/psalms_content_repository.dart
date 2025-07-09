@@ -9,6 +9,7 @@ class PsalmsContentRepository{
     final language = await _languageSectionRepository.getLanguage();
     if(language == LanguageSectionSeeder.UMBUNDU) return await UmPsalmsContentSeeder.items();
     if(language == LanguageSectionSeeder.NGANGELA) return await NgPsalmsContentSeeder.items();
+    if(language == LanguageSectionSeeder.COKWE) return await CoPsalmsContentSeeder.items();
     return await PsalmsContentSeeder.items();
   }
 

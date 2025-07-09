@@ -5,7 +5,7 @@ class KmHymnsContentSeeder{
 
   static List<HymnsContent> items() {
     return [
-      ...KmHymnsTuanuke.list
+      ...KmHymnsGeneral.list
     ];
   }
 }

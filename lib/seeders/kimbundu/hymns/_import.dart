@@ -1,1 +1,1 @@
-export 'km_hymns_tuanuke.dart';
+export 'km_hymns_general.dart';

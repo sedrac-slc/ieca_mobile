@@ -10,6 +10,7 @@ Se a estrofe é coro o HymnsContentCode é CHOIR sem ter position, a estrofe que
 
 HymnsContent(id: , content: "", hymnsNumber: HYMNS_NUMBER_1, typeStanza: HymnsContentCode.CHOIR),
 
+No hino quando tiver na estrofe quebra de linha respeita também colocando (\n)
 considera para o hino abaixo começa com id 7000 a primeira estrofe que irá
 gerar o HymnsContent e deve seguir de forma sequencial e o hymnsNumber é
 HYMNS_NUMBER_1, o hymnsNumber será sequencial quando eu informa outro hino para você fazer de novo este processo e

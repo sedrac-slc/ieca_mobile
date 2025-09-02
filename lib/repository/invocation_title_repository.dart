@@ -13,6 +13,7 @@ class InvocationTitleRepository{
     if(language == LanguageSectionSeeder.NGANGELA) return await NgInvocationTitleSeeder.items();
     if(language == LanguageSectionSeeder.COKWE) return await CoInvocationTitleSeeder.items();
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmInvocationTitleSeeder.items();
+    if(language == LanguageSectionSeeder.FIOTE) return await FtInvocationTitleSeeder.items();
     return await InvocationTitleSeeder.items();
   }
 

@@ -13,6 +13,7 @@ class HymnsGroupRepository{
     if(language == LanguageSectionSeeder.NGANGELA) return await NgHymnsGroupSeeder.items();
     if(language == LanguageSectionSeeder.COKWE) return await CoHymnsGroupSeeder.items();
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmHymnsGroupSeeder.items();
+    if(language == LanguageSectionSeeder.FIOTE) return await FtHymnsGroupSeeder.items();
     return await HymnsGroupSeeder.items();
   }
 

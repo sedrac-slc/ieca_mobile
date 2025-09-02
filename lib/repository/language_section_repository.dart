@@ -49,6 +49,11 @@ class LanguageSectionRepository{
       if(LitanyPerson.CONGREGATION == person) return "Kionge";
       if(LitanyPerson.DIRECTOR_CONGREGATION == person) return "Mutumini / Kionge";
     }
+    if(code == LanguageSectionSeeder.FIOTE.code) {
+      if(LitanyPerson.DIRECTOR == person) return "Ntuadisi";
+      if(LitanyPerson.CONGREGATION == person) return "Dibundu";
+      if(LitanyPerson.DIRECTOR_CONGREGATION == person) return "Ntuadisi / Dibundu";
+    }
     return "";
   }
 

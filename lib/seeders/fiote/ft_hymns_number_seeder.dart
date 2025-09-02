@@ -5,16 +5,16 @@ import 'package:ieca_mobile/models/_import.dart';
 import 'package:ieca_mobile/seeders/_import.dart';
 
 class FtHymnsNumberSeeder {
-  static final GENERAL_1 = HymnsNumber(id: 910, num: 1, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 28; C.C.5", code: HymnBookCode.CC);
-  static final GENERAL_2 = HymnsNumber(id: 911, num: 2, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 22; Lyra 21", code: HymnBookCode.LYARA);
-  static final GENERAL_3 = HymnsNumber(id: 912, num: 3, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 5; C.C. 9", code: HymnBookCode.CC);
-  static final GENERAL_4 = HymnsNumber(id: 913, num: 4, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 21; H.C.c/M 578", code: HymnBookCode.HC_M);
-  static final GENERAL_5 = HymnsNumber(id: 914, num: 5, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 7; C.C.135", code: HymnBookCode.CC);
-  static final GENERAL_6 = HymnsNumber(id: 915, num: 6, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 66; C.C. 282", code: HymnBookCode.CC);
-  static final GENERAL_7 = HymnsNumber(id: 916, num: 7, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 24;Lyra 24", code: HymnBookCode.LYARA);
-  static final GENERAL_8 = HymnsNumber(id: 917, num: 8, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 288; C.C.194", code: HymnBookCode.CC);
-  static final GENERAL_9 = HymnsNumber(id: 918, num: 9, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 32; H.C.c/M 500", code: HymnBookCode.HC_M);
-  static final GENERAL_10 = HymnsNumber(id: 919, num: 10, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 161; C.C.62", code: HymnBookCode.CC);
+  static final GENERAL_1 = HymnsNumber(id: 1000, num: 1, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 7", code: HymnBookCode.CC);
+  static final GENERAL_2 = HymnsNumber(id: 1001, num: 2, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 5", code: HymnBookCode.LYARA);
+  static final GENERAL_3 = HymnsNumber(id: 1002, num: 3, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 2", code: HymnBookCode.CC);
+  static final GENERAL_4 = HymnsNumber(id: 1003, num: 4, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 3", code: HymnBookCode.HC_M);
+  static final GENERAL_5 = HymnsNumber(id: 1004, num: 5, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 10", code: HymnBookCode.CC);
+  static final GENERAL_6 = HymnsNumber(id: 1005, num: 6, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 19", code: HymnBookCode.CC);
+  static final GENERAL_7 = HymnsNumber(id: 1006, num: 7, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 32", code: HymnBookCode.LYARA);
+  static final GENERAL_8 = HymnsNumber(id: 1007, num: 8, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port 47", code: HymnBookCode.CC);
+  static final GENERAL_9 = HymnsNumber(id: 1008, num: 9, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 49", code: HymnBookCode.HC_M);
+  static final GENERAL_10 = HymnsNumber(id: 1009, num: 10, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 65", code: HymnBookCode.CC);
   static final GENERAL_11 = HymnsNumber(id: 920, num: 11, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 155; C.C. 225", code: HymnBookCode.CC);
   static final GENERAL_12 = HymnsNumber(id: 921, num: 12, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: Port. 162; C.C. 213", code: HymnBookCode.CC);
   static final GENERAL_13 = HymnsNumber(id: 922, num: 13, hymnsGroup: FtHymnsGroupSeeder.GENERAL, label: "Música: C.C.39", code: HymnBookCode.CC);

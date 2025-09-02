@@ -51,7 +51,7 @@ class _InvocationContentModalBottomSheetState
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            Text(widget.invocationTitle.name, style: GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.bold),),
+                            Expanded(child: Text(widget.invocationTitle.name, style: GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.bold), overflow: TextOverflow.ellipsis, maxLines: 2,)),
                             const ButtonBack(),
                           ]
                         ),

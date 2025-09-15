@@ -1,6 +1,4 @@
-import 'package:ieca_mobile/enums/hymn_book_code.dart';
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class NgHymnsNumberSeeder{
   static final KU_LEMESA_1 = HymnsNumber(id: 760, num: 1, hymnsGroup: NgHymnsGroupSeeder.KU_LEMESA, label: "Música: Port. 366; C.C.8", code: HymnBookCode.CSr);

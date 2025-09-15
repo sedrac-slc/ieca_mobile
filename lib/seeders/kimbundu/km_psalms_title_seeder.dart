@@ -1,5 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class KmPsalmsTitleSeeder{
   static final JISALAMO_19 = PsalmsTitle(id: 31, name: "JISÁLAMO 19", position: 1, lang: LanguageSectionSeeder.KIMBUNDU);

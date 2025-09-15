@@ -1,6 +1,5 @@
 import 'package:ieca_mobile/enums/hymn_book_code.dart';
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class UmHymnsNumberSeeder{
   static final EKOVONGO_1 = HymnsNumber(id: 380, num: 1, hymnsGroup: UmHymnsGroupSeeder.EKOVONGO, label: "Música: C.Sr. 316", code: HymnBookCode.CSr);

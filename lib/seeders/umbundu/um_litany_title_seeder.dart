@@ -1,5 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class UmLitanyTitleSeeder{
   static final EKOVONGO_LIOKUFENDELA = LitanyTitle(id: 11, name: "Ekovongo Liokufendela", position: 1, lang: LanguageSectionSeeder.PORTUGUES);

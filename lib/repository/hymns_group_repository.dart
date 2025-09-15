@@ -1,6 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/repository/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 import 'package:collection/collection.dart';
 
 class HymnsGroupRepository{
@@ -14,6 +12,7 @@ class HymnsGroupRepository{
     if(language == LanguageSectionSeeder.COKWE) return await CoHymnsGroupSeeder.items();
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmHymnsGroupSeeder.items();
     if(language == LanguageSectionSeeder.FIOTE) return await FtHymnsGroupSeeder.items();
+    if(language == LanguageSectionSeeder.KIKONGO) return await KkHymnsGroupSeeder.items();
     return await HymnsGroupSeeder.items();
   }
 

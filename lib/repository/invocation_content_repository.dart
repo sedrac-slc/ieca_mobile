@@ -1,6 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/repository/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class InvocationContentRepository{
   final _languageSectionRepository = LanguageSectionRepository();
@@ -12,6 +10,7 @@ class InvocationContentRepository{
     if(language == LanguageSectionSeeder.COKWE) return await CoInvocationContentSeeder.items();
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmInvocationContentSeeder.items();
     if(language == LanguageSectionSeeder.FIOTE) return await FtInvocationContentSeeder.items();
+    if(language == LanguageSectionSeeder.KIKONGO) return await KkInvocationContentSeeder.items();
     return await InvocationContentSeeder.items();
   }
 

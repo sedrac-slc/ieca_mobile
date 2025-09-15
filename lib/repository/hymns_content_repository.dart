@@ -1,6 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/repository/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class HymnsContentRepository {
   final _languageSectionRepository = LanguageSectionRepository();
@@ -12,6 +10,7 @@ class HymnsContentRepository {
     if(language == LanguageSectionSeeder.COKWE) return await CoHymnsSeeder.list;
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmHymnsSeeder.list;
     if(language == LanguageSectionSeeder.FIOTE) return await FtHymnsSeeder.list;
+    if(language == LanguageSectionSeeder.KIKONGO) return await KkHymnsSeeder.list;
     return await HymnsSeeder.list;
   }
 

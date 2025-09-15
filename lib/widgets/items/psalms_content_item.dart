@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ieca_mobile/enums/_import.dart';
-import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 import 'package:ieca_mobile/util/app_theme.dart';
 
 class PsalmsContentItem extends StatelessWidget {

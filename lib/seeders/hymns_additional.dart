@@ -1,5 +1,5 @@
 import 'package:ieca_mobile/enums/_import.dart';
-import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class HymnsAdditional {
   static final HYMNS_GROUP = HymnsGroup(id: 30, name: "Adicional", beginning: 1, finished: 16);

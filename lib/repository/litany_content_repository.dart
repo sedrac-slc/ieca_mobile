@@ -1,6 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/repository/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class LitanyContentRepository{
   final _languageSectionRepository = LanguageSectionRepository();
@@ -12,6 +10,7 @@ class LitanyContentRepository{
     if(language == LanguageSectionSeeder.COKWE) return await CoLitanyContentSeeder.items();
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmLitanyContentSeeder.items();
     if(language == LanguageSectionSeeder.FIOTE) return await FtLitanyContentSeeder.items();
+    if(language == LanguageSectionSeeder.KIKONGO) return await KkLitanyContentSeeder.items();
     return await LitanyContentSeeder.items();
   }
 

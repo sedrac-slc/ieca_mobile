@@ -1,4 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class NgHymnsGroupSeeder {
   static final KU_LEMESA = HymnsGroup(id: 60, name: "Ku Lemesa", beginning: 1, finished: 17);

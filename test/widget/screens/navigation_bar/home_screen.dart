@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 import 'package:ieca_mobile/screens/navigation_bar/home_screen.dart';
 import 'package:ieca_mobile/object_box.dart';
 import 'package:ieca_mobile/main.dart' as app_main;

@@ -1,6 +1,5 @@
 import 'package:ieca_mobile/enums/hymn_book_code.dart';
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class HymnsNumberSeeder{
   static final CALL_TO_WORSHIP_1 = HymnsNumber(id: 1, num: 1, hymnsGroup: HymnsGroupSeeder.CALL_TO_WORSHIP, label: "Música: C.Sr. 316", code: HymnBookCode.CSr);

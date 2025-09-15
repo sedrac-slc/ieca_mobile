@@ -1,4 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class HymnsGroupSeeder {
   static final CALL_TO_WORSHIP = HymnsGroup(id: 1, name: "Chamada para Adoração", beginning: 1, finished: 4);

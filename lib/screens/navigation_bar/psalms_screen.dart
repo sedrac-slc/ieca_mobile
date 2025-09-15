@@ -1,6 +1,6 @@
 import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/widgets/search/map/_import.dart';
-import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 import 'package:ieca_mobile/repository/psalms_title_repository.dart';
 import 'package:ieca_mobile/util/app_theme.dart';
 import 'package:ieca_mobile/widgets/_import.dart';

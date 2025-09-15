@@ -1,5 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class InvocationTitleSeeder{
   static final GENERAL = InvocationTitle(id: 1, name: "Geral", position: 1, lang: LanguageSectionSeeder.PORTUGUES);

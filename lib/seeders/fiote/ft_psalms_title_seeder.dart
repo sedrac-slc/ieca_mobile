@@ -1,5 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class FtPsalmsTitleSeeder{
   static final NKUNGA_19 = PsalmsTitle(id: 40, name: "NKUNGA 19", position: 1, lang: LanguageSectionSeeder.FIOTE);

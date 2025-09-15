@@ -1,6 +1,4 @@
-import 'package:ieca_mobile/enums/_import.dart';
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/portugues/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class HymnsChildren {
   static List<HymnsContent> list =[

@@ -1,6 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/repository/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class HymnsNumberRepository {
   final _languageSectionRepository = LanguageSectionRepository();
@@ -13,6 +11,7 @@ class HymnsNumberRepository {
     if(language == LanguageSectionSeeder.COKWE) list = await CoHymnsNumberSeeder.items();
     if(language == LanguageSectionSeeder.KIMBUNDU) list = await KmHymnsNumberSeeder.items();
     if(language == LanguageSectionSeeder.FIOTE) list = await FtHymnsNumberSeeder.items();
+    if(language == LanguageSectionSeeder.KIKONGO) list = await KkHymnsNumberSeeder.items();
     return await list.where((it) => it.hymnsGroup.id == item.id).toList();
   }
 

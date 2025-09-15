@@ -1,4 +1,4 @@
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 import 'package:ieca_mobile/seeders/portugues/hymns/_import.dart';
 import 'package:ieca_mobile/models/hymns_content.dart';
 

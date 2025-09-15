@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
 import 'package:ieca_mobile/widgets/items/litany_content_item.dart';
 

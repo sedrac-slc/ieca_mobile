@@ -1,5 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class LitanyTitleSeeder{
   static final CALL_TO_WORSHIP = LitanyTitle(id: 1, name: "Chamada Para Adoração", position: 1, lang: LanguageSectionSeeder.PORTUGUES);

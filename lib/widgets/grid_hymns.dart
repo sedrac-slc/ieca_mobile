@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 import 'package:ieca_mobile/screens/hymns_content_screen.dart';
 import 'package:ieca_mobile/widgets/_import.dart';
 

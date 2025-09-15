@@ -1,6 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/repository/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 import 'package:collection/collection.dart';
 
 class PsalmsTitleRepository{
@@ -14,6 +12,7 @@ class PsalmsTitleRepository{
     if(language == LanguageSectionSeeder.COKWE) return await CoPsalmsTitleSeeder.items();
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmPsalmsTitleSeeder.items();
     if(language == LanguageSectionSeeder.FIOTE) return await FtPsalmsTitleSeeder.items();
+    if(language == LanguageSectionSeeder.KIKONGO) return await KkPsalmsTitleSeeder.items();
     return await PsalmsTitleSeeder.items();
   }
 

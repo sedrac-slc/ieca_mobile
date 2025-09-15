@@ -1,6 +1,4 @@
-import 'package:ieca_mobile/enums/hymn_book_code.dart';
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class KmHymnsNumberSeeder {
   static final GENERAL_1 = HymnsNumber(id: 910, num: 1, hymnsGroup: KmHymnsGroupSeeder.GENERAL, label: "Música: Port. 28; C.C.5", code: HymnBookCode.CC);

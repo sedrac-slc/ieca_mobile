@@ -1,5 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class KmLitanyTitleSeeder{
   static final KUMUTU_UALA_KU_MUTUAMESA_O_MAKA_NA_JEHOVA = LitanyTitle(id: 41, name: "Musambu Ua Dianga - Kumutu Uala Ku Mutuamesa O Maka Na Jehova", position: 1, lang: LanguageSectionSeeder.KIMBUNDU);

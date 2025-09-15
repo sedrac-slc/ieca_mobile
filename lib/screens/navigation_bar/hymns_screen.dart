@@ -1,7 +1,7 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/enums/_import.dart';
 import 'package:ieca_mobile/l10n/app_localizations.dart';
-import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 import 'package:ieca_mobile/repository/_import.dart';
 import 'package:ieca_mobile/screens/hymns_content_screen.dart';
 import 'package:ieca_mobile/util/app_theme.dart';

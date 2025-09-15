@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ieca_mobile/main.dart';
-import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 import 'package:ieca_mobile/objectbox.g.dart';
 
 class PreferenceRepository extends ChangeNotifier{

@@ -1,5 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'hymns/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class FtHymnsContentSeeder{
 

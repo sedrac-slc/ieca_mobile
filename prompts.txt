@@ -50,6 +50,7 @@ Invocatoria
  4. o position começa de 1 deve ser sequencial
  5. o id começa de 100 deve ser sequencial
 
+Não retorna em lista, apenas retorna os PsalmsContent de forma inline
  ------------------------------------------------------------------------------
  Litanias
  O texto abaixo irá gerar classe dart.

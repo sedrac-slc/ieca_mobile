@@ -1,0 +1,12 @@
+import 'package:ieca_mobile/models/_import.dart';
+
+class KkHymnsGroupSeeder {
+   static final GENERAL = HymnsGroup(id: 10, name: "General", beginning: 1, finished: 47);
+
+  static List<HymnsGroup> items() {
+    return [
+      GENERAL,
+    ];
+  }
+
+}

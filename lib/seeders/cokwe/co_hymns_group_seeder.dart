@@ -1,4 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class CoHymnsGroupSeeder {
   static final KUHALISA = HymnsGroup(id: 80, name: "kuhalisa", beginning: 1, finished: 13);

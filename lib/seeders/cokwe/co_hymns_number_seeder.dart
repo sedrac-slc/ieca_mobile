@@ -1,6 +1,4 @@
-import 'package:ieca_mobile/enums/hymn_book_code.dart';
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class CoHymnsNumberSeeder{
   static final KUHALISA_1 = HymnsNumber(id: 850, num: 1, hymnsGroup: CoHymnsGroupSeeder.KUHALISA, label: "Música: Port. 366;  C.C. 8", code: HymnBookCode.CC);

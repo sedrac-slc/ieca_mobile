@@ -1,5 +1,4 @@
-import 'package:ieca_mobile/models/_import.dart';
-import 'package:ieca_mobile/seeders/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class CoLitanyTitleSeeder{
   static final MUTAMBI_WA_KUWAHILA = LitanyTitle(id: 31, name: "Mutambi Wa Kuwahila", position: 1, lang: LanguageSectionSeeder.COKWE);

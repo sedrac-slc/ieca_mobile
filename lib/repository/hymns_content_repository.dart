@@ -11,6 +11,7 @@ class HymnsContentRepository {
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmHymnsSeeder.list;
     if(language == LanguageSectionSeeder.FIOTE) return await FtHymnsSeeder.list;
     if(language == LanguageSectionSeeder.KIKONGO) return await KkHymnsSeeder.list;
+    if(language == LanguageSectionSeeder.KWANYAMA) return await KwHymnsSeeder.list;
     return await HymnsSeeder.list;
   }
 

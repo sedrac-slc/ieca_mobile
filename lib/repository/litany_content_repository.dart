@@ -11,6 +11,7 @@ class LitanyContentRepository{
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmLitanyContentSeeder.items();
     if(language == LanguageSectionSeeder.FIOTE) return await FtLitanyContentSeeder.items();
     if(language == LanguageSectionSeeder.KIKONGO) return await KkLitanyContentSeeder.items();
+    if(language == LanguageSectionSeeder.KWANYAMA) return await KwLitanyContentSeeder.items();
     return await LitanyContentSeeder.items();
   }
 

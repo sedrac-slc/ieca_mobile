@@ -11,6 +11,7 @@ class InvocationContentRepository{
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmInvocationContentSeeder.items();
     if(language == LanguageSectionSeeder.FIOTE) return await FtInvocationContentSeeder.items();
     if(language == LanguageSectionSeeder.KIKONGO) return await KkInvocationContentSeeder.items();
+    if(language == LanguageSectionSeeder.KWANYAMA) return await KwInvocationContentSeeder.items();
     return await InvocationContentSeeder.items();
   }
 

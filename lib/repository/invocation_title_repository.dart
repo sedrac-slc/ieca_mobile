@@ -13,6 +13,7 @@ class InvocationTitleRepository{
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmInvocationTitleSeeder.items();
     if(language == LanguageSectionSeeder.FIOTE) return await FtInvocationTitleSeeder.items();
     if(language == LanguageSectionSeeder.KIKONGO) return await KkInvocationTitleSeeder.items();
+    if(language == LanguageSectionSeeder.KWANYAMA) return await KwInvocationTitleSeeder.items();
     return await InvocationTitleSeeder.items();
   }
 

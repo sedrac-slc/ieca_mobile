@@ -13,6 +13,7 @@ class PsalmsTitleRepository{
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmPsalmsTitleSeeder.items();
     if(language == LanguageSectionSeeder.FIOTE) return await FtPsalmsTitleSeeder.items();
     if(language == LanguageSectionSeeder.KIKONGO) return await KkPsalmsTitleSeeder.items();
+    if(language == LanguageSectionSeeder.KWANYAMA) return await KwPsalmsTitleSeeder.items();
     return await PsalmsTitleSeeder.items();
   }
 

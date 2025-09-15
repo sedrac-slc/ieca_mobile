@@ -1,7 +1,7 @@
 import 'package:ieca_mobile/_import.dart';
 
-class KkHymnsGroupSeeder {
-   static final GENERAL = HymnsGroup(id: 100, name: "General", beginning: 1, finished: 47);
+class KwHymnsGroupSeeder {
+   static final GENERAL = HymnsGroup(id: 15, name: "General", beginning: 1, finished: 47);
 
   static List<HymnsGroup> items() {
     return [

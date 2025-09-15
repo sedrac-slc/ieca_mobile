@@ -13,6 +13,7 @@ class LitanyTitleRepository {
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmLitanyTitleSeeder.items();
     if(language == LanguageSectionSeeder.FIOTE) return await FtLitanyTitleSeeder.items();
     if(language == LanguageSectionSeeder.KIKONGO) return await KkLitanyTitleSeeder.items();
+    if(language == LanguageSectionSeeder.KWANYAMA) return await KwLitanyTitleSeeder.items();
     return await LitanyTitleSeeder.items();
   }
 

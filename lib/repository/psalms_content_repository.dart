@@ -11,6 +11,7 @@ class PsalmsContentRepository{
     if(language == LanguageSectionSeeder.KIMBUNDU) return await KmPsalmsContentSeeder.items();
     if(language == LanguageSectionSeeder.FIOTE) return await FtPsalmsContentSeeder.items();
     if(language == LanguageSectionSeeder.KIKONGO) return await KkPsalmsContentSeeder.items();
+    if(language == LanguageSectionSeeder.KWANYAMA) return await KwPsalmsContentSeeder.items();
     return await PsalmsContentSeeder.items();
   }
 

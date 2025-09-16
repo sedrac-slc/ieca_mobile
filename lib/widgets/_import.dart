@@ -1,9 +1,11 @@
-export 'container/_import.dart';
-export 'inputs/_import.dart';
-export 'modal/_import.dart';
-export 'tile/_import.dart';
 export 'badge/_import.dart';
 export 'button/_import.dart';
+export 'container/_import.dart';
+export 'inputs/_import.dart';
+export 'items/_import.dart';
+export 'modal/_import.dart';
+export 'search/_import.dart';
+export 'tile/_import.dart';
 export 'item_info.dart';
 export 'hymns_info.dart';
 export 'historic_group.dart';

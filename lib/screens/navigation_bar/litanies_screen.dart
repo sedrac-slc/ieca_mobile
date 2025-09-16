@@ -77,7 +77,7 @@ class _LitaniesScreenState extends State<LitaniesScreen> {
                     return !value
                         ? ValueListenableBuilder<List<LitanyTitle>>(
                             valueListenable: _litanyTitles,
-                            builder: (_, _, _)  => _PanelLitany(litanyTitles: _litanyTitles.value))
+                            builder: (_, value , _)  => value.isEmpty ? ListEmpty() : _PanelLitany(litanyTitles: _litanyTitles.value))
                         : ValueListenableBuilder<Map<LitanyTitle, List<LitanyContent>>>(
                             valueListenable: _litanySearch,
                             builder: (_, _, _) => _PanelLitanySearch(map: _litanySearch.value));

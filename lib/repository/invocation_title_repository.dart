@@ -1,3 +1,5 @@
+import 'package:diacritic/diacritic.dart';
+import 'package:fuzzy/fuzzy.dart';
 import 'package:ieca_mobile/_import.dart';
 import 'package:collection/collection.dart';
 
@@ -19,9 +21,13 @@ class InvocationTitleRepository{
 
   Future<Map<InvocationTitle, List<InvocationContent>>> getSearch(String text) async {
     final list = await _invocationContentRepository.getAll();
-    final searchText = text.toLowerCase();
-    final filteredItems = list.where((item) =>item.content.toLowerCase().contains(searchText));
-    return groupBy(filteredItems, (InvocationContent item) => item.invocationTitle);
+    final fuse = Fuzzy<InvocationContent>(list, options: FuzzyOptions(
+        keys: [WeightedKey<InvocationContent>(getter: (i) => removeDiacritics(i.content), weight: 1, name: "content")],
+      ),
+    );
+    final searchText = removeDiacritics(text);
+    final filtered = fuse.search(searchText).map((r) => r.item).toList();
+    return groupBy(filtered, (InvocationContent i) => i.invocationTitle);
   }
 
 }

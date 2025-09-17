@@ -1,3 +1,5 @@
+import 'package:diacritic/diacritic.dart';
+import 'package:fuzzy/fuzzy.dart';
 import 'package:ieca_mobile/_import.dart';
 import 'package:collection/collection.dart';
 
@@ -22,14 +24,14 @@ class HymnsGroupRepository{
   }
 
   Future<Map<HymnsGroup, Map<HymnsNumber, List<HymnsContent>>>> getSearch(String text) async {
-    final searchText = text.toLowerCase();
     final list = await _hymnsContentRepository.getAll();
-    final filtered = list.where((item) => item.content.toLowerCase().contains(searchText));
-    final groupedByGroup = groupBy(filtered, (HymnsContent item) => item.hymnsNumber.hymnsGroup);
-    return groupedByGroup.map((group, contents) {
-      final groupedByNumber = groupBy(contents, (item) => item.hymnsNumber);
-      return MapEntry(group, groupedByNumber);
-    });
+    final fuse = Fuzzy<HymnsContent>(list, options: FuzzyOptions(
+        keys: [WeightedKey<HymnsContent>(getter: (i) => removeDiacritics(i.content), weight: 1, name: "content")],
+      ),
+    );
+    final searchText = removeDiacritics(text);
+    final filtered = fuse.search(searchText).map((r) => r.item).toList();
+    return groupBy(filtered, (HymnsContent i) => i.hymnsNumber.hymnsGroup).map((g, c) => MapEntry(g, groupBy(c, (i) => i.hymnsNumber)));
   }
 
 }

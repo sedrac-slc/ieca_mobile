@@ -1,3 +1,5 @@
+import 'package:diacritic/diacritic.dart';
+import 'package:fuzzy/fuzzy.dart';
 import 'package:ieca_mobile/_import.dart';
 import 'package:collection/collection.dart';
 
@@ -18,10 +20,14 @@ class LitanyTitleRepository {
   }
 
   Future<Map<LitanyTitle, List<LitanyContent>>> getSearch(String text) async {
-    final searchText = text.toLowerCase();
     final list = await _litanyContentRepository.getAll();
-    final filteredItems = list.where((item) =>item.content.toLowerCase().contains(searchText));
-    return groupBy(filteredItems, (LitanyContent item) => item.litanyTitle);
+    final fuse = Fuzzy<LitanyContent>(list, options: FuzzyOptions(
+        keys: [WeightedKey<LitanyContent>(getter: (i) => removeDiacritics(i.content), weight: 1, name: "content")],
+      ),
+    );
+    final searchText = removeDiacritics(text);
+    final filtered = fuse.search(searchText).map((r) => r.item).toList();
+    return groupBy(filtered, (LitanyContent i) => i.litanyTitle);
   }
 
 }

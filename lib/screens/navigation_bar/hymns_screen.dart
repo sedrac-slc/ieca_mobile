@@ -1,12 +1,8 @@
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ieca_mobile/enums/_import.dart';
 import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/_import.dart';
-import 'package:ieca_mobile/repository/_import.dart';
-import 'package:ieca_mobile/screens/hymns_content_screen.dart';
-import 'package:ieca_mobile/util/app_theme.dart';
-import 'package:ieca_mobile/widgets/_import.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class HymnsScreen extends StatefulWidget {
   const HymnsScreen({super.key});
@@ -32,14 +28,6 @@ class _HymnsScreenState extends State<HymnsScreen> {
   }
 
   @override
-  void initState() {
-    WidgetsBinding.instance.addPostFrameCallback((_) async {
-      await _initData();
-    });
-    super.initState();
-  }
-
-  @override
   void dispose() {
     _hymnsSearch.dispose();
     _hymnsGroup.dispose();
@@ -55,101 +43,108 @@ class _HymnsScreenState extends State<HymnsScreen> {
       appBar: AppBar(
         title: TextTitleBar(text: AppLocalizations.of(context)!.hymns, color: Colors.white,),
         centerTitle: true,
-        actions: <Widget>[const ButtonSetting()],
         backgroundColor: colorBar,
       ),
-      body: Column(
-        spacing: 10,
-        children: [
-          Container(
-            padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
-            color: colorBar,
-            child: InputSearch(
-              onSearch: (text) async {
-                _hymnsSearch.value = await _hymnsGroupRepository.getSearch(text);
-                if(!_isSearch.value) _isSearch.value = true;
-              },
-              onClear: () async {
-                await _initData();
-                _isSearch.value = false;
-              },
-            ),
-          ),
+      drawer: SettingDrawer(),
+      body: Consumer<PreferenceRepository>(
+        builder: (context, value, child) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            _initData();
+          });
+          return Column(
+            spacing: 10,
+            children: [
+              Container(
+                padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
+                color: colorBar,
+                child: InputSearch(
+                  onSearch: (text) async {
+                    _hymnsSearch.value = await _hymnsGroupRepository.getSearch(text);
+                    if(!_isSearch.value) _isSearch.value = true;
+                  },
+                  onClear: () async {
+                    await _initData();
+                    _isSearch.value = false;
+                  },
+                ),
+              ),
 
-          ValueListenableBuilder(
-            valueListenable: _isSearch,
-            builder: (context, value, child) {
-              return value ? Center(
-                child: Text("Resultados da pesquisa"),
-              ) : ValueListenableBuilder<int>(
-                  valueListenable: _badgeItem,
-                  builder: (context, value, child) {
-                    return BadgeContainer(
-                      text: "Tipo",
-                      padding: 3,
-                      children: [
-                        BadgeItem(text: "Normal", isSelected: _badgeItem.value == BadgeHymns.NORMAL, onClick: () async {
-                          await _changeBadgeItem(BadgeHymns.NORMAL);
-                        },),
-                        BadgeItem(text: "Doxologias", isSelected: _badgeItem.value == BadgeHymns.DOXOLOGY, onClick: () async {
-                          await _changeBadgeItem(BadgeHymns.DOXOLOGY);
-                        },),
-                        BadgeItem(text: "Adicionais", isSelected: _badgeItem.value == BadgeHymns.ADDITIONAL, onClick: () async {
-                          await _changeBadgeItem(BadgeHymns.ADDITIONAL);
-                        },),
-                      ],
-                    );
-                  }
-              );
-            }
-          ),
-
-          Expanded(
-            child: Container(
-              padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
-              child: ValueListenableBuilder<bool>(
+              ValueListenableBuilder(
                 valueListenable: _isSearch,
-                builder: (_, value, _) {
-                  return !value
-                      ? ValueListenableBuilder<int>(
+                builder: (context, value, child) {
+                  return value ? Center(
+                    child: Text("Resultados da pesquisa"),
+                  ) : ValueListenableBuilder<int>(
                       valueListenable: _badgeItem,
                       builder: (context, value, child) {
-                        if(value == BadgeHymns.ADDITIONAL) return _PanelHymns(key: ValueKey(BadgeHymns.ADDITIONAL), type: BadgeHymns.ADDITIONAL,);
-                        if(value == BadgeHymns.DOXOLOGY) return _PanelHymns(key: ValueKey(BadgeHymns.DOXOLOGY), type: BadgeHymns.DOXOLOGY,);
-                        return ValueListenableBuilder<List<HymnsGroup>>(
-                          valueListenable: _hymnsGroup,
-                          builder: (_, _, _) {
-                            return ListView.separated(
-                              itemCount: _hymnsGroup.value.length,
-                              separatorBuilder: (context, index) => Padding(padding: EdgeInsets.symmetric(vertical: 5)),
-                              itemBuilder: (context, index) {
-                                final item = _hymnsGroup.value[index];
-                                return HymnsGroupTile(
-                                  hymnsGroup: item,
-                                  onPressed: () {
-                                    showModalBottomSheet(context: context, isScrollControlled: true, builder: (_) {
-                                      return HymnsNumberModalBottomSheet(hymnsGroup: item,);
-                                    },
+                        return BadgeContainer(
+                          text: "Tipo",
+                          padding: 3,
+                          children: [
+                            BadgeItem(text: "Normal", isSelected: _badgeItem.value == BadgeHymns.NORMAL, onClick: () async {
+                              await _changeBadgeItem(BadgeHymns.NORMAL);
+                            },),
+                            BadgeItem(text: "Doxologias", isSelected: _badgeItem.value == BadgeHymns.DOXOLOGY, onClick: () async {
+                              await _changeBadgeItem(BadgeHymns.DOXOLOGY);
+                            },),
+                            BadgeItem(text: "Adicionais", isSelected: _badgeItem.value == BadgeHymns.ADDITIONAL, onClick: () async {
+                              await _changeBadgeItem(BadgeHymns.ADDITIONAL);
+                            },),
+                          ],
+                        );
+                      }
+                  );
+                }
+              ),
+
+              Expanded(
+                child: Container(
+                  padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
+                  child: ValueListenableBuilder<bool>(
+                    valueListenable: _isSearch,
+                    builder: (_, value, _) {
+                      return !value
+                          ? ValueListenableBuilder<int>(
+                          valueListenable: _badgeItem,
+                          builder: (context, value, child) {
+                            if(value == BadgeHymns.ADDITIONAL) return _PanelHymns(key: ValueKey(BadgeHymns.ADDITIONAL), type: BadgeHymns.ADDITIONAL,);
+                            if(value == BadgeHymns.DOXOLOGY) return _PanelHymns(key: ValueKey(BadgeHymns.DOXOLOGY), type: BadgeHymns.DOXOLOGY,);
+                            return ValueListenableBuilder<List<HymnsGroup>>(
+                              valueListenable: _hymnsGroup,
+                              builder: (_, _, _) {
+                                return ListView.separated(
+                                  itemCount: _hymnsGroup.value.length,
+                                  separatorBuilder: (context, index) => Padding(padding: EdgeInsets.symmetric(vertical: 5)),
+                                  itemBuilder: (context, index) {
+                                    final item = _hymnsGroup.value[index];
+                                    return HymnsGroupTile(
+                                      hymnsGroup: item,
+                                      onPressed: () {
+                                        showModalBottomSheet(context: context, isScrollControlled: true, builder: (_) {
+                                          return HymnsNumberModalBottomSheet(hymnsGroup: item,);
+                                        },
+                                        );
+                                      },
                                     );
                                   },
                                 );
                               },
                             );
-                          },
-                        );
-                      }
-                  )
-                      : ValueListenableBuilder< Map<HymnsGroup, Map<HymnsNumber, List<HymnsContent>>> >(
-                          valueListenable: _hymnsSearch,
-                          builder: (_, _, _){
-                            return _HymnMapSearch(item: _hymnsSearch.value,);
                           }
-                      );
-                },
-              )
-            ),
-          ),
-        ],
+                      )
+                          : ValueListenableBuilder< Map<HymnsGroup, Map<HymnsNumber, List<HymnsContent>>> >(
+                              valueListenable: _hymnsSearch,
+                              builder: (_, _, _){
+                                return _HymnMapSearch(item: _hymnsSearch.value,);
+                              }
+                          );
+                    },
+                  )
+                ),
+              ),
+            ],
+          );
+        }
       ),
     );
   }
@@ -168,14 +163,6 @@ class _PanelHymnsState extends State<_PanelHymns> {
   final ValueNotifier<List<HymnsNumber>> _hymnsNumbers = ValueNotifier([]);
   final _repository = HymnsNumberRepository();
 
-  @override
-  void initState() {
-    WidgetsBinding.instance.addPostFrameCallback((_) async {
-      await _initData();
-    });
-    super.initState();
-  }
-
   _initData() async {
     if(widget.type == BadgeHymns.DOXOLOGY) _hymnsNumbers.value = await _repository.getByDoxologies();
     if(widget.type == BadgeHymns.ADDITIONAL) _hymnsNumbers.value = await _repository.getByAdditional();
@@ -183,12 +170,21 @@ class _PanelHymnsState extends State<_PanelHymns> {
 
   @override
   Widget build(BuildContext context) {
-    return ValueListenableBuilder(
-        valueListenable: _hymnsNumbers,
-        builder: (context, value, child) {
-          if(value.isEmpty) return const ListEmpty();
-          return GridHymns(hymnsNumbers: _hymnsNumbers.value,);
-        }
+    return Consumer<PreferenceRepository>(
+      builder: (context, value, child) {
+
+        WidgetsBinding.instance.addPostFrameCallback((_) async {
+          await _initData();
+        });
+
+        return ValueListenableBuilder(
+            valueListenable: _hymnsNumbers,
+            builder: (context, value, child) {
+              if(value.isEmpty) return const ListEmpty();
+              return GridHymns(hymnsNumbers: _hymnsNumbers.value,);
+            }
+        );
+      }
     );
   }
 }

@@ -3,5 +3,10 @@
   "invocation": "Invocation",
   "litanies": "Litanies",
   "hymns": "Hymns",
-  "psalms": "Psalms"
+  "psalms": "Psalms",
+  "settings": "Settings",
+  "portuguese": "Portuguese",
+  "english": "English",
+  "applicationLanguage": "Application language",
+  "hymnalSection": "Hymnal section"
 }

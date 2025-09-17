@@ -3,18 +3,19 @@ import 'package:ieca_mobile/main.dart';
 import 'package:ieca_mobile/_import.dart';
 import 'package:ieca_mobile/objectbox.g.dart';
 
-class PreferenceRepository extends ChangeNotifier{
+class PreferenceRepository extends ChangeNotifier {
   final box = objectbox.store.box<Preference>();
+  var language = "pt";
 
-  Preference? getLanguage(){
-    return box.query(Preference_.code.equals("lang")).build().findFirst();
+  Preference? getLanguageSectionHymnal(){
+    return box.query(Preference_.code.equals("langSectionHymnal")).build().findFirst();
   }
 
-  void changeLanguage(LanguageSection languageSection) {
-    final preference = getLanguage();
+  void changeLanguageSectionHymnal(LanguageSection languageSection) {
+    final preference = getLanguageSectionHymnal();
 
     if(preference == null){
-      box.put(Preference(code: "lang", value: languageSection.code));
+      box.put(Preference(code: "langSectionHymnal", value: languageSection.code));
       notifyListeners();
       return;
     }
@@ -24,4 +25,13 @@ class PreferenceRepository extends ChangeNotifier{
     notifyListeners();
   }
 
+
+  String getLanguage(){
+    return language;
+  }
+
+  void changeLanguage(String lang) {
+   language = lang;
+   notifyListeners();
+  }
 }

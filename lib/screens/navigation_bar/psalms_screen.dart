@@ -1,5 +1,4 @@
 import 'package:ieca_mobile/l10n/app_localizations.dart';
-import 'package:ieca_mobile/util/app_theme.dart';
 import 'package:ieca_mobile/_import.dart';
 import 'package:flutter/material.dart';
 
@@ -35,11 +34,9 @@ class _PsalmsScreenState extends State<PsalmsScreen> {
       appBar: AppBar(
         title: TextTitleBar(text: AppLocalizations.of(context)!.psalms, color: Colors.white,),
         centerTitle: true,
-        actions: <Widget>[
-          const ButtonSetting()
-        ],
         backgroundColor: colorBar,
       ),
+      drawer: SettingDrawer(),
       body: Column(
         spacing: 5,
         children: [

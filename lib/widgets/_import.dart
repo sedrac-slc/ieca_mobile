@@ -15,3 +15,4 @@ export 'modal_button_top.dart';
 export 'icon_trailing.dart';
 export 'grid_hymns.dart';
 export 'list_empty.dart';
+export 'setting_drawer.dart';

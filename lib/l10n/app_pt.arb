@@ -3,5 +3,10 @@
   "invocation": "Invocatoria",
   "litanies": "Litanias",
   "hymns": "Hinos",
-  "psalms": "Salmos"
+  "psalms": "Salmos",
+  "settings": "Definições",
+  "portuguese": "Português",
+  "english": "Inglês",
+  "applicationLanguage": "Idioma do aplicativo",
+  "hymnalSection": "Seção do hinário"
 }

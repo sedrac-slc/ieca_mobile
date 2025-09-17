@@ -22,4 +22,19 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get psalms => 'Psalms';
+
+  @override
+  String get settings => 'Settings';
+
+  @override
+  String get portuguese => 'Portuguese';
+
+  @override
+  String get english => 'English';
+
+  @override
+  String get applicationLanguage => 'Application language';
+
+  @override
+  String get hymnalSection => 'Hymnal section';
 }

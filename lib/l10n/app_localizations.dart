@@ -127,6 +127,36 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Psalms'**
   String get psalms;
+
+  /// No description provided for @settings.
+  ///
+  /// In en, this message translates to:
+  /// **'Settings'**
+  String get settings;
+
+  /// No description provided for @portuguese.
+  ///
+  /// In en, this message translates to:
+  /// **'Portuguese'**
+  String get portuguese;
+
+  /// No description provided for @english.
+  ///
+  /// In en, this message translates to:
+  /// **'English'**
+  String get english;
+
+  /// No description provided for @applicationLanguage.
+  ///
+  /// In en, this message translates to:
+  /// **'Application language'**
+  String get applicationLanguage;
+
+  /// No description provided for @hymnalSection.
+  ///
+  /// In en, this message translates to:
+  /// **'Hymnal section'**
+  String get hymnalSection;
 }
 
 class _AppLocalizationsDelegate

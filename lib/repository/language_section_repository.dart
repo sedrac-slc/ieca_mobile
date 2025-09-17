@@ -13,13 +13,13 @@ class LanguageSectionRepository{
   }
 
   Future<LanguageSection> getLanguage() async {
-    final preference = _repository.getLanguage();
+    final preference = _repository.getLanguageSectionHymnal();
     if(preference == null) return LanguageSectionSeeder.PORTUGUES;
     return await _getByCode(preference.value);
   }
 
   String litanyPerson(String person)  {
-    final code = _repository.getLanguage()?.value ?? LanguageSectionSeeder.PORTUGUES.code;
+    final code = _repository.getLanguageSectionHymnal()?.value ?? LanguageSectionSeeder.PORTUGUES.code;
 
     if(code == LanguageSectionSeeder.PORTUGUES.code) {
       if(LitanyPerson.DIRECTOR == person) return "Dirigente";

@@ -10,7 +10,7 @@ class CoHymnsContentSeeder{
       ...CoHymnsJitaYaMweneMwene.list,
       ...CoHymnsKuendaKwaMukwaYesu.list,
       ...CoHymnsKwizaChaMwene.list,
-      ...CoHymnsTuanuke.list
+      ...CoHymnsTuanuke.list,
     ];
   }
 }

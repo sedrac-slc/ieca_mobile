@@ -15,7 +15,7 @@ class UmHymnsYesuInilaNdonjuliVoYelusalai{
     HymnsContent(id: 1835, position: 5, content: "Ulamba lekemãlo\nKokuove a Soma yetu;\nU omãla vasivaya\nVati hosana Osoma.\nWayeva asivayo,\nYevavo alo etu,\nOsanjukila esunga\nOve Soma yombembua.", hymnsNumber: UmHymnsNumberSeeder.YESU_INILA_NDONJULI_VO_YELUSALAI_56, typeStanza: HymnsContentCode.VERSE),
 
     HymnsContent(id: 1836, position: 1, content: "Ndeci ko Yelusalãi\nVa imba olopandu via lua,\nLetu haico tu sivayi\nYesu Onjovoli yetu.", hymnsNumber: UmHymnsNumberSeeder.YESU_INILA_NDONJULI_VO_YELUSALAI_57, typeStanza: HymnsContentCode.VERSE),
-    HymnsContent(id: 1837, content: "Yeveleli! Alaka otumãla! (2x)\nOku tumbangiya, oku \ntumbangiya.\nOku tumbangiya Yesu Onjovoli yetu.", hymnsNumber: UmHymnsNumberSeeder.YESU_INILA_NDONJULI_VO_YELUSALAI_57, typeStanza: HymnsContentCode.CHOIR),
+    HymnsContent(id: 1837, content: "Yeveleli! Alaka otumãla! (2x)\nOku tumbangiya, oku\ntumbangiya.\nOku tumbangiya Yesu Onjovoli yetu.", hymnsNumber: UmHymnsNumberSeeder.YESU_INILA_NDONJULI_VO_YELUSALAI_57, typeStanza: HymnsContentCode.CHOIR),
     HymnsContent(id: 1838, position: 2, content: "Va lua ko Yelusalãi\nVa pandula olosapo.\nVina Yesu a va tela,\nViocisola cokovailu.", hymnsNumber: UmHymnsNumberSeeder.YESU_INILA_NDONJULI_VO_YELUSALAI_57, typeStanza: HymnsContentCode.VERSE),
     HymnsContent(id: 1839, position: 3, content: "Letu tuakuandaka yaye,\nTuakuanjila yokovailu.\nTu li oku sanjukila\nElongiso lia posoka.", hymnsNumber: UmHymnsNumberSeeder.YESU_INILA_NDONJULI_VO_YELUSALAI_57, typeStanza: HymnsContentCode.VERSE),
   ];

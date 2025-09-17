@@ -4,7 +4,7 @@ class FtHymnsContentSeeder{
 
   static List<HymnsContent> items() {
     return [
-      ...FtHymnsGeneral.list
+      ...FtHymnsGeneral.list,
     ];
   }
 }

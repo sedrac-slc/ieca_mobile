@@ -403,6 +403,10 @@ class HymnsNumberSeeder{
   static final DOXOLOGIES_371 = HymnsNumber(id: 371, num: 371, hymnsGroup: HymnsGroupSeeder.DOXOLOGIES, label: "Música: Lyra 311", code: HymnBookCode.LYARA);
   static final DOXOLOGIES_372 = HymnsNumber(id: 372, num: 372, hymnsGroup: HymnsGroupSeeder.DOXOLOGIES, label: "Música:  P.H. 536", code: HymnBookCode.PH);
 
+  static List<HymnsNumber> doxologies() {
+    return [ DOXOLOGIES_366, DOXOLOGIES_367, DOXOLOGIES_368, DOXOLOGIES_369, DOXOLOGIES_370, DOXOLOGIES_371, DOXOLOGIES_372,];
+  }
+
   static List<HymnsNumber> items() {
     return [
 
@@ -502,7 +506,7 @@ class HymnsNumberSeeder{
 
       END_OF_SERVICE_362, END_OF_SERVICE_363, END_OF_SERVICE_364, END_OF_SERVICE_365,
 
-      DOXOLOGIES_366, DOXOLOGIES_367, DOXOLOGIES_368, DOXOLOGIES_369, DOXOLOGIES_370, DOXOLOGIES_371, DOXOLOGIES_372,
+      ...doxologies(),
 
       ...HymnsAdditional.HYMNS_NUMBERS
     ];

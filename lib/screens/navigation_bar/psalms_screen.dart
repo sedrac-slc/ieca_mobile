@@ -35,6 +35,7 @@ class _PsalmsScreenState extends State<PsalmsScreen> {
         title: TextTitleBar(text: AppLocalizations.of(context)!.psalms, color: Colors.white,),
         centerTitle: true,
         backgroundColor: colorBar,
+        iconTheme: const IconThemeData(color: Colors.white,),
       ),
       drawer: SettingDrawer(),
       body: Column(

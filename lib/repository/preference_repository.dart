@@ -6,9 +6,22 @@ import 'package:ieca_mobile/objectbox.g.dart';
 class PreferenceRepository extends ChangeNotifier {
   final box = objectbox.store.box<Preference>();
   var language = "pt";
+  var theme = "light";
 
-  Preference? getLanguageSectionHymnal(){
-    return box.query(Preference_.code.equals("langSectionHymnal")).build().findFirst();
+  String getTheme() => theme;
+
+  String getLanguage() => language;
+
+  Preference? getLanguageSectionHymnal() => box.query(Preference_.code.equals("langSectionHymnal")).build().findFirst();
+
+  void changeTheme(String lang) {
+    theme = lang;
+    notifyListeners();
+  }
+
+  void changeLanguage(String lang) {
+    language = lang;
+    notifyListeners();
   }
 
   void changeLanguageSectionHymnal(LanguageSection languageSection) {
@@ -25,13 +38,4 @@ class PreferenceRepository extends ChangeNotifier {
     notifyListeners();
   }
 
-
-  String getLanguage(){
-    return language;
-  }
-
-  void changeLanguage(String lang) {
-   language = lang;
-   notifyListeners();
-  }
 }

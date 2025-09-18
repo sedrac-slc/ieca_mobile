@@ -30,4 +30,9 @@ class PsalmsTitleRepository{
     return groupBy(filtered, (PsalmsContent i) => i.psalmsTitle);
   }
 
+  Future<int> count() async {
+    final items = await getAll();
+    return items.length;
+  }
+
 }

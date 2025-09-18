@@ -37,4 +37,28 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get hymnalSection => 'Hymnal section';
+
+  @override
+  String get theme => 'Theme';
+
+  @override
+  String get light => 'Claro';
+
+  @override
+  String get dark => 'Dark';
+
+  @override
+  String get type => 'Type';
+
+  @override
+  String get normal => 'Normal';
+
+  @override
+  String get additional => 'Additional';
+
+  @override
+  String get doxology => 'Doxology';
+
+  @override
+  String get inputSearch => 'Search...';
 }

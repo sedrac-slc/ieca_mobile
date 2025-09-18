@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/util/app_theme.dart';
 
 class InputSearch extends StatefulWidget {
@@ -34,7 +35,7 @@ class _InputSearchState extends State<InputSearch> {
       decoration: InputDecoration(
         filled: true,
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(20)),
-        hintText: widget.hintText,
+        hintText: AppLocalizations.of(context)?.inputSearch ?? widget.hintText,
         suffixIcon: Padding(
           padding: const EdgeInsets.all(5),
           child: Container(

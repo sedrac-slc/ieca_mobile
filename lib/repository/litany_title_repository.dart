@@ -30,4 +30,9 @@ class LitanyTitleRepository {
     return groupBy(filtered, (LitanyContent i) => i.litanyTitle);
   }
 
+  Future<int> count() async {
+    final items = await getAll();
+    return items.length;
+  }
+
 }

@@ -15,7 +15,7 @@ class InvocationTile extends StatelessWidget {
     final ColorScheme colorScheme = AppTheme.colorScheme(context);
     return Container(
       decoration: BoxDecoration(
-        color: colorScheme.surfaceContainerHigh,
+        color: colorScheme.surfaceDim,
           border: Border.all(
             color: Colors.transparent
           ),
@@ -27,7 +27,7 @@ class InvocationTile extends StatelessWidget {
           title: Text(
             item.name,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.roboto(fontSize: 14),
+            style: GoogleFonts.roboto(fontSize: 14, color: colorScheme.scrim),
           ),
           trailing: IconTrailing(onPressed: onPressed),
           contentPadding: EdgeInsets.only(right: 5, left: 5),

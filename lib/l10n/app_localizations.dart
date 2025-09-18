@@ -157,6 +157,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Hymnal section'**
   String get hymnalSection;
+
+  /// No description provided for @theme.
+  ///
+  /// In en, this message translates to:
+  /// **'Theme'**
+  String get theme;
+
+  /// No description provided for @light.
+  ///
+  /// In en, this message translates to:
+  /// **'Claro'**
+  String get light;
+
+  /// No description provided for @dark.
+  ///
+  /// In en, this message translates to:
+  /// **'Dark'**
+  String get dark;
+
+  /// No description provided for @type.
+  ///
+  /// In en, this message translates to:
+  /// **'Type'**
+  String get type;
+
+  /// No description provided for @normal.
+  ///
+  /// In en, this message translates to:
+  /// **'Normal'**
+  String get normal;
+
+  /// No description provided for @additional.
+  ///
+  /// In en, this message translates to:
+  /// **'Additional'**
+  String get additional;
+
+  /// No description provided for @doxology.
+  ///
+  /// In en, this message translates to:
+  /// **'Doxology'**
+  String get doxology;
+
+  /// No description provided for @inputSearch.
+  ///
+  /// In en, this message translates to:
+  /// **'Search...'**
+  String get inputSearch;
 }
 
 class _AppLocalizationsDelegate

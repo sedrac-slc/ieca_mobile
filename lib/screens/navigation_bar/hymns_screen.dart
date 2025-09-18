@@ -44,6 +44,7 @@ class _HymnsScreenState extends State<HymnsScreen> {
         title: TextTitleBar(text: AppLocalizations.of(context)!.hymns, color: Colors.white,),
         centerTitle: true,
         backgroundColor: colorBar,
+        iconTheme: const IconThemeData(color: Colors.white,),
       ),
       drawer: SettingDrawer(),
       body: Consumer<PreferenceRepository>(
@@ -78,16 +79,16 @@ class _HymnsScreenState extends State<HymnsScreen> {
                       valueListenable: _badgeItem,
                       builder: (context, value, child) {
                         return BadgeContainer(
-                          text: "Tipo",
+                          text: AppLocalizations.of(context)?.type ?? "Tipo",
                           padding: 3,
                           children: [
-                            BadgeItem(text: "Normal", isSelected: _badgeItem.value == BadgeHymns.NORMAL, onClick: () async {
+                            BadgeItem(text: AppLocalizations.of(context)?.normal ?? "Normal", isSelected: _badgeItem.value == BadgeHymns.NORMAL, onClick: () async {
                               await _changeBadgeItem(BadgeHymns.NORMAL);
                             },),
-                            BadgeItem(text: "Doxologias", isSelected: _badgeItem.value == BadgeHymns.DOXOLOGY, onClick: () async {
+                            BadgeItem(text: AppLocalizations.of(context)?.doxology ?? "Doxologias", isSelected: _badgeItem.value == BadgeHymns.DOXOLOGY, onClick: () async {
                               await _changeBadgeItem(BadgeHymns.DOXOLOGY);
                             },),
-                            BadgeItem(text: "Adicionais", isSelected: _badgeItem.value == BadgeHymns.ADDITIONAL, onClick: () async {
+                            BadgeItem(text: AppLocalizations.of(context)?.additional ?? "Adicionais", isSelected: _badgeItem.value == BadgeHymns.ADDITIONAL, onClick: () async {
                               await _changeBadgeItem(BadgeHymns.ADDITIONAL);
                             },),
                           ],

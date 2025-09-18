@@ -1,4 +1,3 @@
-import 'package:ieca_mobile/enums/hymn_book_code.dart';
 import 'package:ieca_mobile/_import.dart';
 
 class UmHymnsNumberSeeder{
@@ -403,6 +402,10 @@ class UmHymnsNumberSeeder{
   static final ATUMBANGIYO_371 = HymnsNumber(id: 751, num: 371, hymnsGroup: UmHymnsGroupSeeder.ATUMBANGIYO, label: "Música: Lyra 311", code: HymnBookCode.LYARA);
   static final ATUMBANGIYO_372 = HymnsNumber(id: 752, num: 372, hymnsGroup: UmHymnsGroupSeeder.ATUMBANGIYO, label: "Música:  P.H. 536", code: HymnBookCode.PH);
 
+  static List<HymnsNumber> doxologies() {
+    return [ ATUMBANGIYO_366, ATUMBANGIYO_367, ATUMBANGIYO_368, ATUMBANGIYO_369, ATUMBANGIYO_370, ATUMBANGIYO_371, ATUMBANGIYO_372, ];
+  }
+
   static List<HymnsNumber> items() {
     return [
 
@@ -502,7 +505,7 @@ class UmHymnsNumberSeeder{
 
       OKU_OYA_EFENDELO_362, OKU_OYA_EFENDELO_363, OKU_OYA_EFENDELO_364, OKU_OYA_EFENDELO_365,
 
-      ATUMBANGIYO_366, ATUMBANGIYO_367, ATUMBANGIYO_368, ATUMBANGIYO_369, ATUMBANGIYO_370, ATUMBANGIYO_371, ATUMBANGIYO_372,
+      ...doxologies(),
 
       ...HymnsAdditional.HYMNS_NUMBERS
     ];

@@ -43,6 +43,7 @@ class _LitaniesScreenState extends State<LitaniesScreen> {
         title: TextTitleBar(text: AppLocalizations.of(context)!.litanies, color: Colors.white,),
         centerTitle: true,
         backgroundColor: colorBar,
+        iconTheme: const IconThemeData(color: Colors.white,),
       ),
       drawer: SettingDrawer(),
       body: Column(

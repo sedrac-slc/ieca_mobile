@@ -30,4 +30,9 @@ class InvocationTitleRepository{
     return groupBy(filtered, (InvocationContent i) => i.invocationTitle);
   }
 
+  Future<int> count() async {
+    final items = await getAll();
+    return items.length;
+  }
+
 }

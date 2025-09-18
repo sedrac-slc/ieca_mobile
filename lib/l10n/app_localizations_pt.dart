@@ -37,4 +37,28 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get hymnalSection => 'Seção do hinário';
+
+  @override
+  String get theme => 'Tema';
+
+  @override
+  String get light => 'Claro';
+
+  @override
+  String get dark => 'Dark';
+
+  @override
+  String get type => 'Tipo';
+
+  @override
+  String get normal => 'Normal';
+
+  @override
+  String get additional => 'Adicionais';
+
+  @override
+  String get doxology => 'Doxologias';
+
+  @override
+  String get inputSearch => 'Pesquisar...';
 }

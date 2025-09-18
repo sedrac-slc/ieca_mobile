@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ieca_mobile/enums/_import.dart';
-import 'package:ieca_mobile/models/hymns_number.dart';
-import 'package:ieca_mobile/repository/hymns_content_repository.dart';
-import 'package:ieca_mobile/util/app_theme.dart';
-import 'package:ieca_mobile/widgets/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class HymnsContentScreen extends StatefulWidget {
   final HymnsNumber hymnsNumber;
@@ -29,7 +25,7 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(Icons.arrow_circle_left_outlined, color: Colors.white,),
+          icon: Icon(AppIconData.iconBack, color: Colors.white,),
         ),
       ),
       body: FutureBuilder(

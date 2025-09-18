@@ -38,7 +38,7 @@ class _IecaAppState extends State<IecaApp> {
             useMaterial3: true,
             colorScheme: MaterialTheme.darkScheme()
           ),
-          themeMode: ThemeMode.system,
+          themeMode: value.theme == "dark" ? ThemeMode.dark : ThemeMode.system,
           home: const PageScreen(),
           routes: {
             /* Screens for navigation bar */
@@ -46,6 +46,7 @@ class _IecaAppState extends State<IecaApp> {
             '/home': (context) => const HomeScreen(),
             '/hymns': (context) => const HymnsScreen(),
             '/litanies': (context) => const HymnsScreen(),
+            '/about': (context) => const AboutScreen(),
           },
         );
       }

@@ -8,5 +8,13 @@
   "portuguese": "Portuguese",
   "english": "English",
   "applicationLanguage": "Application language",
-  "hymnalSection": "Hymnal section"
+  "hymnalSection": "Hymnal section",
+  "theme": "Theme",
+  "light": "Claro",
+  "dark": "Dark",
+  "type": "Type",
+  "normal": "Normal",
+  "additional": "Additional",
+  "doxology": "Doxology",
+  "inputSearch": "Search..."
 }

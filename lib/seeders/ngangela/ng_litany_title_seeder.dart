@@ -5,8 +5,8 @@ class NgLitanyTitleSeeder{
   static final YA_KU_LITAVELA = LitanyTitle(id: 22, name: "Ya Ku Litavela", position: 2, lang: LanguageSectionSeeder.NGANGELA);
   static final YA_KU_PINGA_VIEKA_NA_VIEKA = LitanyTitle(id: 23, name: "Ya Ku Pinga Vieka Na Vieka", position: 3, lang: LanguageSectionSeeder.NGANGELA);
   static final YA_KU_SANTSELA = LitanyTitle(id: 24, name: "Ya ku santsela", position: 4, lang: LanguageSectionSeeder.NGANGELA);
-  static final YA_NATALE = LitanyTitle(id: 25, name: "Ya Natale", position: 6, lang: LanguageSectionSeeder.NGANGELA);
-  static final YA_PASKUA = LitanyTitle(id: 26, name: "Ya Paskua", position: 7, lang: LanguageSectionSeeder.NGANGELA);
+  static final YA_NATALE = LitanyTitle(id: 25, name: "Ya Natale", position: 5, lang: LanguageSectionSeeder.NGANGELA);
+  static final YA_PASKUA = LitanyTitle(id: 26, name: "Ya Paskua", position: 6, lang: LanguageSectionSeeder.NGANGELA);
 
   static List<LitanyTitle> items() {
     return [

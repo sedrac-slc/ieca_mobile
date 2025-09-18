@@ -8,5 +8,13 @@
   "portuguese": "Português",
   "english": "Inglês",
   "applicationLanguage": "Idioma do aplicativo",
-  "hymnalSection": "Seção do hinário"
+  "hymnalSection": "Seção do hinário",
+  "theme": "Tema",
+  "light": "Claro",
+  "dark": "Dark",
+  "type": "Tipo",
+  "normal": "Normal",
+  "additional": "Adicionais",
+  "doxology": "Doxologias",
+  "inputSearch": "Pesquisar..."
 }

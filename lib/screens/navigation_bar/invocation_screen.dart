@@ -1,6 +1,7 @@
 import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/_import.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class InvocationScreen extends StatefulWidget {
   const InvocationScreen({super.key});
@@ -14,14 +15,6 @@ class _InvocationScreenState extends State<InvocationScreen> {
   final ValueNotifier<List<InvocationTitle>> _invocationTitles = ValueNotifier([],);
   final ValueNotifier<bool> _isSearch = ValueNotifier(false);
   final _repository = InvocationTitleRepository();
-
-  @override
-  void initState() {
-    WidgetsBinding.instance.addPostFrameCallback((_) async {
-      await _initData();
-    });
-    super.initState();
-  }
 
   _initData() async {
     _invocationTitles.value = await _repository.getAll();
@@ -43,45 +36,53 @@ class _InvocationScreenState extends State<InvocationScreen> {
         title: TextTitleBar(text: AppLocalizations.of(context)!.invocation, color: Colors.white,),
         centerTitle: true,
         backgroundColor: colorBar,
+        iconTheme: const IconThemeData(color: Colors.white,),
       ),
       drawer: SettingDrawer(),
-      body: Column(
-        spacing: 5,
-        children: [
-          Container(
-            padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
-            color: colorBar,
-            child: InputSearch(
-                onSearch: (text) async {
-                  _invocationSearch.value = await _repository.getSearch(text);
-                  if(!_isSearch.value) _isSearch.value = true;
-                },
-                onClear: () async {
-                  await _initData();
-                  _isSearch.value = false;
-                },
-            ),
-          ),
-          Expanded(
-            child: Container(
-              padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
-              child: ValueListenableBuilder<bool>(
-                valueListenable: _isSearch,
-                builder: (_, value, _) {
-                  return !value
-                      ? ValueListenableBuilder<List<InvocationTitle>>(
-                        valueListenable: _invocationTitles,
-                        builder: (_, value, _)  => value.isEmpty ? ListEmpty() : _PanelInvocation(invocationTitles: value)
-                      )
-                      : ValueListenableBuilder<Map<InvocationTitle, List<InvocationContent>>>(
-                          valueListenable: _invocationSearch,
-                          builder: (_, _, _) => _PanelInvocationSearch(map: _invocationSearch.value)
-                      );
-                }
+      body: Consumer<PreferenceRepository>(
+        builder: (context, value, child) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            _initData();
+          });
+          return Column(
+            spacing: 5,
+            children: [
+              Container(
+                padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
+                color: colorBar,
+                child: InputSearch(
+                    onSearch: (text) async {
+                      _invocationSearch.value = await _repository.getSearch(text);
+                      if(!_isSearch.value) _isSearch.value = true;
+                    },
+                    onClear: () async {
+                      await _initData();
+                      _isSearch.value = false;
+                    },
+                ),
               ),
-            ),
-          )
-        ],
+              Expanded(
+                child: Container(
+                  padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
+                  child: ValueListenableBuilder<bool>(
+                    valueListenable: _isSearch,
+                    builder: (_, value, _) {
+                      return !value
+                          ? ValueListenableBuilder<List<InvocationTitle>>(
+                            valueListenable: _invocationTitles,
+                            builder: (_, value, _)  => value.isEmpty ? ListEmpty() : _PanelInvocation(invocationTitles: value)
+                          )
+                          : ValueListenableBuilder<Map<InvocationTitle, List<InvocationContent>>>(
+                              valueListenable: _invocationSearch,
+                              builder: (_, _, _) => _PanelInvocationSearch(map: _invocationSearch.value)
+                          );
+                    }
+                  ),
+                ),
+              )
+            ],
+          );
+        }
       ),
     );
   }

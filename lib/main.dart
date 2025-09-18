@@ -17,6 +17,7 @@ Future<void> main() async {
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (_) =>  PreferenceRepository()),
+      ChangeNotifierProvider(create: (_) =>  FavouriteRepository()),
     ],
     child: const IecaApp(),
   ));

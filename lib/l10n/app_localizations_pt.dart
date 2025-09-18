@@ -83,4 +83,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get portfolio => 'Portifolio';
+
+  @override
+  String get iecaHymnal => 'Hinário IECA';
+
+  @override
+  String get hymn => 'Hino';
 }

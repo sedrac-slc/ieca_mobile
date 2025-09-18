@@ -122,16 +122,10 @@ class _SettingDrawerState extends State<SettingDrawer> {
                   icon: const Icon(Icons.keyboard_arrow_down),
                   items: [
                     DropdownMenuItem(
-                      value: "pt",
-                      child: Text(
-                        AppLocalizations.of(context)?.portuguese ?? "Português",
-                      ),
+                      value: "pt", child: Text(AppLocalizations.of(context)?.portuguese ?? "Português",),
                     ),
                     DropdownMenuItem(
-                      value: "en",
-                      child: Text(
-                        AppLocalizations.of(context)?.english ?? "Inglês",
-                      ),
+                      value: "en", child: Text(AppLocalizations.of(context)?.english ?? "Inglês",),
                     ),
                   ],
                   onChanged: (String? newValue) {
@@ -161,16 +155,10 @@ class _SettingDrawerState extends State<SettingDrawer> {
                   icon: const Icon(Icons.keyboard_arrow_down),
                   items: [
                     DropdownMenuItem(
-                      value: "light",
-                      child: Text(
-                        AppLocalizations.of(context)?.light ?? "Claro",
-                      ),
+                      value: "light", child: Text(AppLocalizations.of(context)?.light ?? "Claro",),
                     ),
                     DropdownMenuItem(
-                      value: "dark",
-                      child: Text(
-                        AppLocalizations.of(context)?.dark ?? "Escuro",
-                      ),
+                      value: "dark", child: Text(AppLocalizations.of(context)?.dark ?? "Escuro",),
                     ),
                   ],
                   onChanged: (String? newValue) {

@@ -1,3 +1,4 @@
+export 'provider/_import.dart';
 export 'hymns_group_repository.dart';
 export 'hymns_number_repository.dart';
 export 'hymns_content_repository.dart';
@@ -7,5 +8,4 @@ export 'litany_content_repository.dart';
 export 'litany_title_repository.dart';
 export 'psalms_content_repository.dart';
 export 'psalms_title_repository.dart';
-export 'preference_repository.dart';
 export 'language_section_repository.dart';

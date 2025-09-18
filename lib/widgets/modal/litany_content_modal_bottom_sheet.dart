@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ieca_mobile/models/litany_title.dart';
-import 'package:ieca_mobile/repository/litany_content_repository.dart';
-import 'package:ieca_mobile/widgets/button/button_back.dart';
-import 'package:ieca_mobile/widgets/items/litany_content_item.dart';
+import 'package:provider/provider.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class LitanyContentModalBottomSheet extends StatefulWidget {
   final LitanyTitle litanyTitle;
@@ -22,6 +20,7 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
 
   @override
   Widget build(BuildContext context) {
+    final favouriteRepository = context.watch<FavouriteRepository>();
     return Container(
       width: MediaQuery.of(context).size.width,
       height: MediaQuery.of(context).size.height,
@@ -46,7 +45,21 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
                       softWrap: true,
                     ),
                   ),
-                  const ButtonBack(),
+
+                  Container(
+                    child: Row(
+                      children: [
+                        IconButton(onPressed: () {
+                          favouriteRepository.addLitanyTitle(widget.litanyTitle);
+                        }, icon: Icon(
+                          favouriteRepository.existsLitanyTitle(widget.litanyTitle)
+                              ? Icons.favorite_outlined : Icons.favorite_border,
+                        )),
+                        const ButtonBack(),
+                      ]
+                    )
+                  )
+
                 ]
             ),
           ),

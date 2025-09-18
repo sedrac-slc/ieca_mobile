@@ -1,6 +1,7 @@
 import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/_import.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class LitaniesScreen extends StatefulWidget {
   const LitaniesScreen({super.key});
@@ -14,14 +15,6 @@ class _LitaniesScreenState extends State<LitaniesScreen> {
   final ValueNotifier<List<LitanyTitle>> _litanyTitles = ValueNotifier([]);
   final ValueNotifier<bool> _isSearch = ValueNotifier(false);
   final _repository = LitanyTitleRepository();
-
-  @override
-  void initState() {
-    WidgetsBinding.instance.addPostFrameCallback((_) async {
-      await _initData();
-    });
-    super.initState();
-  }
 
   _initData() async {
     _litanyTitles.value = await _repository.getAll();
@@ -46,41 +39,48 @@ class _LitaniesScreenState extends State<LitaniesScreen> {
         iconTheme: const IconThemeData(color: Colors.white,),
       ),
       drawer: SettingDrawer(),
-      body: Column(
-        spacing: 5,
-        children: [
-          Container(
-            padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
-            color: colorBar,
-            child: InputSearch(
-              onSearch: (text) async {
-                _litanySearch.value = await _repository.getSearch(text);
-                if(!_isSearch.value) _isSearch.value = true;
-              },
-              onClear: () async {
-              await _initData();
-              _isSearch.value = false;
-              },
-            ),
-          ),
-          Expanded(
-            child: Container(
-              padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10,),
-              child: ValueListenableBuilder<bool>(
-                  valueListenable: _isSearch,
-                  builder: (_, value, _) {
-                    return !value
-                        ? ValueListenableBuilder<List<LitanyTitle>>(
-                            valueListenable: _litanyTitles,
-                            builder: (_, value , _)  => value.isEmpty ? ListEmpty() : _PanelLitany(litanyTitles: _litanyTitles.value))
-                        : ValueListenableBuilder<Map<LitanyTitle, List<LitanyContent>>>(
-                            valueListenable: _litanySearch,
-                            builder: (_, _, _) => _PanelLitanySearch(map: _litanySearch.value));
-                  }
+      body: Consumer<PreferenceRepository>(
+        builder: (context, value, child) {
+          WidgetsBinding.instance.addPostFrameCallback((_) {
+            _initData();
+          });
+          return Column(
+            spacing: 5,
+            children: [
+              Container(
+                padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
+                color: colorBar,
+                child: InputSearch(
+                  onSearch: (text) async {
+                    _litanySearch.value = await _repository.getSearch(text);
+                    if(!_isSearch.value) _isSearch.value = true;
+                  },
+                  onClear: () async {
+                  await _initData();
+                  _isSearch.value = false;
+                  },
+                ),
               ),
-            ),
-          ),
-        ],
+              Expanded(
+                child: Container(
+                  padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10,),
+                  child: ValueListenableBuilder<bool>(
+                      valueListenable: _isSearch,
+                      builder: (_, value, _) {
+                        return !value
+                            ? ValueListenableBuilder<List<LitanyTitle>>(
+                                valueListenable: _litanyTitles,
+                                builder: (_, value , _)  => value.isEmpty ? ListEmpty() : _PanelLitany(litanyTitles: _litanyTitles.value))
+                            : ValueListenableBuilder<Map<LitanyTitle, List<LitanyContent>>>(
+                                valueListenable: _litanySearch,
+                                builder: (_, _, _) => _PanelLitanySearch(map: _litanySearch.value));
+                      }
+                  ),
+                ),
+              ),
+            ],
+          );
+        }
       ),
     );
   }

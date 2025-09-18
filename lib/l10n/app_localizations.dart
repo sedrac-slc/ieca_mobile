@@ -247,6 +247,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Portfolio'**
   String get portfolio;
+
+  /// No description provided for @iecaHymnal.
+  ///
+  /// In en, this message translates to:
+  /// **'IECA Hymnal'**
+  String get iecaHymnal;
+
+  /// No description provided for @hymn.
+  ///
+  /// In en, this message translates to:
+  /// **'Hymn'**
+  String get hymn;
 }
 
 class _AppLocalizationsDelegate

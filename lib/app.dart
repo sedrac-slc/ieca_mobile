@@ -1,9 +1,8 @@
 import 'package:ieca_mobile/l10n/app_localizations.dart';
-import 'package:ieca_mobile/repository/_import.dart';
-import 'package:ieca_mobile/screens/_import.dart';
 import 'package:ieca_mobile/theme/theme.dart';
-import 'package:flutter/material.dart';
+import 'package:ieca_mobile/_import.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter/material.dart';
 
 class IecaApp extends StatefulWidget {
   const IecaApp({super.key});
@@ -17,6 +16,12 @@ class _IecaAppState extends State<IecaApp> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      final preferenceRepository = context.read<PreferenceRepository>();
+      if(preferenceRepository.getLanguageSectionHymnal() == null) {
+        preferenceRepository.changeLanguageSectionHymnal(LanguageSectionSeeder.PORTUGUES);
+      }
+    });
   }
 
 

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/_import.dart';
+import 'package:ieca_mobile/l10n/app_localizations.dart';
+import 'package:provider/provider.dart';
 
 class HymnsContentScreen extends StatefulWidget {
   final HymnsNumber hymnsNumber;
@@ -16,17 +18,28 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
 
   @override
   Widget build(BuildContext context) {
-    final colorBar = AppTheme.colorAppBar(context);
     final colorDark = AppTheme.colorAppBarDark(context);
+    final favouriteRepository = context.watch<FavouriteRepository>();
+
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: colorBar,
+        title: Text(AppLocalizations.of(context)?.hymn ?? "Hino"),
         leading: IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
-          icon: Icon(AppIconData.iconBack, color: Colors.white,),
+          onPressed: () => Navigator.pop(context),
+          icon: Icon(AppIconData.iconBack),
         ),
+        actions: [
+          IconButton(onPressed: () {
+            favouriteRepository.addHymns(widget.hymnsNumber);
+          }, icon: Icon(
+                favouriteRepository.existsHymns(widget.hymnsNumber)
+                ? Icons.favorite_outlined : Icons.favorite_border,
+          )),
+
+          IconButton(onPressed: () {
+
+          }, icon: Icon(Icons.share))
+        ],
       ),
       body: FutureBuilder(
         future: _hymnsContentRepository.getBy(widget.hymnsNumber),

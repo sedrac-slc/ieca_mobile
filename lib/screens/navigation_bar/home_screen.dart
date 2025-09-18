@@ -36,7 +36,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         actions: [const LogoIeca()],
-        title: const TextTitleBar(text: "Hinário IECA", color: Colors.white),
+        title: TextTitleBar(text: AppLocalizations.of(context)?.iecaHymnal ?? "Hinário IECA", color: Colors.white),
         centerTitle: true,
         backgroundColor: colorBar,
         iconTheme: const IconThemeData(color: Colors.white,),

@@ -1,18 +1,18 @@
 import 'package:objectbox/objectbox.dart';
 
 @Entity()
-class Preference{
+class Favourite{
   @Id()
   int id;
-  String code;
+  String number;
   String value;
+  String lang;
 
-  Preference({this.id = 0, required this.code, required this.value});
+  Favourite({this.id = 0, required this.number, required this.value, required this.lang});
 
   @override
   String toString() {
-    return "Preference(id: $id, code: $code, value: $value)";
+    return "Favourite(id: $id, number: $number, value: $value, lang: $lang)";
   }
 
-  static Preference TEST = Preference(code: "code", value: "value");
 }

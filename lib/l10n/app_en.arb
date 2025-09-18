@@ -23,5 +23,7 @@
   "compile": "Compilation",
   "developerBy": "Developed by",
   "contact": "Contact",
-  "portfolio": "Portfolio"  
+  "portfolio": "Portfolio",
+  "iecaHymnal": "IECA Hymnal",
+  "hymn": "Hymn"
 }

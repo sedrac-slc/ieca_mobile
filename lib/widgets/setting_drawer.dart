@@ -187,7 +187,6 @@ class _SettingDrawerState extends State<SettingDrawer> {
             Navigator.pushNamed(context, '/about');
           },),
 
-          ListTile(title: Text("Politica de Privacidade"),)
         ],
       ),
     );

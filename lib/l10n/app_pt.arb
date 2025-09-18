@@ -16,5 +16,12 @@
   "normal": "Normal",
   "additional": "Adicionais",
   "doxology": "Doxologias",
-  "inputSearch": "Pesquisar..."
+  "inputSearch": "Pesquisar...",
+  "about": "Sobre",
+  "aboutDescription": "Este aplicativo oferece uma coletânea completa das canções do Hinário da IECA, permitindo acesso rápido, pesquisa eficiente e navegação intuitiva para todos os membros e interessados na música litúrgica da nossa comunidade",
+  "version": "Versão",
+  "compile": "Compilação",
+  "developerBy": "Desenvolvido por",
+  "contact": "Contacto",
+  "portfolio": "Portifolio"
 }

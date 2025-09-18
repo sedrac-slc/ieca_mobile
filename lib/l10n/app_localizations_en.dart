@@ -42,7 +42,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get theme => 'Theme';
 
   @override
-  String get light => 'Claro';
+  String get light => 'Light';
 
   @override
   String get dark => 'Dark';
@@ -61,4 +61,26 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get inputSearch => 'Search...';
+
+  @override
+  String get about => 'About';
+
+  @override
+  String get aboutDescription =>
+      'This application offers a complete collection of songs from the IECA Hymnal, allowing quick access, efficient search, and intuitive navigation for all members and those interested in the liturgical music of our community';
+
+  @override
+  String get version => 'Version';
+
+  @override
+  String get compile => 'Compilation';
+
+  @override
+  String get developerBy => 'Developed by';
+
+  @override
+  String get contact => 'Contact';
+
+  @override
+  String get portfolio => 'Portfolio';
 }

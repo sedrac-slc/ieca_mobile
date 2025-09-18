@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ieca_mobile/_import.dart';
+import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/widgets/logo_ieca.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -51,7 +52,7 @@ class _AboutScreenState extends State<AboutScreen> {
           onPressed: () => Navigator.pop(context),
           icon: Icon(AppIconData.iconBack),
         ),
-        title: const Text("Sobre"),
+        title: Text(AppLocalizations.of(context)?.about ?? "Sobre"),
         centerTitle: true,
       ),
       body: Center(
@@ -62,12 +63,10 @@ class _AboutScreenState extends State<AboutScreen> {
               child: LogoIeca(width: 100, height: 100),
             ),
 
-            const Padding(
+            Padding(
               padding: EdgeInsets.symmetric(horizontal: 20.0),
               child: Text(
-                "Este aplicativo oferece uma coletânea completa das canções do Hinário da IECA, "
-                    "permitindo acesso rápido, pesquisa eficiente e navegação intuitiva para todos os "
-                    "membros e interessados na música litúrgica da nossa comunidade.",
+                AppLocalizations.of(context)?.aboutDescription ?? "Este aplicativo oferece uma coletânea completa das canções do Hinário da IECA, permitindo acesso rápido, pesquisa eficiente e navegação intuitiva para todos os membros e interessados na música litúrgica da nossa comunidade",
                 textAlign: TextAlign.center,
               ),
             ),
@@ -77,12 +76,12 @@ class _AboutScreenState extends State<AboutScreen> {
               child: Column(
                 children: [
                   ListTile(
-                      title: const Text("Versão:"),
+                      title: Text(AppLocalizations.of(context)?.version ?? "Versão:"),
                       trailing: Text(_version.isEmpty ? "..." : _version),
                   ),
 
                   ListTile(
-                    title: const Text("Compilação:"),
+                    title: Text(AppLocalizations.of(context)?.compile ?? "Compilação:"),
                     trailing: Text(_buildNumber.isEmpty ? "..." : _buildNumber),
                   ),
 
@@ -95,18 +94,18 @@ class _AboutScreenState extends State<AboutScreen> {
                     ),
                     child: Column(
                       children: [
-                        const ListTile(
-                          title: Text("Desenvolvido por"), trailing: Text("Sedrac L. Calupeteca"),
+                        ListTile(
+                          title: Text(AppLocalizations.of(context)?.developerBy ?? "Desenvolvido por"), trailing: Text("Sedrac L. Calupeteca"),
                         ),
                         ListTile(
                           leading: Icon(Icons.phone),
-                          title: Text("Contacto"),
+                          title: Text(AppLocalizations.of(context)?.contact ?? "Contacto"),
                           trailing: Text("936269780"),
                           onTap: () => _launchPhone("936269780"),
                         ),
                         ListTile(
                           leading: Icon(Icons.open_in_browser),
-                          title: Text("Portifolio"),
+                          title: Text(AppLocalizations.of(context)?.portfolio ?? "Portifolio"),
                           trailing: Text("https://slc-sedrac...", overflow: TextOverflow.ellipsis,),
                           onTap: () => _launchURL("https://slc-sedrac.netlify.app/"),
                         ),

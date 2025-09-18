@@ -167,7 +167,7 @@ abstract class AppLocalizations {
   /// No description provided for @light.
   ///
   /// In en, this message translates to:
-  /// **'Claro'**
+  /// **'Light'**
   String get light;
 
   /// No description provided for @dark.
@@ -205,6 +205,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Search...'**
   String get inputSearch;
+
+  /// No description provided for @about.
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get about;
+
+  /// No description provided for @aboutDescription.
+  ///
+  /// In en, this message translates to:
+  /// **'This application offers a complete collection of songs from the IECA Hymnal, allowing quick access, efficient search, and intuitive navigation for all members and those interested in the liturgical music of our community'**
+  String get aboutDescription;
+
+  /// No description provided for @version.
+  ///
+  /// In en, this message translates to:
+  /// **'Version'**
+  String get version;
+
+  /// No description provided for @compile.
+  ///
+  /// In en, this message translates to:
+  /// **'Compilation'**
+  String get compile;
+
+  /// No description provided for @developerBy.
+  ///
+  /// In en, this message translates to:
+  /// **'Developed by'**
+  String get developerBy;
+
+  /// No description provided for @contact.
+  ///
+  /// In en, this message translates to:
+  /// **'Contact'**
+  String get contact;
+
+  /// No description provided for @portfolio.
+  ///
+  /// In en, this message translates to:
+  /// **'Portfolio'**
+  String get portfolio;
 }
 
 class _AppLocalizationsDelegate

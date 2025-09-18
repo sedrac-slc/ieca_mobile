@@ -183,7 +183,7 @@ class _SettingDrawerState extends State<SettingDrawer> {
             ),
           ),
 
-          ListTile(title: Text("Sobre"), onTap: () {
+          ListTile(title: Text(AppLocalizations.of(context)?.about ?? "Sobre"), onTap: () {
             Navigator.pushNamed(context, '/about');
           },),
 

@@ -10,11 +10,18 @@
   "applicationLanguage": "Application language",
   "hymnalSection": "Hymnal section",
   "theme": "Theme",
-  "light": "Claro",
+  "light": "Light",
   "dark": "Dark",
   "type": "Type",
   "normal": "Normal",
   "additional": "Additional",
   "doxology": "Doxology",
-  "inputSearch": "Search..."
+  "inputSearch": "Search...",
+  "about": "About",
+  "aboutDescription": "This application offers a complete collection of songs from the IECA Hymnal, allowing quick access, efficient search, and intuitive navigation for all members and those interested in the liturgical music of our community",
+  "version": "Version",
+  "compile": "Compilation",
+  "developerBy": "Developed by",
+  "contact": "Contact",
+  "portfolio": "Portfolio"  
 }

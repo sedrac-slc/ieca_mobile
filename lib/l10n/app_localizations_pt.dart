@@ -61,4 +61,26 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get inputSearch => 'Pesquisar...';
+
+  @override
+  String get about => 'Sobre';
+
+  @override
+  String get aboutDescription =>
+      'Este aplicativo oferece uma coletânea completa das canções do Hinário da IECA, permitindo acesso rápido, pesquisa eficiente e navegação intuitiva para todos os membros e interessados na música litúrgica da nossa comunidade';
+
+  @override
+  String get version => 'Versão';
+
+  @override
+  String get compile => 'Compilação';
+
+  @override
+  String get developerBy => 'Desenvolvido por';
+
+  @override
+  String get contact => 'Contacto';
+
+  @override
+  String get portfolio => 'Portifolio';
 }

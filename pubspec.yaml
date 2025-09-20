@@ -47,6 +47,7 @@ dependencies:
   package_info_plus: ^9.0.0
   url_launcher: ^6.3.2
   optional: ^6.1.0+1
+  social_sharing_plus: ^1.2.3
 
 dev_dependencies:
   flutter_test:
@@ -95,6 +96,8 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/img/social/facebook.png
+    - assets/img/social/whatsapp.png
     - assets/img/ieca_1152.png
     - assets/img/ieca_960.png
     - assets/img/logo_ieca.png

@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/_import.dart';
 import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
+import 'package:social_sharing_plus/social_sharing_plus.dart';
 
 class HymnsContentScreen extends StatefulWidget {
   final bool isFavourite;
@@ -50,7 +51,12 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
               }
               favouriteRepository.addHymns(widget.hymnsNumber);
           }, icon: Icon(_iconDataFavourite(favouriteRepository))),
-          IconButton(onPressed: () { }, icon: Icon(Icons.share))
+          IconButton(onPressed: () async {
+            await SocialSharingPlus.shareToSocialMedia(
+              SocialPlatform.reddit,
+              "${widget.hymnsNumber.num} - ${widget.hymnsNumber.label}",
+            );
+          }, icon: Icon(Icons.share))
         ],
       ),
       body: FutureBuilder(

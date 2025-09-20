@@ -49,12 +49,7 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
                   Container(
                     child: Row(
                       children: [
-                        IconButton(onPressed: () {
-                          favouriteRepository.addLitanyTitle(widget.litanyTitle);
-                        }, icon: Icon(
-                          favouriteRepository.existsLitanyTitle(widget.litanyTitle)
-                              ? Icons.favorite_outlined : Icons.favorite_border,
-                        )),
+                        IconButton(onPressed: () { }, icon: Icon(Icons.favorite_border)),
                         const ButtonBack(),
                       ]
                     )

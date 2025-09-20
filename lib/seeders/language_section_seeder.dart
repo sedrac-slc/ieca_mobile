@@ -15,4 +15,8 @@ class LanguageSectionSeeder{
       PORTUGUES, UMBUNDU, NGANGELA, COKWE, KIMBUNDU, FIOTE, KIKONGO, KWANYAMA
     ];
   }
+
+  static LanguageSection code(String code) {
+    return items().where((it) => it.code == code).first;
+  }
 }

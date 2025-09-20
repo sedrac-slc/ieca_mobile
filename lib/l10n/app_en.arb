@@ -12,6 +12,7 @@
   "theme": "Theme",
   "light": "Light",
   "dark": "Dark",
+  "system": "System",
   "type": "Type",
   "normal": "Normal",
   "additional": "Additional",
@@ -25,5 +26,7 @@
   "contact": "Contact",
   "portfolio": "Portfolio",
   "iecaHymnal": "IECA Hymnal",
-  "hymn": "Hymn"
+  "hymn": "Hymn",
+  "favourites": "Favourites",
+  "noInformation": "No information"
 }

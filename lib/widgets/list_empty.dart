@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ieca_mobile/l10n/app_localizations.dart';
 
 class ListEmpty extends StatelessWidget {
   const ListEmpty({super.key});
@@ -12,7 +13,7 @@ class ListEmpty extends StatelessWidget {
         children: [
           Icon(Icons.info_outline, color: Colors.grey, size: 80,),
           Text(
-            "Não tem informação",
+            AppLocalizations.of(context)?.noInformation ?? "Não tem informação",
             style: TextStyle(color: Colors.grey),
           ),
         ],

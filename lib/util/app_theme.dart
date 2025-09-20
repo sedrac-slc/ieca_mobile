@@ -21,4 +21,10 @@ class AppTheme{
     return  isDarkMode ? Colors.grey : MaterialTheme.lightScheme().primary;
   }
 
+  static Color textTile(BuildContext context){
+    final Brightness brightness = MediaQuery.of(context).platformBrightness;
+    final bool isDarkMode = brightness == Brightness.dark;
+    return  isDarkMode ? Colors.white : Colors.black;
+  }
+
 }

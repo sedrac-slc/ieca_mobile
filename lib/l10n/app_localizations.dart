@@ -176,6 +176,12 @@ abstract class AppLocalizations {
   /// **'Dark'**
   String get dark;
 
+  /// No description provided for @system.
+  ///
+  /// In en, this message translates to:
+  /// **'System'**
+  String get system;
+
   /// No description provided for @type.
   ///
   /// In en, this message translates to:
@@ -259,6 +265,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Hymn'**
   String get hymn;
+
+  /// No description provided for @favourites.
+  ///
+  /// In en, this message translates to:
+  /// **'Favourites'**
+  String get favourites;
+
+  /// No description provided for @noInformation.
+  ///
+  /// In en, this message translates to:
+  /// **'No information'**
+  String get noInformation;
 }
 
 class _AppLocalizationsDelegate

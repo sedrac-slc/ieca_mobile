@@ -5,9 +5,15 @@ import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
 class HymnsContentScreen extends StatefulWidget {
+  final bool isFavourite;
   final HymnsNumber hymnsNumber;
+  final LanguageSection? language;
 
-  const HymnsContentScreen({super.key, required this.hymnsNumber});
+  const HymnsContentScreen({
+    required this.hymnsNumber,
+    this.isFavourite = false,
+    this.language,
+  });
 
   @override
   State<HymnsContentScreen> createState() => _HymnsContentScreenState();
@@ -15,6 +21,14 @@ class HymnsContentScreen extends StatefulWidget {
 
 class _HymnsContentScreenState extends State<HymnsContentScreen> {
   final HymnsContentRepository _hymnsContentRepository = HymnsContentRepository();
+
+  IconData _iconDataFavourite(FavouriteRepository favouriteRepository){
+    bool data = false;
+    data = widget.isFavourite && widget.language != null
+        ? favouriteRepository.existsHymnsByLang(widget.hymnsNumber, widget.language!.code)
+        : favouriteRepository.existsHymns(widget.hymnsNumber);
+    return data ? Icons.favorite_outlined : Icons.favorite_border;
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -30,19 +44,17 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
         ),
         actions: [
           IconButton(onPressed: () {
-            favouriteRepository.addHymns(widget.hymnsNumber);
-          }, icon: Icon(
-                favouriteRepository.existsHymns(widget.hymnsNumber)
-                ? Icons.favorite_outlined : Icons.favorite_border,
-          )),
-
-          IconButton(onPressed: () {
-
-          }, icon: Icon(Icons.share))
+              if(widget.isFavourite && widget.language != null) {
+                favouriteRepository.removeHymns(widget.hymnsNumber, widget.language!);
+                return;
+              }
+              favouriteRepository.addHymns(widget.hymnsNumber);
+          }, icon: Icon(_iconDataFavourite(favouriteRepository))),
+          IconButton(onPressed: () { }, icon: Icon(Icons.share))
         ],
       ),
       body: FutureBuilder(
-        future: _hymnsContentRepository.getBy(widget.hymnsNumber),
+        future: _hymnsContentRepository.getBy(widget.hymnsNumber, language: widget.language),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
             return Column(

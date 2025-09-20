@@ -27,7 +27,7 @@ class LitanyTile extends StatelessWidget {
           title: Text(
             litanyTitle.name,
             overflow: TextOverflow.ellipsis,
-            style: const TextStyle(fontSize: 14),
+            style: TextStyle(fontSize: 14, color: AppTheme.textTile(context)),
           ),
           trailing: IconTrailing(onPressed: onPressed),
           contentPadding: EdgeInsets.only(right: 5, left: 5),

@@ -11,7 +11,8 @@
   "hymnalSection": "Seção do hinário",
   "theme": "Tema",
   "light": "Claro",
-  "dark": "Dark",
+  "dark": "Escuro",
+  "system": "Sistema",
   "type": "Tipo",
   "normal": "Normal",
   "additional": "Adicionais",
@@ -25,5 +26,7 @@
   "contact": "Contacto",
   "portfolio": "Portifolio",
   "iecaHymnal": "Hinário IECA",
-  "hymn": "Hino"
+  "hymn": "Hino",
+  "favourites": "Favouritos",
+  "noInformation": "Não tem informação"
 }

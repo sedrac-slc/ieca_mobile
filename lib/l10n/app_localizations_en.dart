@@ -48,6 +48,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get dark => 'Dark';
 
   @override
+  String get system => 'System';
+
+  @override
   String get type => 'Type';
 
   @override
@@ -89,4 +92,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get hymn => 'Hymn';
+
+  @override
+  String get favourites => 'Favourites';
+
+  @override
+  String get noInformation => 'No information';
 }

@@ -66,11 +66,7 @@ class _SettingDrawerState extends State<SettingDrawer> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text(
-                      AppLocalizations.of(context)?.hymnalSection ??
-                          "Secção do hinário",
-                      style: GoogleFonts.roboto(fontSize: 15),
-                    ),
+                    Text(AppLocalizations.of(context)?.hymnalSection ?? "Secção do hinário", style: GoogleFonts.roboto(fontSize: 15),),
                     ValueListenableBuilder<LanguageSection>(
                       valueListenable: _languageSection,
                       builder: (_, _, _) {
@@ -78,10 +74,7 @@ class _SettingDrawerState extends State<SettingDrawer> {
                           isExpanded: true,
                           value: _languageSection.value,
                           icon: const Icon(Icons.keyboard_arrow_down),
-                          items:
-                              _languageSections.value.map((
-                                LanguageSection item,
-                              ) {
+                          items:_languageSections.value.map((LanguageSection item,) {
                                 return DropdownMenuItem(
                                   value: item,
                                   child: Text(item.name),
@@ -154,6 +147,9 @@ class _SettingDrawerState extends State<SettingDrawer> {
                   value: _preferenceRepository.theme,
                   icon: const Icon(Icons.keyboard_arrow_down),
                   items: [
+                    DropdownMenuItem(
+                      value: "system", child: Text(AppLocalizations.of(context)?.system ?? "Sistema",),
+                    ),
                     DropdownMenuItem(
                       value: "light", child: Text(AppLocalizations.of(context)?.light ?? "Claro",),
                     ),

@@ -27,7 +27,7 @@ class PsalmsTile extends StatelessWidget {
           title: Text(
             psalmsTitle.name,
             overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.roboto(fontSize: 14),
+            style: GoogleFonts.roboto(fontSize: 14, color: AppTheme.textTile(context)),
           ),
           trailing: IconTrailing(onPressed: onPressed),
           contentPadding: EdgeInsets.only(right: 5, left: 5),

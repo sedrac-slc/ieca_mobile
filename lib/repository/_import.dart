@@ -1,3 +1,4 @@
+export 'favourite/_import.dart';
 export 'provider/_import.dart';
 export 'hymns_group_repository.dart';
 export 'hymns_number_repository.dart';

@@ -45,7 +45,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get light => 'Claro';
 
   @override
-  String get dark => 'Dark';
+  String get dark => 'Escuro';
+
+  @override
+  String get system => 'Sistema';
 
   @override
   String get type => 'Tipo';
@@ -89,4 +92,10 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get hymn => 'Hino';
+
+  @override
+  String get favourites => 'Favouritos';
+
+  @override
+  String get noInformation => 'Não tem informação';
 }

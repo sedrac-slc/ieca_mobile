@@ -6,18 +6,20 @@ class BadgeContainer extends StatelessWidget {
   final String text;
   final double padding;
   final List<BadgeItem> children;
+  final EdgeInsets margin;
 
-  const BadgeContainer({super.key, required this.text, required this.children, this.padding = 10});
+  const BadgeContainer({super.key, required this.text, required this.children, this.padding = 5, this.margin = EdgeInsets.zero});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20),
+      margin: margin,
       alignment: Alignment.topLeft,
-      height: 65,
+      height: 55,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        spacing: 8,
+        spacing: 5,
         children: [
           Text(text, style: GoogleFonts.roboto(fontSize: 15)),
           Expanded(

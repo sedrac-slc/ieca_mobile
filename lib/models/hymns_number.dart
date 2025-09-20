@@ -35,8 +35,24 @@ class HymnsNumber{
     );
   }
 
+  HymnsNumber copyWith({
+    int? id,
+    int? num,
+    String? code,
+    String? label,
+    HymnsGroup? hymnsGroup,
+  }) {
+    return HymnsNumber(
+      id: id ?? this.id,
+      num: num ?? this.num,
+      code: code ?? this.code,
+      label: label ?? this.label,
+      hymnsGroup: hymnsGroup ?? this.hymnsGroup,
+    );
+  }
+
   @override
   String toString() {
-    return "HymnsNumber(id=$id, numb=$num, code=$code)";
+    return "HymnsNumber(id=$id, num=$num, code=$code, group= $hymnsGroup)";
   }
 }

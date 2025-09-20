@@ -3,22 +3,30 @@ import 'package:ieca_mobile/_import.dart';
 class HymnsNumberRepository {
   final _languageSectionRepository = LanguageSectionRepository();
 
+  List<HymnsNumber> chooseLanguage(LanguageSection language) {
+    if(language == LanguageSectionSeeder.UMBUNDU) return  UmHymnsNumberSeeder.items();
+    if(language == LanguageSectionSeeder.NGANGELA) return NgHymnsNumberSeeder.items();
+    if(language == LanguageSectionSeeder.COKWE) return CoHymnsNumberSeeder.items();
+    if(language == LanguageSectionSeeder.KIMBUNDU) return KmHymnsNumberSeeder.items();
+    if(language == LanguageSectionSeeder.FIOTE) return FtHymnsNumberSeeder.items();
+    if(language == LanguageSectionSeeder.KIKONGO) return KkHymnsNumberSeeder.items();
+    if(language == LanguageSectionSeeder.KWANYAMA) return KwHymnsNumberSeeder.items();
+    return HymnsNumberSeeder.items();
+  }
+
   Future<List<HymnsNumber>> getAll() async {
-    var list = HymnsNumberSeeder.items();
     final language = await _languageSectionRepository.getLanguage();
-    if(language == LanguageSectionSeeder.UMBUNDU) list = await UmHymnsNumberSeeder.items();
-    if(language == LanguageSectionSeeder.NGANGELA) list = await NgHymnsNumberSeeder.items();
-    if(language == LanguageSectionSeeder.COKWE) list = await CoHymnsNumberSeeder.items();
-    if(language == LanguageSectionSeeder.KIMBUNDU) list = await KmHymnsNumberSeeder.items();
-    if(language == LanguageSectionSeeder.FIOTE) list = await FtHymnsNumberSeeder.items();
-    if(language == LanguageSectionSeeder.KIKONGO) list = await KkHymnsNumberSeeder.items();
-    if(language == LanguageSectionSeeder.KWANYAMA) list = await KwHymnsNumberSeeder.items();
-    return await list;
+    return chooseLanguage(language);
   }
 
   Future<List<HymnsNumber>> getBy(HymnsGroup item) async {
     var list = await getAll();
     return await list.where((it) => it.hymnsGroup.id == item.id).toList();
+  }
+
+  Future<HymnsNumber> getByNumber(int num) async {
+    var list = await getAll();
+    return await list.where((it) => it.num == num).first;
   }
 
   Future<List<HymnsNumber>> getByDoxologies() async {
@@ -32,6 +40,11 @@ class HymnsNumberRepository {
     return await HymnsAdditional.HYMNS_NUMBERS
           .where((it) => it.hymnsGroup.id == HymnsAdditional.HYMNS_GROUP.id)
           .toList();
+  }
+
+  HymnsNumber getByFavourite(Favourite favourite, LanguageSection language) {
+   final items = chooseLanguage(language);
+   return items.where((it) => it.num.toString() == favourite.number).first;
   }
 
   Future<int> count() async {

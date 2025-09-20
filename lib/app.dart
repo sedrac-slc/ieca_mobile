@@ -24,6 +24,12 @@ class _IecaAppState extends State<IecaApp> {
     });
   }
 
+  ThemeMode chooseThemeMode(PreferenceRepository value) {
+    if(value.theme == "light") return ThemeMode.light;
+    if(value.theme == "dark") return ThemeMode.dark;
+    return ThemeMode.system;
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +49,7 @@ class _IecaAppState extends State<IecaApp> {
             useMaterial3: true,
             colorScheme: MaterialTheme.darkScheme()
           ),
-          themeMode: value.theme == "dark" ? ThemeMode.dark : ThemeMode.system,
+          themeMode: chooseThemeMode(value),
           home: const PageScreen(),
           routes: {
             /* Screens for navigation bar */

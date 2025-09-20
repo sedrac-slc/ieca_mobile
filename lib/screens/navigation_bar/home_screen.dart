@@ -16,6 +16,7 @@ class _HomeScreenState extends State<HomeScreen> {
   final _hymnsNumberRepository = HymnsNumberRepository();
   final _litanyTitleRepository = LitanyTitleRepository();
   final _psalmsTitleRepository = PsalmsTitleRepository();
+  final _badgeFavourite = ValueNotifier(FavouriteType.HYMNS);
   final _statisticItem = ValueNotifier(StatisticItem());
 
   _initData() async {
@@ -47,7 +48,7 @@ class _HomeScreenState extends State<HomeScreen> {
             WidgetsBinding.instance.addPostFrameCallback((_) async {
               await _initData();
             });
-            return SingleChildScrollView(
+            return Container(
               child: SizedBox(
                 height: MediaQuery.of(context).size.height,
                 width: MediaQuery.of(context).size.width,
@@ -105,6 +106,33 @@ class _HomeScreenState extends State<HomeScreen> {
                               ],
                             ),
                           ),
+
+                          ValueListenableBuilder(
+                              valueListenable: _badgeFavourite,
+                              builder: (context, value, child) {
+                                return Expanded(
+                                  child: ListView( children: [
+                                    BadgeContainer(
+                                      text: AppLocalizations.of(context)?.favourites ?? "Favouritos",
+                                      margin: const EdgeInsets.symmetric(vertical: 10),
+                                      children: [
+                                        BadgeItem(text: AppLocalizations.of(context)?.hymns ?? "Hinos", isSelected: value == FavouriteType.HYMNS, onClick: () => _badgeFavourite.value = FavouriteType.HYMNS),
+                                        BadgeItem(text: AppLocalizations.of(context)?.litanies ?? "Litanias", isSelected: value == FavouriteType.LITANY, onClick: () => _badgeFavourite.value = FavouriteType.LITANY),
+                                      ],
+                                    ),
+
+                                    Container(
+                                        padding: const EdgeInsets.symmetric(horizontal: 20),
+                                        child: FavouriteContainer(favouriteType: value.toString())
+                                    )
+                                  ],),
+                                );
+                              }
+                          )
+
+
+
+
                         ],
                       );
                     }

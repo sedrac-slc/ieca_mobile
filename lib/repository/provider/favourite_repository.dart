@@ -5,18 +5,18 @@ class FavouriteRepository extends ChangeNotifier {
   final hymnsFavourite = HymnFavouriteRepository();
   LanguageSection? language;
 
-  void putOrRemove(HymnsNumber hymnsNumber) {
+  void hymnPutOrRemove(HymnsNumber hymnsNumber) {
     hymnsFavourite.putOrRemove(hymnsNumber);
     notifyListeners();
   }
 
-  void putOrRemoveLang(HymnsNumber hymnsNumber, LanguageSection language) {
+  void hymnPutOrRemoveLang(HymnsNumber hymnsNumber, LanguageSection language) {
     hymnsFavourite.putOrRemoveLang(hymnsNumber, language.code);
     this.language = language;
     notifyListeners();
   }
 
-  bool existsHymns(HymnsNumber hymnsNumber) => hymnsFavourite.exists(hymnsNumber);
-  bool existsHymnsByLang(HymnsNumber hymnsNumber, String lang) => hymnsFavourite.existsByLang(hymnsNumber, lang);
+  bool hymnExists(HymnsNumber hymnsNumber) => hymnsFavourite.exists(hymnsNumber);
+  bool hymnExistsLang(HymnsNumber hymnsNumber, String lang) => hymnsFavourite.existsByLang(hymnsNumber, lang);
 
 }

@@ -26,8 +26,8 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
   IconData _iconDataFavourite(FavouriteRepository favouriteRepository){
     bool data = false;
     data = widget.isFavourite && widget.language != null
-        ? favouriteRepository.existsHymnsByLang(widget.hymnsNumber, widget.language!.code)
-        : favouriteRepository.existsHymns(widget.hymnsNumber);
+        ? favouriteRepository.hymnExistsLang(widget.hymnsNumber, widget.language!.code)
+        : favouriteRepository.hymnExists(widget.hymnsNumber);
     return data ? Icons.favorite_outlined : Icons.favorite_border;
   }
 
@@ -57,10 +57,10 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
         actions: [
           IconButton(onPressed: () {
               if(widget.isFavourite && widget.language != null) {
-                favouriteRepository.putOrRemoveLang(widget.hymnsNumber, widget.language!);
+                favouriteRepository.hymnPutOrRemoveLang(widget.hymnsNumber, widget.language!);
                 return;
               }
-              favouriteRepository.putOrRemove(widget.hymnsNumber);
+              favouriteRepository.hymnPutOrRemove(widget.hymnsNumber);
           }, icon: Icon(_iconDataFavourite(favouriteRepository))),
           CopyButton(message: _message),
           SharedButton(message: _message,),

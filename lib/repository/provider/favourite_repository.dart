@@ -5,13 +5,13 @@ class FavouriteRepository extends ChangeNotifier {
   final hymnsFavourite = HymnFavouriteRepository();
   LanguageSection? language;
 
-  void addHymns(HymnsNumber hymnsNumber) {
+  void putOrRemove(HymnsNumber hymnsNumber) {
     hymnsFavourite.putOrRemove(hymnsNumber);
     notifyListeners();
   }
 
-  void removeHymns(HymnsNumber hymnsNumber, LanguageSection language) {
-    hymnsFavourite.removeWithLang(hymnsNumber, language.code);
+  void putOrRemoveLang(HymnsNumber hymnsNumber, LanguageSection language) {
+    hymnsFavourite.putOrRemoveLang(hymnsNumber, language.code);
     this.language = language;
     notifyListeners();
   }

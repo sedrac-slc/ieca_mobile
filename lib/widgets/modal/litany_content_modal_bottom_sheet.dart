@@ -50,7 +50,7 @@ class _LitanyContentModalBottomSheetState extends State<LitanyContentModalBottom
                     child: Row(
                       children: [
                         IconButton(onPressed: () { }, icon: Icon(Icons.favorite_border)),
-                        const ButtonBack(),
+                        const RollbackButton(),
                       ]
                     )
                   )

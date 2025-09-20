@@ -1,7 +1,9 @@
+import 'package:flutter/cupertino.dart';
 import 'package:ieca_mobile/main.dart';
 import 'package:ieca_mobile/_import.dart';
 import 'package:ieca_mobile/objectbox.g.dart';
 import 'package:optional/optional.dart';
+import 'package:toastification/toastification.dart';
 
 class HymnFavouriteRepository {
   final preferenceRepository = PreferenceRepository();
@@ -51,16 +53,23 @@ class HymnFavouriteRepository {
     final favourite = find(hymnsNumber);
     if (favourite.isPresent) {
       box.remove(favourite.value.id);
+      _toastRemoveFavourite();
     } else {
       final favourite = convertFavourite(hymnsNumber);
       box.put(favourite.value);
+      _toastPutFavourite();
     }
   }
 
-  void removeWithLang(HymnsNumber hymnsNumber, String lang) {
+  void putOrRemoveLang(HymnsNumber hymnsNumber, String lang) {
     final favourite = findByLang(hymnsNumber, lang);
     if (favourite.isPresent) {
       box.remove(favourite.value.id);
+      _toastRemoveFavourite();
+    } else {
+      final favourite = createWithLang(hymnsNumber, lang);
+      box.put(favourite);
+      _toastPutFavourite();
     }
   }
 
@@ -80,4 +89,22 @@ class HymnFavouriteRepository {
     final filters = getAll().map((it) => it.lang).toSet();
     return items.where((it) => filters.contains(it.code)).toList();
   }
+
+  void _toastPutFavourite() {
+    toastification.show(
+      title: Text("Hino adicionado aos favoritos"),
+      autoCloseDuration: const Duration(seconds: 2),
+      alignment: Alignment.bottomCenter,
+    );
+  }
+
+  void _toastRemoveFavourite() {
+    toastification.show(
+      title: Text("Hino retirado dos favoritos"),
+      autoCloseDuration: const Duration(seconds: 2),
+      alignment: Alignment.bottomCenter,
+      type: ToastificationType.error,
+    );
+  }
+
 }

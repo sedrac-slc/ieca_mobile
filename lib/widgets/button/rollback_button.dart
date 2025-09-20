@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ieca_mobile/util/app_theme.dart';
 
-class ButtonBack extends StatelessWidget {
-  const ButtonBack({super.key});
+class RollbackButton extends StatelessWidget {
+  const RollbackButton({super.key});
 
   @override
   Widget build(BuildContext context) {

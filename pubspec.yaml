@@ -48,6 +48,7 @@ dependencies:
   url_launcher: ^6.3.2
   optional: ^6.1.0+1
   social_sharing_plus: ^1.2.3
+  toastification: ^3.0.3
 
 dev_dependencies:
   flutter_test:

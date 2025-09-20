@@ -1,5 +1,4 @@
 import 'package:ieca_mobile/_import.dart';
-import 'package:optional/optional.dart';
 
 class HymnsContentRepository {
   final _languageSectionRepository = LanguageSectionRepository();
@@ -23,5 +22,14 @@ class HymnsContentRepository {
   Future<List<HymnsContent>> getBy(HymnsNumber item, {LanguageSection? language = null}) async {
     List<HymnsContent> list = language == null ? await getAll() : chooseLanguage(language);
     return await list.where((it) => it.hymnsNumber.id == item.id).toList();
+  }
+
+  Future<String> generator(HymnsNumber item, {LanguageSection? language = null}) async {
+    List<HymnsContent> list = await getBy(item, language: language);
+    final lang = LanguageSectionSeeder.code(item.hymnsGroup.lang);
+    String hymns = "Hino ${item.num} (${lang.name})\n\n";
+    return hymns + list.map((it) {
+      return it.typeStanza == HymnsContentCode.VERSE ? "${it.position}. ${it.content}" :  "**${it.content}**";
+    }).join("\n\n");
   }
 }

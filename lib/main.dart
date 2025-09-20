@@ -3,6 +3,7 @@ import 'package:ieca_mobile/_import.dart';
 import 'package:ieca_mobile/app.dart';
 import 'package:ieca_mobile/object_box.dart';
 import 'package:provider/provider.dart';
+import 'package:toastification/toastification.dart';
 
 /// Provides access to the ObjectBox Store throughout the app.
 late ObjectBox objectbox;
@@ -19,6 +20,8 @@ Future<void> main() async {
       ChangeNotifierProvider(create: (_) =>  PreferenceRepository()),
       ChangeNotifierProvider(create: (_) =>  FavouriteRepository()),
     ],
-    child: const IecaApp(),
+    child: ToastificationWrapper(
+        child: const IecaApp()
+    ),
   ));
 }

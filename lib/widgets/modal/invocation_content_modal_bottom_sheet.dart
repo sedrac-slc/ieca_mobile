@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ieca_mobile/models/invocation_title.dart';
-import 'package:ieca_mobile/repository/invocation_content_repository.dart';
-import 'package:ieca_mobile/widgets/_import.dart';
-import 'package:ieca_mobile/widgets/items/_import.dart';
+import 'package:ieca_mobile/_import.dart';
 
 class InvocationContentModalBottomSheet extends StatefulWidget {
   final InvocationTitle invocationTitle;
@@ -52,7 +49,7 @@ class _InvocationContentModalBottomSheetState
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Expanded(child: Text(widget.invocationTitle.name, style: GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.bold), overflow: TextOverflow.ellipsis, maxLines: 2,)),
-                            const ButtonBack(),
+                            const RollbackButton(),
                           ]
                         ),
                         Expanded(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/models/psalms_title.dart';
 import 'package:ieca_mobile/repository/psalms_content_repository.dart';
-import 'package:ieca_mobile/widgets/button/button_back.dart';
+import 'package:ieca_mobile/widgets/button/rollback_button.dart';
 import 'package:ieca_mobile/widgets/items/_import.dart';
 
 class PsalmsContentModalBottomSheet extends StatefulWidget {
@@ -39,7 +39,7 @@ class _PsalmsContentModalBottomSheetState extends State<PsalmsContentModalBottom
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(widget.psalmsTitle.name, style: GoogleFonts.roboto(fontSize: 20, fontWeight: FontWeight.bold),),
-                    const ButtonBack(),
+                    const RollbackButton(),
                   ]
               ),
           ),

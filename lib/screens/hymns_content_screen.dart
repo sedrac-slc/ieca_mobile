@@ -1,9 +1,8 @@
-import 'package:flutter/material.dart';
+import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:ieca_mobile/_import.dart';
-import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
-import 'package:social_sharing_plus/social_sharing_plus.dart';
+import 'package:flutter/material.dart';
 
 class HymnsContentScreen extends StatefulWidget {
   final bool isFavourite;
@@ -22,6 +21,7 @@ class HymnsContentScreen extends StatefulWidget {
 
 class _HymnsContentScreenState extends State<HymnsContentScreen> {
   final HymnsContentRepository _hymnsContentRepository = HymnsContentRepository();
+  String _message = "";
 
   IconData _iconDataFavourite(FavouriteRepository favouriteRepository){
     bool data = false;
@@ -29,6 +29,17 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
         ? favouriteRepository.existsHymnsByLang(widget.hymnsNumber, widget.language!.code)
         : favouriteRepository.existsHymns(widget.hymnsNumber);
     return data ? Icons.favorite_outlined : Icons.favorite_border;
+  }
+
+  void initData() async {
+    _message = await _hymnsContentRepository.generator(widget.hymnsNumber, language: widget.language);
+    setState(() {});
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    initData();
   }
 
   @override
@@ -46,17 +57,13 @@ class _HymnsContentScreenState extends State<HymnsContentScreen> {
         actions: [
           IconButton(onPressed: () {
               if(widget.isFavourite && widget.language != null) {
-                favouriteRepository.removeHymns(widget.hymnsNumber, widget.language!);
+                favouriteRepository.putOrRemoveLang(widget.hymnsNumber, widget.language!);
                 return;
               }
-              favouriteRepository.addHymns(widget.hymnsNumber);
+              favouriteRepository.putOrRemove(widget.hymnsNumber);
           }, icon: Icon(_iconDataFavourite(favouriteRepository))),
-          IconButton(onPressed: () async {
-            await SocialSharingPlus.shareToSocialMedia(
-              SocialPlatform.reddit,
-              "${widget.hymnsNumber.num} - ${widget.hymnsNumber.label}",
-            );
-          }, icon: Icon(Icons.share))
+          CopyButton(message: _message),
+          SharedButton(message: _message,),
         ],
       ),
       body: FutureBuilder(

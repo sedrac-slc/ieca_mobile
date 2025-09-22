@@ -3,6 +3,7 @@ import 'package:ieca_mobile/l10n/app_localizations.dart';
 import 'package:ieca_mobile/_import.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:toastification/toastification.dart';
 
 class HymnsScreen extends StatefulWidget {
   const HymnsScreen({super.key});
@@ -15,7 +16,9 @@ class _HymnsScreenState extends State<HymnsScreen> {
   final ValueNotifier< Map<HymnsGroup, Map<HymnsNumber, List<HymnsContent>>> >  _hymnsSearch = ValueNotifier({},);
   final ValueNotifier<List<HymnsGroup>> _hymnsGroup = ValueNotifier([]);
   final ValueNotifier<bool> _isSearch = ValueNotifier(false);
+  final ValueNotifier<bool> _isNumber = ValueNotifier(false);
   final ValueNotifier<int> _badgeItem = ValueNotifier(0);
+  final _hymnsNumberRepository = HymnsNumberRepository();
   final _hymnsGroupRepository = HymnsGroupRepository();
 
   _initData() async {
@@ -27,11 +30,28 @@ class _HymnsScreenState extends State<HymnsScreen> {
     if(pos == BadgeHymns.NORMAL) await _initData();
   }
 
+  _openHymnsContent(int number) async {
+    try {
+      final item = await _hymnsNumberRepository.getByNumber(number);
+      Navigator.push(context,
+        MaterialPageRoute(builder: (context) => HymnsContentScreen(hymnsNumber: item),),
+      );
+    }catch(Exception){
+      toastification.show(
+        type: ToastificationType.error,
+        style: ToastificationStyle.flat,
+        title: Text("Hino não encontrado"),
+        autoCloseDuration: const Duration(seconds: 2),
+      );
+    }
+  }
+
   @override
   void dispose() {
     _hymnsSearch.dispose();
     _hymnsGroup.dispose();
     _badgeItem.dispose();
+    _isNumber.dispose();
     _isSearch.dispose();
     super.dispose();
   }
@@ -58,15 +78,25 @@ class _HymnsScreenState extends State<HymnsScreen> {
               Container(
                 padding: const EdgeInsets.only(top: 8.0, left: 15, right: 15, bottom: 10),
                 color: colorBar,
-                child: InputSearch(
-                  onSearch: (text) async {
-                    _hymnsSearch.value = await _hymnsGroupRepository.getSearch(text);
-                    if(!_isSearch.value) _isSearch.value = true;
-                  },
-                  onClear: () async {
-                    await _initData();
-                    _isSearch.value = false;
-                  },
+                child: ValueListenableBuilder(
+                  valueListenable: _isNumber,
+                  builder: (context, value, child) {
+                    return InputSearch(
+                      isNumber: value,
+                      onNumber: (number) async => _openHymnsContent(number),
+                      onSearch: (text) async {
+                        _isNumber.value = NumberUtil.isInteger(text);
+                        if(_isNumber.value) return;
+                        _hymnsSearch.value = await _hymnsGroupRepository.getSearch(text);
+                        if(!_isSearch.value) _isSearch.value = true;
+                      },
+                      onClear: () async {
+                        await _initData();
+                        _isSearch.value = false;
+                        _isNumber.value = false;
+                      },
+                    );
+                  }
                 ),
               ),
 
